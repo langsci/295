@@ -1,11 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      File: langsci-forest-setup.sty
 %%    Author: Language Science Press (http://langsci-press.org)
-%%      Date: 2016-01-16 16:47:43 UTC 
-%%   Purpose: This file contains optional styles and settings for the 
+%%      Date: 2016-01-16 16:47:43 UTC
+%%   Purpose: This file contains optional styles and settings for the
 %%            forest package. This version is for 2.0.
 %%  Language: LaTeX
-%%   Licence: 
+%%   Licence:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -13,15 +13,18 @@
 % a workaround is to use a different pgf driver.
 % See email from Akira Kakuto to Stefan Müller 15.01.2016
 
+% Do we need this for 2017?
+% We seem to be better off without it 31.10.2017
 %deceive the driver
-\def\pdftexversion{140}
+%\def\pdftexversion{140}
 %use the old driver for dvipdfm
-\def\pgfsysdriver{pgfsys-dvipdfm.def} 
+%\def\pgfsysdriver{pgfsys-dvipdfm.def}
 
 % http://en.wikibooks.org/wiki/LaTeX/Linguistics#Syntactic_trees
 \usepackage{tikz-dependency}
 
-\usetikzlibrary{tikzmark} % saves positions in tikz pictures, allows to connect arbitrary text
+% dangerous, use at own risk
+%\usetikzlibrary{tikzmark} % saves positions in tikz pictures, allows to connect arbitrary text
 
 
 % http://tex.stackexchange.com/questions/256280/drawing-complex-dependency-diagrams-with-tikz-forest
@@ -30,32 +33,26 @@
 \tikzset{deparrow/.style={-Latex}}%,blue}}
 
 
-% does not work with forest v1.05 did not check later versions
-\usepackage[external]{forest}
-\tikzset{external/up to date check=simple} 
-% for texlive: -shell-escape, for miktex -enable-write18
-% All externalized graphics go go the \externaldirectory
-%\tikzexternalize[prefix=external-figures/,shell escape=-shell-escape]
-\tikzset{external/system call={xelatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource"}}
+% externalization works with package memoize
+\usepackage[linguistics]{forest}
 %\usepackage{morewrites}
-
-%\usepackage{forest}
-% for forest version2
-\useforestlibrary{linguistics}
-\forestapplylibrarydefaults{linguistics}
-
 
 
 
 % specification for all trees, "default preamble" appends to existing specification.
 % The version with apostrophe replaces it.
 \forestset{default preamble'={
-    for tree={align=center,parent anchor=south, child anchor=north,base=bottom},
-    before drawing tree={
-      sort by=y,
-      for min={tree}{baseline}
-    }
-  }} 
+    for tree={align=center,parent anchor=south, child anchor=north,anchor=north,base=bottom},   
+% anchor=north was introduced to get alignments of AVMs right.
+% used to be anchor=north but this fails on trees in \ea \z examples, St. Mü. 02.05.2020 or may be not
+%
+% This would align trees to the baseline. We do not want this for TAG
+% where several trees have to be aligned with respect to their center.
+%    before drawing tree={
+%      sort by=y,
+%      for min={tree}{baseline}
+%    }
+  }}
 
 
 \forestset{
@@ -81,7 +78,7 @@
 
 
 % http://www.texample.net/tikz/examples/borrowers-and-lenders/
-\usetikzlibrary{arrows} %,positioning} 
+\usetikzlibrary{arrows} %,positioning}
 \tikzset{
     %Define standard arrow tip
     >=stealth'}
@@ -89,7 +86,7 @@
 
 
 %% \forestset{
-%% sn edges/.style={for tree={parent anchor=south, child anchor=north,align=center,base=bottom,where n children=0{tier=word}{}}}, 
+%% sn edges/.style={for tree={parent anchor=south, child anchor=north,align=center,base=bottom,where n children=0{tier=word}{}}},
 %% background tree/.style={for tree={text opacity=0.2,draw opacity=0.2,edge={draw opacity=0.2}}}
 %% }
 
@@ -103,15 +100,33 @@
     l sep=0,inner xsep=0,
     append translation/.expanded/.wrap pgfmath arg={\gettranslation{##1}}{content},
     content/.expanded/.wrap pgfmath arg={\gettext{##1}}{content},
-  },  
+  },
   append translation/.style={
     if={strequal("#1","")}{}{
       append={[#1,no edge,inner xsep=0,inner ysep=0,outer ysep=0,
+               tier=gloss, % does not work for TAG trees since the words are not aligned at the baseline
                l=\baselineskip + 0.2ex,
         ]}
     }
-  } 
+  }
 }
+
+\forestset{
+  with unaligned translation/.style={
+    l sep=0,inner xsep=0,
+    append unaligned translation/.expanded/.wrap pgfmath arg={\gettranslation{##1}}{content},
+    content/.expanded/.wrap pgfmath arg={\gettext{##1}}{content},
+  },
+  append unaligned translation/.style={
+    if={strequal("#1","")}{}{
+      append={[#1,no edge,inner xsep=0,inner ysep=0,outer ysep=0,
+               %tier=gloss, % does not work for TAG trees since the words are not aligned at the baseline
+               l=\baselineskip + 0.2ex,
+        ]}
+    }
+  }
+}
+
 
 \def\gettext#1{\gettextA#1;;\endget}
 \def\gettextA#1;#2;{\removesep#1;}
@@ -119,12 +134,31 @@
 \def\gettranslationA#1;#2;{\removesep#2;}
 \def\removesep#1;#2\endget{#1}
 
+% copy of the above for TAG
+\forestset{
+  with translation TAG/.style={
+    l sep=0,inner xsep=0,
+    append translation TAG/.expanded/.wrap pgfmath arg={\gettranslation{##1}}{content},
+    content/.expanded/.wrap pgfmath arg={\gettext{##1}}{content},
+  },
+  append translation TAG/.style={
+    if={strequal("#1","")}{}{
+      append={[#1,no edge,inner xsep=0,inner ysep=0,outer ysep=0,
+               %tier=gloss, % does not work for TAG trees since the words are not aligned at the baseline
+               l=\baselineskip + 0.2ex,
+        ]}
+    }
+  }
+}
+
 
 % a specific style that specifies the word tier: all nodes that do not have any children
 % to do: make this style default and change all other figures explicitely as is described here:
 % http://tex.stackexchange.com/questions/167983/getting-rid-of-a-default-where-specification
 \forestset{
-sm edges/.style={for tree={parent anchor=south, child anchor=north,base=bottom},
+sm edges/.style={for tree={parent anchor=south, child anchor=north,base=top}, % changed base=bottom
+                                % to top since we have NP and AVM nodes and the NP has to start
+                                % right away at the same hight as the AVM St. Mü. 18.10.2017
                  where n children=0{tier=word,delay=with translation}{} %,delay=with translation
                  },
 sm edges without translation/.style={for tree={parent anchor=south, child anchor=north,base=bottom},
@@ -163,42 +197,62 @@ dg junction/.style={no edge, tikz+={\draw (!p.east)--(!.west) (.east)--(!n.west)
 %
 % So cool! Thanks Sašo Živanović
 %
- wg/.style={
+% modified to cope with multiple occurances of the same word (the, the1, the2)
+%
+  wg/.style={
     for tree={
       no edge,
       draw,
       outer ysep=1pt,
     },
-    copy label/.style={
-      for children={
-        if content={}{
-            content/.pgfmath={content("!u")},
-            calign with current,
-            edge={draw,{-Triangle[open,reversed]}},
-            copy label,
-            !u.content/.pgfmath={content},
-            !u.content+=',
-        }{
-          copy label,
-        }
-      }
-    },
     delay={
       copy label,
-      for tree={name/.pgfmath={content}},
+      for tree={nameN/.option=content},
     },
     for tree={content format={\strut\forestoption{content}}},
     where n children={0}{
       tier=word,
     }{},
   },
+  copy label/.style={
+    for children={
+      if content={}{
+        % content/.pgfmath={content("!u")},
+        content/.option=!u.content, % faster
+        calign with current,
+        edge={draw,{-Triangle[open,reversed]}},
+        copy label,
+        % !u.content/.pgfmath={content},
+        !u.content/.option=content, % faster
+        !u.content+=',
+      }{
+        copy label,
+      }
+    }
+  },
+  % 1. This is not effective if there's many clashes.
+  % 2. Register tempcounta must be free to use.
+  nameN/.style={
+    if nodewalk valid={name=#1}{
+      tempcounta=2,
+      @nameN=#1,
+    }{
+      name=#1,
+    },
+  },
+  @nameN/.style={
+    while nodewalk valid={name/.process=Rw1{tempcounta}{#1##1}}{
+      tempcounta+=1,
+    },
+    name/.process=Rw1{tempcounta}{#1##1},
+  },
 %
 %
 % TAG
 % http://tex.stackexchange.com/questions/207459/getting-old-school-trees-with-forest
-% fit -> fit=band causes all nodes to have nothing below them 
+% fit -> fit=band causes all nodes to have nothing below them
 tag/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top,fit=rectangle},
-  where n children=0{delay=with translation}{},
+  where n children=0{delay=with translation TAG}{},
 % the following breaks the alignments in sets
   begin draw/.code={\begin{tikzpicture}[baseline=(current bounding box.center)]}
 },
@@ -207,15 +261,9 @@ tag/.style={for tree={parent anchor=south, child anchor=north,align=center,base=
 no word baseline/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top},
   where n children=0{delay=with translation}{}},
 %
-% a style that creates an arrow pointing to the substitution node from a tree top node encoded as daughter 
+% a style that creates an arrow pointing to the substitution node from a tree top node encoded as daughter
 substitution/.style={edge={<-,dashed},l+=\baselineskip},
 %
-%
-%
-typehierarchy/.style={for tree={parent anchor=south, child
-    anchor=north,align=center,base=top,font=\itshape,fit=rectangle}},
-% if there are instances as leaves in the hiarchy
-instance/.style={edge=dotted},
 %
 % auxiliary nodes without node label
 %empty nodes/.style={
@@ -237,6 +285,112 @@ instance/.style={edge=dotted},
      empty nodes/.style={
      delay={where content={}{shape=coordinate,for siblings={anchor=north}}{}}
      }
+   }
+
+\forestset{
+  % Easy extra edges
+  edge to'/.style 2 args={
+    tikz+={\path[#2](#1.parent anchor)--(.child anchor);}
+  },
+  edge to/.style={
+    edge to'/.expanded={\unexpanded{#1}}{\forestoption{edge}},
+  },
+  edge from'/.style 2 args={
+    tikz+={\path[#2](.parent anchor)--(#1.child anchor);}
+  },
+  edge from/.style={
+    edge from'/.process=_O{#1}{#1.edge},
+  },
+  % Identify two (adjacent, vertically aligned) nodes
+  forget@node@boundary/.code={%
+    \forestolet{positive@edge@#1}\relax
+    \forestolet{negative@edge@#1}\relax
+  },
+  identify/.style={
+    phantom,
+    temptoksa/.option=#1.name,
+    before typesetting nodes/.process=Rw1{temptoksa}{
+      content/.option=##1.content,
+      content format/.option=##1.content format,
+      node format/.option=##1.node format,
+    },
+    for parent/.process=Ow1{n}{
+      after packing node={
+        for ##1={
+          ignore,ignore edge,forget@node@boundary/.option=grow,
+        },
+      },
+    },
+    for nodewalk/.process=Rw1Ow1{temptoksa}{name=##1}{!u.name}{edge to={##1}},
+  },
+  % Uniformly spread any sequence of nodes
+  spread/.style n args=4{
+    % #1 = coordinate (x,y,s,l)
+    % #2 = nodewalk to spread
+    % #3 = relative node name of the node with the final coordinate
+    % #4 = final coordinate shift
+    for nodewalk={
+      tempcounta'=-1,
+      #2,
+      tempdima/.pgfmath={(#1("#3")+#4-#1(""))/tempcounta()}
+    }{tempcounta'+=1},
+    tempdimb'=0pt,
+    for nodewalk={#2}{
+      #1'+/.register=tempdimb,
+      tempdimb'+/.register=tempdima,
+    },
+  },
+}
+
+% The old type hierarchy style
+\forestset{
+typehierarchy/.style={for tree={parent anchor=south, child
+% old version:
+%    anchor=north,align=center,base=top,font=\itshape,fit=rectangle}},
+% to get parallel lines:
+    anchor=north,align=center,base=top,font=\itshape,calign=fixed angles}},
+% if there are instances as leaves in the hiarchy
+instance/.style={edge=dotted}
+}
+
+% Type hierarchy (Saso 2020)
+\forestset{
+  type hierarchy/.style={
+    for tree={
+      anchor=base,
+%anchor=north,
+      content format={\noexpand\type{\unexpanded{#1}\forestoption{content}}},
+    },
+  },
+  partition/.style={
+    content format={\noexpand\textsc{\forestoption{content}}},
+    draw,
+  },
+  instance/.style={
+    gray,edge={gray,dashed}
+  },
+  % if all leaves in the hierarchy are instances, we can declare this as follows:
+  % nodes which do not have children (n children=0) are drawn in gray and edges leading to them are dashed 
+  instances/.style={
+      for tree={
+      s sep=0,
+      if n children=0{
+        gray,
+        edge={dashed,gray},
+      }{},
+  }},
+}
+
+% AVM helper
+\forestset{
+  avm/.style={
+    content format={%
+      \noexpand\avmoptions{#1}%
+      \noexpand\begin{avm}%
+        \forestoption{content}%
+      \noexpand\end{avm}%
+    },
+  },
 }
 
 

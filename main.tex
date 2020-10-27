@@ -1,24 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
-%%%     Language Science Press Master File       %%%
-%%%         follow the instructions below        %%%
-%%%                                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-
 \documentclass[output=book,
-  nonflat,
-  modfonts,
-  colorlinks,
+  colorlinks,    citecolor=brown,
 showindex
-		  ]{langsci/langscibook}    
-  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
-%%%          additional packages                 %%%
-%%%                                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+		  ]{./langscibook}
 
 \input{localmetadata.tex}
 \input{localpackages.tex}
@@ -30,12 +13,12 @@ showindex
 %%%             Frontmatter                      %%%
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\newcommand{\japhug}[2]{\ili{\forme{#1} `#2'}}
- \newcommand{\forme}[1]{#1}
+% \newcommand{\japhug}[2]{\ili{\forme{#1} `#2'}}
+%  \newcommand{\forme}[1]{#1}
 \begin{document}     
 \input{localcommands.tex} 
  
- \japhug{abc}{123}
+%  \japhug{abc}{123}
 %\maketitle                
 %\frontmatter
 
@@ -52,7 +35,7 @@ showindex
 %%%             Chapters                         %%%
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \include{chapters/1-01}  %Japhug language, corpus and culture
+\include{chapters/1-01}  %Japhug language, corpus and culture
 % \include{chapters/1-02} %A sketch of Japhug
 % \include{chapters/2-01} %Phonological inventory
 % \include{chapters/2-02} %Consonant clusters and partial reduplication
