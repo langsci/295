@@ -1,0 +1,13 @@
+# LaTeX generated files
+*.aux
+*.toc
+*.bbl
+*.blg
+*.out
+*.log
+*.snm
+*.idx
+*.ilg
+*.ind
+*.nav
+*.synctex.gz
