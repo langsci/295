@@ -26,7 +26,8 @@
 \newcommand{\phonet}[1]{\mbox{\phon[#1]}}  
 \newcommand{\ipab}[1]{{\phon#1}}  
 \newcommand{\forme}[1]{\textit{\phon#1}}  
-\newcommand{\japhug}[2]{\textit{\phon#1} `#2'}  
+% \newcommand{\japhug}[2]{\ili{\forme{#1} `#2'}}
+\newcommand{\japhug}[2]{\forme{#1} `#2'}
 \newcommand{\stau}[2]{\textit{\phon#1} `#2'}  
 \newcommand{\tibn}[1]{{\tibetain#1}}  
 \newcommand{\tibt}[2]{\tibn{#1} \textit{\phon#2}}  
@@ -52,6 +53,7 @@
 \newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
 \newcommand{\tld}{\textasciitilde{}}
 \newcommand{\fl}{$\rightarrow$}
+\newcommand{\flobv}{\fl{}3$'$}
 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
