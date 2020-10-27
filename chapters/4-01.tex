@@ -1,0 +1,617 @@
+\chapter{The structure of the Japhug verb} \label{chap:verb.template}
+
+\section{Introduction} \label{sec:verb.intro}
+Japhug is a verbocentric language: nearly half of this grammar (eleven chapters) is devoted to verbal morphology.  
+
+This chapter first presents an overview of the structure of the verb in Japhug, including the prefixal (§\ref{sec:prefixal.chain}) and suffixal (§\ref{sec:suffixes}, §\ref{sec:peg.circumfix}) chains. The final sections discusses the templatic structure of Japhug verbal morphology (§\ref{sec:templatic.verb}) and word boundaries (§\ref{sec:wordhood.verb}).
+ 
+ 
+\section{The prefixal chain} \label{sec:prefixal.chain}
+Like other Gyalrongic languages, Japhug has a strongly prefixing verbal morphology. Inflectional and derivational prefixes constitute two different groups with almost no overlap, the latter closer to the verb root, and the former further away from it. For this reason, these two groups are referred to as `outer' and `inner' prefixes.\footnote{Previous accounts of the Japhug verbal template such as \citet{jacques13harmonization} do not clearly distinguish between these two prefixal domains.}
+
+Not all prefixes are tautosyllabic; some only comprise a consonant (for instance some allomorphs of the translocative such as \forme{ɕ-}), and due to vowel contraction rules (§\ref{sec:contraction}, §\ref{sec:allomorphy.inv}), some combinations of prefixes merge into a single syllable. The transcription used in this grammar however undoes the effect of vowel merger to bring clarity to the morphological analysis, and avoid a proliferation of portmanteau affixes.
+
+\subsection{Outer prefixes} \label{sec:outer.prefixal.chain}
+The template of outer prefixes in finite verb forms is summarized in \tabref{tab:template.inflectional.pref}. It contains six slots, as compared to the four slots in the suffixal chain (§\ref{sec:suffixes}). This table does not represent inner prefixes, which are contained within the `extended verb stem', and discussed below in §\ref{sec:inner.prefixal.chain}.
+
+\begin{table}
+\caption{The template of outer prefixes }\label{tab:template.inflectional.pref}
+\begin{tabular}{llllllll}
+\lsptoprule
+-6 & -5 & -4 & -3 & -2 & -1 &   0  &  \\
+Modal & Negation & AM & Orientation & second   & Inverse &Extended \\
+& & & & person & Progressive &verb stem\\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+The minimal verb form only contains the verb stem without any prefix. The only finite verb forms with empty prefixal slots are the first or third persons (§\ref{sec:intransitive.paradigm}) or \textsc{1/3}\fl{}3' configurations (§\ref{sec:indexation.mixed}, §\ref{sec:indexation.non.local}) of the affirmative Factual Non-Past (§\ref{sec:factual}), as in (\ref{ex:Gi}). All other finite verb forms require the presence of at least one prefix.
+
+\begin{exe}
+\ex \label{ex:Gi}
+\gll ɣi / ɣi-a \\
+come:\textsc{fact} { } come:\textsc{fact}-\textsc{1sg} \\
+\glt `He comes/will come; I (will) come.' 
+\end{exe}
+
+Slot -6 can be filled by the Irrealis  \forme{a-} (§\ref{sec:irrealis.morphology}), the Rhetorical Interrogative \forme{ɯβrɤ\trt}, the Polar Interrogative  \forme{ɯ\trt}, the Probabilitative \forme{ɯmɤ-} and the Proximative Aspect \forme{jɯ-}  prefixes (§\ref{sec:proximative}). These prefixes are mutually exclusive. 
+
+Slot -5 contains the negative prefixes (§\ref{sec:negation}), which also partially encode TAME. Only one negative prefix can appear in this position; double negation must be expressed with a negative auxiliary (§\ref{sec:double.negation}).
+
+Slot -4 is restricted to the translocative \forme{ɕɯ-} and cislocative \forme{ɣɯ-} Associated Motion prefixes (§\ref{sec:am.prefixes}). These two prefixes are mutually exclusive, and also incompatible with motion or manipulation verbs with opposite deixis (§\ref{sec:motion.verbs.AM}).
+
+Slot -3 corresponds to orientation preverbs (§\ref{sec:orientation.preverbs}). It must be filled in all finite forms other than the Factual Non-Past (§\ref{sec:fact.morphology}) and the negative Sensory (§\ref{sec:negation}, §\ref{sec:sensory.morphology}), and only one preverb is allowed in this position. Xtokavian dialects of Japhug have an additional slot -3' containing the Inferential \forme{a-} prefix (§\ref{sec:xtokavian.preverbs}) and the Aorist \forme{a-} (§\ref{sec:indexation.non.local}), but since these two prefixes have merged with the orientation preverbs in Kamnyu Japhug, this slot is not treated as different from -3 in this grammar. Although not an orientation preverb, the Apprehensive \forme{ɕɯ-} (§\ref{sec:apprehensive}) also appears in slot -3.
+
+Slot -2 includes indexation prefixes, including second person \forme{tɯ-} (§\ref{sec:intr.23}), the \forme{ta-} 1\fl{}2  and \forme{kɯ-} 2\fl{}1 portmanteau prefixes (§\ref{sec:indexation.local}) and the generic S/O prefix \forme{kɯ-} (§\ref{sec:indexation.generic.tr}). The prefixal element \forme{k(ɯ)-} of the peg circumfix (§\ref{sec:peg.circumfix}) is also located in this slot.
+
+Slot -1 comprises the inverse \forme{-wɣ} (§\ref{sec:allomorphy.inv}) and the Progressive \forme{asɯ-} (§\ref{sec:progressive.morphology}) prefixes.Tthese two prefixes only appear on transitive verbs, since they are incompatible with morphologically intransitive verbs. This slot is the only one that can be filled by more than one prefix simultaneously, as shown by forms such as \forme{pjɤ-k-ɤ́<wɣ>z-nɤjo-ci} `he was waiting for him' in (\ref{ex:pjAkAwGznAjoci}) where the inverse \forme{-wɣ} (see §\ref{sec:indexation.non.local} and §\ref{sec:obviation.saliency} on the function of the inverse prefix in this example) is infixed within the \forme{-ɤz-} allomorph of the Progressive (§\ref{sec:contraction}, §\ref{sec:progressive.morphology}).
+
+\begin{exe}
+\ex \label{ex:pjAkAwGznAjoci}
+\gll   tɕe pjɤ-ɣi tɕe qala kɯ pjɤ$^{-3}$-k$^{-2}$-\rouge{ɤ́}<\bleu{wɣ}>\rouge{z}$^{-1}$-nɤjo-ci  tɕe\\
+\textsc{lnk} \textsc{ifr}:\textsc{down}-come \textsc{lnk} rabbit \textsc{erg} \textsc{ifr}.\textsc{ipfv}$^{-3}$-\textsc{peg}$^{-2}$-<\bleu{\textsc{inv}}>\rouge{\textsc{prog}}$^{-1}$-wait-\textsc{peg}\textsc{lnk}  \\
+\glt `(The snow leopard)$_i$ came down. The rabbit was waiting for him$_i$ (there).' (140427 qala cho kWrtsAG, 64)
+\end{exe}
+
+In addition, since the autive \forme{nɯ-} can also be infixed within the progressive (§\ref{sec:autoben.position}, §\ref{sec:inner.prefixal.chain}), slot -1 actually lies at the border between the inner and outer prefixal domains.
+
+All of these slots can be filled, as in example (\ref{ex:amAGWtAtWwGndza}). Although there are co-occurrence restrictions across slots (for instance, some prefixes in -6 such as the Rhetorical Interrogative \forme{ɯβrɤ-} are incompatible with the negative prefixes in -5; additional examples are presented in §\ref{sec:templatic.verb}), it is possible to build verb forms with nearly any subset of the six prefixal slots of the outer domain.
+
+\begin{exe}
+\ex \label{ex:amAGWtAtWwGndza}
+\gll qapar kɯ nɤʑo a$^{-6}$-mɤ$^{-5}$-ɣɯ$^{-4}$-tɤ$^{-3}$-tɯ́$^{-2}$-wɣ$^{-1}$-ndza \\
+dhole \textsc{erg} \textsc{2sg} \textsc{irr}$^{-6}$-\textsc{neg}$^{-5}$-\textsc{cisl}$^{-4}$-\textsc{pfv}$^{-3}$-2$^{-2}$-\textsc{inv}$^{-1}$-eat \\
+\glt `(Let us hope that) the dhole will not come to eat you.' (elicited)
+\end{exe}
+
+
+The Sensory Evidential existential verbs \japhug{ɣɤʑu}{exist} and \japhug{maŋe}{not exist} are only compatible with the affixes of slot -2 (the second person and generic \forme{kɯ-}), but in this case these appear as infixes rather than prefixes (§\ref{sec:intr.person.irregular}). The defective verb \japhug{kɤtɯpa}{tell} cannot take any prefix (§\ref{sec:irregular.transitive}).
+
+Non-finite verb forms follow a similar but slightly different template. As shown in \tabref{tab:template.nmlz} (§\ref{sec:participles}), participles lack the -2 slot, have strong restrictions on the other slots: in -6 only the prospective \forme{jɯ-} is possible), in -5 only \forme{mɤ-} or \forme{mɯ\trt}, in -3 only type A and B preverbs, and in rare cases in -1 only the progressive. Participial prefixes occur between slot -1 and the extended verb stem, and in addition some participle forms take a possessive prefix before slot -6.
+
+\subsection{Inner prefixes} \label{sec:inner.prefixal.chain}
+Unlike outer prefixes, inner prefixes do not follow a rigid template. The sigmatic causative, in particular, can occur recursively (§\ref{sec:sig.caus.other.recursion}) and its relative position vis-a-vis the facilitative (§\ref{sec:facilitative.nWGW}) and reciprocal (§\ref{sec:redp.reciprocal}) derivations is determined by semantic scope (§\ref{sec:sig.caus.other.derivations}).
+
+\figref{fig:map.inner.prefixes} represents the possible ways in which most inner prefixes (excluding the autive, the denominal prefixes, the human antipassive, the distributed action derivation and the subject-oriented facilitative) can be combined with each other, excluding cases of lexicalized derivations.\footnote{Lexicalized derivations do not necessarily follow these ordering rules, see §\ref{sec:sig.caus.lexicalized} and §\ref{sec:autoben.lexicalized}.} Examples of attested complex forms can be found in the following sections:
+
+\begin{itemize}
+\item Antipassive \forme{rɤ-} (\textsc{apass}): §\ref{sec:antipassive.compatibility}
+\item Applicative \forme{nɯ(ɣ)-} (\textsc{appl}): §\ref{sec:appl.other.derivations}
+\item Sigmatic causative \forme{sɯ(ɣ)-} (\textsc{caus}):  §\ref{sec:sig.caus.other.derivations}
+\item Velar causative \forme{ɣɤ-} (\textsc{caus2}): §\ref{sec:velar.caus.other}
+\item Facilitative \forme{nɯɣɯ-} (\textsc{facil}): §\ref{sec:facilitative.nWGW}
+\item Passive \forme{a-} (\textsc{pass}): §\ref{sec:passive.other.derivations} 
+\item Proprietive \forme{sɤ-} (\textsc{prop}): §\ref{sec:proprietive.compatibility} 
+\item Reflexive \forme{ʑɣɤ-} (\textsc{refl}): §\ref{sec:refl.caus}, §\ref{sec:refl.tropative}, §\ref{sec:reciprocal.other}
+\item Tropative \forme{nɤ(ɣ)-} (\textsc{trop}): 
+ §\ref{sec:tropative.other.construction}
+\end{itemize}
+
+
+\begin{figure}
+\caption{The possible linear orders of inner prefixes} \label{fig:map.inner.prefixes}  
+  \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \node[state] (refl) {\noeud{ʑɣɤ-}{refl}}; 
+  \node[state] (caus) [above right of=refl] {\noeud{sɯ(ɣ)-}{caus}};
+  \node[state] (recip) [above of=caus]  {\noeud{a-}{recip}};     
+  \node[state] (facil) [right of=refl] {\noeud{nɯɣɯ-}{facil}}; 
+  \node[state] (appl) [right of=facil] {\noeud{nɯ-}{appl}}; 
+  \node[state] (apass) [right of=caus] {\noeud{rɤ-}{apass}}; 
+  \node[state] (trop) [right of=appl] {\noeud{nɤ-}{trop}}; 
+  \node[state] (prop) [above of=trop] {\noeud{sɤ-}{prop}}; 
+  \node[state] (pass) [above of=apass] {\noeud{a-}{pass}}; 
+  \node[state] (caus2) [above of=recip] {\noeud{ɣɤ-}{caus2}};
+\path (refl) edge              (caus)
+        (caus) edge [loop above] (caus)
+        (caus) edge [bend right] (facil)
+        (facil) edge [bend right] (caus)
+        (caus) edge [bend right] (recip)
+        (recip) edge [bend right] (caus)
+        (caus) edge (apass)
+        (caus) edge (pass)
+        (caus) edge (trop)
+        (caus) edge (appl)
+        (refl) edge [bend right] (trop)
+        (refl) edge [bend right] (appl)
+        (refl) edge [bend left] (caus2)
+        (recip) edge (caus2)
+        (caus) edge [bend right]  (caus2)
+        (trop) edge [bend right] (prop);
+\end{tikzpicture}
+\end{figure}
+
+Combinations of more than two inner prefixes are very rare, and mainly involve lexicalized derivations. Examples include \japhug{asɤmɯmtsʰɯmtsʰɤm}{inform each other}(from \japhug{mtsʰɤm}{hear}) (\ref{ex:ZnasAmWmtshWmtshAmnW2}), which combines an \forme{amɯ-}reciprocal, a sigmatic causative, and a reduplicated reciprocal derivations (see further discussion in §\ref{sec:sAmW}; in \ref{ex:ZnasAmWmtshWmtshAmnW2} and following examples, inner prefixes are colored in red and outer prefixes in blue).
+
+\begin{exe}
+\ex \label{ex:ZnasAmWmtshWmtshAmnW2}
+\gll  ɣurʑa kɯrcat nɯ \bleu{ʑ-nɯ}-\rouge{a-sɯ-ɤmɯ-mtsʰɯ\redp{}}mtsʰɤm-nɯ \bleu{ɲɯ}-ŋu, \\
+ hundred eight \textsc{dem} \textsc{tral}-\textsc{aor}-\textsc{recip}-\textsc{caus}-\textsc{recip}-hear-\textsc{pl} \textsc{sens}-be \\
+\glt `(All) one hundred and eight (boys) went and informed each other.' (2005 Norbzang, 90)
+\end{exe}
+
+ A common case of non-lexicalized triple derivation is found when a doubly derived verb additionally takes the highly productive autive prefix, as in (\ref{ex:tonWZGACWfkanW}).
+
+
+\begin{exe}
+\ex \label{ex:tonWZGACWfkanW}
+\gll   \bleu{to}-\rouge{nɯ-ʑɣɤ-ɕɯ}-fka-nɯ ʑo \bleu{ɲɯ}-ŋu. \\
+  \textsc{ifr}-\textsc{auto}-\textsc{refl}-\textsc{caus}-be.full-\textsc{pl} \textsc{emph} \textsc{sens}-be \\
+\glt `They ate to their full.' (huli yu shanying-zh, 28)
+\end{exe}
+
+The position of the autive prefix is very unusual (§\ref{sec:autoben.position}), and not easily representable in \figref{fig:map.inner.prefixes}. In non-contracting verb forms (§\ref{sec:contraction}), it occurs on the border between the outer and inner prefixal domain, following the inverse (as shown by example \ref{ex:amAGWnWtWwGnWmbi}, with all six outer prefixal positions filled) and preceding the reflexive \forme{ʑɣɤ-} (example \ref{ex:tonWZGACWfkanW} above, see also §\ref{sec:refl.autoben}). 
+
+\begin{exe}
+\ex \label{ex:amAGWnWtWwGnWmbi}
+\gll \bleu{ɯ-ɲɯ}-ra nɤ, \bleu{a-mɤ-ɣɯ-nɯ-tɯ́-wɣ}-\rouge{nɯ}-mbi \\
+\textsc{qu}-\textsc{sens}-be.needed add \textsc{irr}-\textsc{neg}-\textsc{cisl}-\textsc{pfv}-2-\textsc{inv}-\textsc{auto}-give \\
+\glt `If he$_i$ needs it$_j$, then he$_i$ does not have to come and give it$_j$ to you (if he does not want to).' (elicited) 
+\end{exe}
+
+In the case of contracting verbs (§\ref{sec:contraction}), the autive is however inserted after the \forme{a-} element (§\ref{sec:autoben.position}), even in verbs such as \japhug{atɤr}{fall}  (\ref{ex:pjAnWtAr}) where it is not analyzable as a prefix synchronically -- the autive is thus infixed within the verb stem.
+
+\begin{exe}
+\ex \label{ex:pjAnWtAr}
+\gll ɯʑo \bleu{pjɯ}-ɤ<\rouge{nɯ}>tɤr \bleu{mɤ}-cʰa. \\
+\textsc{3sg} \textsc{ipfv}-<\textsc{auto}>fall \textsc{neg}-can:\textsc{fact} \\
+\glt `It cannot fall (detach) on its own (as its sticks on the clothes).' (18-qromJoR, 183)
+\end{exe}
+
+In addition, the autive is infixed within the progressive \forme{asɯ-} (§\ref{sec:autoben.position}, §\ref{sec:allomorphy.inv}, §\ref{sec:progressive.morphology}), stranded between the outer and inner domain, as shown by (\ref{ex:konWsWndzaj}). The autive is also infixed when used with the Sensory existential verbs (§\ref{sec:intr.person.irregular}, §\ref{sec:autoben.position}).
+
+\begin{exe}
+\ex \label{ex:konWsWndzaj}
+\gll ɕa ʁɟa ʑo \bleu{ku-o}<\rouge{nɯ}>\bleu{sɯ}-ndza-j \\
+meat completely \textsc{emph} \textsc{prs}-\textsc{prog}<\textsc{auto}>-eat-\textsc{1pl} \\
+\glt `We are eating only meat.' (2003 kandZislama, 132)
+\end{exe}
+
+While most of the prefixes in the inner domain follow a layered structure, the position of the autive, which is determined by phonology and morphology rather than semantics, is clearly templatic (\citealt[218]{bickel07inflectional}, §\ref{sec:templatic.verb}).
+
+ 
+
+\subsection{Stress} \label{sec:stress.prefixal.chain}
+Unlike most Gyalrong languages (\citealt{jackson05yingao}, \citealt{linyj12tone}, \citealt[69--81]{gong18these}), Japhug lacks tonal alternations, and stress retraction is very rare. Stress is located by default on the last syllable of the verb stem (all suffixes from slots +1 to +4, are unstressed, §\ref{sec:suffixes}), and stress retraction only occurs with three prefixes: the inverse  \forme{-wɣ} (slot -1, §\ref{sec:allomorphy.inv}), the  negative sensory \forme{mɯ́j-} (slot -5, §\ref{sec:neg.allomorphs}) and the interrogative \forme{ɯ-} (slot -6, §\ref{sec:interrogative.W.morpho}).
+
+\subsection{Phonotactic constraints} \label{sec:prefix.phonotactic}
+There are very strong phonotactic contraints on prefixes in Japhug. Of the fifty consonant phonemes that are contrastive in onset position (§\ref{sec:consonant.phonemes}), only ten are attested in inner prefixes (§\ref{sec:inner.prefixal.chain}): the nasal \ipa{m} and \ipa{n} (but not \ipa{ŋ} and \ipa{ɲ}), the glides \ipa{j} and \ipa{w}, the dental and alveolo-patalal fricatives (\ipa{s}, \ipa{z}, \ipa{ɕ} and \ipa{ʑ}), the rhotic \ipa{r} (but not the lateral \ipa{l}) and the velar spirant \ipa{ɣ} (but not its uvular counterpart \ipa{ʁ}). The vowels of the inner prefixes are limited to \ipa{a}, \ipa{ɯ} and \ipa{ɤ}. Outer prefixes (§\ref{sec:outer.prefixal.chain}) other than person indexation (§\ref{sec:intr.23}) and orientation preverbs (§\ref{sec:kamnyu.preverbs}) show the same restriction.
+ 
+Person indexation prefixes (second person \forme{tɯ\trt}, generic \forme{kɯ-} and the portmanteau \forme{ta-} and \forme{kɯ\trt}, §\ref{sec:intr.23}, §\ref{sec:portmanteau.prefixes.history}), are exclusively built from two  unvoiced unaspirated stops, \ipa{k}  and \ipa{t}. This characteristic is shared with a subgroup of non-finite verb forms (§\ref{sec:velar.nmlz.history}, §\ref{sec:dental.nmlz.history}).
+  
+Orientation preverbs stand out among prefixes in allowing aspirated stops, palatal and labial stops, the lateral \forme{l-} and the palatal nasal (§\ref{sec:kamnyu.preverbs}, §\ref{sec:khWti}), as well as the vowels \ipa{u} and \ipa{o}, which suggest a more recent grammaticalization (§\ref{sec:preverbs.adverbs}, \citealt[92]{jacques12agreement}).  
+
+\section{The suffixal chain}  \label{sec:suffixes}
+
+Japhug has four inflectional suffixal slots, fewer than the six slots of the outer prefixal domain (§\ref{sec:outer.prefixal.chain}). \tabref{tab:template.suff} presents the suffixal template.
+
+\begin{table}
+\caption{The suffixal template }\label{tab:template.suff}
+\begin{tabular}{llllllll}
+\lsptoprule
+  0  &+1&+2&+3&+4  \\
+verb stem & Past & First  & Dual/ & Peg\\
+&transitive &person&Plural&\\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+Slot +1 only contains the \forme{-t} suffix found in  \textsc{1sg}\fl{}3 and \textsc{2sg}\fl{}3 of the Aorist, Inferential, Past Imperfective and Apprehensive (§\ref{sec:other.TAME}) of the transitive paradigm (§\ref{sec:indexation.mixed}). It can only be added on open syllable verb stems. It can only be followed by the \textsc{1sg} \forme{-a} indexation suffix. The form \forme{-t} is only found in the dialects of Ercha, Kamnyu and Mangi, all dialects east of Rqakyo (including all Xtokavian dialects) have \forme{-z} instead. A sound change \forme{*-s} \fl{} \forme{-t} seems to have occurred in Kamnyu, but its conditioning is unclear. This suffix is cognate to the suffix \forme{-z} in Zbu, which also occurs in \textsc{3sg}\fl{}3' forms (\citealt[160--161]{gong18these}).
+
+Slot +2 corresponds to the first person indexation prefixes \textsc{1sg} \forme{-a}, \textsc{1du} \forme{-tɕi} and \textsc{1pl} \forme{-ji} (§\ref{sec:intr.1},  §\ref{sec:indexation.mixed}).
+
+Slot +3 comprises the second and third person dual \forme{-ndʑi} and plural \forme{-nɯ} indexation suffixes (§\ref{sec:intr.23}). This slot cannot be filled if a non-singular first person suffix occurs in slot +2, and only contains at most one suffix. As a result of the second constraint, in 3$\leftrightarrow$3 and 2$\leftrightarrow$3 configurations, it is not possible to index the number of both arguments. As shown in §\ref{sec:double.number.indexation}, these constraints are morphological and cannot be accounted for by purely phonological rules.
+
+Slot +4 is restricted to the suffixal element \forme{-ci} of the peg circumfix, which always occur in combination with the prefixal element \forme{k(ɯ)-} in slot -2, and can be elided (§\ref{sec:peg.circumfix}).
+
+When no stress-bearing prefix is present (§\ref{sec:stress.prefixal.chain}), the stress invariably falls on the last syllable of the verb stem. The prefixal slots +2 to +4 are always unstressed, and their vowel can become unvoiced (§\ref{sec:stress}).
+
+Combinations of \textsc{1du}/\textsc{1pl} \forme{-tɕi}/\forme{-j} (slot +2) with third or second dual or plural \forme{-ndʑi/-nɯ} (slot +3) suffixes are prohibited (§\ref{sec:double.number.indexation}): for instance, $\dagger$\forme{pɯ-mto-tɕi-nɯ} (\textsc{aor}-see-\textsc{1du}-\textsc{pl}, intended meaning: `The two of us saw them') is categorically rejected. The only possible form is \forme{pɯ-mto-tɕi} (\textsc{aor}-see-\textsc{1du}), with neutralization of the number of the object. 
+ 
+The only verb forms where slots +1, +2 and +3 are filled are the Aorist or Inferential \textsc{1sg}\fl{}3\textsc{du/pl}, as in (\ref{ex:pWmtotandZi}). This is the verb form with the highest suffix-to-prefix ration (3/1).
+
+\begin{exe}
+\ex \label{ex:pWmtotandZi}
+\gll pɯ-mto-t$^{+1}$-a$^{+2}$-ndʑi$^{+3}$\\
+\textsc{aor}-see-\textsc{pst}:\textsc{tr}$^{+1}$-\textsc{1sg}$^{+2}$-\textsc{du}$^{+3}$ \\
+\glt `I saw the two of them.' (elicited)
+\end{exe}
+ 
+The +4 slot is generally empty, except in two cases: the Inferential of contracting (intransitive) verbs, as in (\ref{ex:tokAlWlAtndZici2}), and  in combination with the \forme{ɯmɤ-} and \forme{ɯβrɤ-} modal prefixes (§\ref{sec:peg.circumfix}). In the latter case, it is potentially compatible with transitive verbs in the Aorist, and verb forms such as (\ref{ex:WmApWkWmtoandZici}) with all four suffixal slots filled are acceptable, though no example is found in the corpus.
+
+\begin{exe}
+\ex \label{ex:tokAlWlAtndZici2}
+\gll to-k-ɤlɯlɤt-ndʑi$^{+3}$-ci$^{+4}$ \\
+\textsc{ifr}-\textsc{peg}-fight-\textsc{du}$^{+3}$-\textsc{peg}$^{+4}$ \\
+\glt `The two of them fought.' (140428 yonggan de xiaocaifeng-zh, 193)
+\end{exe}
+ 
+The maximal suffixal chain as in (\ref{ex:WmApWkWmtoandZici}) can only be built by integrating the circumfix \forme{kɯ-...-ci}  and the modal \forme{ɯmɤ-} prefix, so that the prefixal chain has at least three elements (\forme{ɯmɤ-pɯ-kɯ-}) constituting four syllables, as compared to the suffixal chain which contains  four elements (\forme{-t-a-ndʑi-ci}) and three syllables (4/3 suffix-to-prefix ratio).
+ 
+\begin{exe}
+\ex \label{ex:WmApWkWmtoandZici}
+\gll  ɯmɤ-pɯ-kɯ-mto-t$^{+1}$-a$^{+2}$-ndʑi$^{+3}$-ci$^{+4}$ \\
+ \textsc{prob}-\textsc{aor}-\textsc{peg}-see-\textsc{pst}:\textsc{tr}$^{+1}$-\textsc{1sg}$^{+2}$-\textsc{du}$^{+3}$-\textsc{peg}$^{+4}$ \\
+ \glt `It looks like I have seen the two of them.' (elicited)
+\end{exe} 
+ 
+Stem alternation (§\ref{sec:stem.alternation}) involves in some cases suffixal elements such as \forme{-t} in stem II (§\ref{sec:stem2}; see also §\ref{sec:t.free.variation}) and \forme{-m} in stem III ( (§\ref{sec:stem3}) which are not considered as part of this suffixal template. However, even if one were to analyze those elements as separate suffixes, they would occupy slot +1: the \forme{-t} Past Tense transitive suffix and stem III are mutually incompatible, and in any case \forme{-t} can only surface if the preceding verb stem has an open syllable. Moreover, evidence from bipartite verbs (§\ref{sec:bipartite}), in particular example (\ref{ex:mAtWspe2}) suggests that stem III is not suffixal.
+
+Derivational suffixes are very rare in Japhug, and only found in a handful of lexicalized examples such as the \forme{-t} applicative (§\ref{sec:applicative.t}, §\ref{sec:antipassive.t}). Since applicative suffix generates a closed syllable stem (for instance \japhug{ɣɯt}{bring} from \japhug{ɣi}{come}), this suffix and the transitive Past tense \forme{-t} suffix are mutually incompatible, and no verb form has more than four suffixes, even counting frozen morphology.
+
+All of the suffixes presented in \tabref{tab:template.suff} occur in finite verb forms. Non-finite verbs in Japhug cannot take any suffix (§\ref{sec:participles}).
+
+Japhug clearly is a strongly prefixing language: it is possible to reach seven to even potentially nine prefixes in a single verb form by combining the six slots of the outer prefixal domain (§\ref{sec:prefixal.chain}) with one to three prefixes of the inner domain (see for instance \ref{ex:amAGWnWtWwGnWmbi}), while four suffixes is the upper limit for the suffixal domain. 
+
+\section{The peg circumfix} \label{sec:peg.circumfix}
+
+\subsection{Morphology}
+The peg circumfix \forme{kɯ-...-ci} comprises a prefixal element \forme{k(ɯ)-} inserted in slot -2 of the outer domain (§\ref{sec:outer.prefixal.chain}), and a suffixal element \forme{-ci}, which appears last in the suffixal chain, after all indexation suffixes, as shown by (\ref{ex:mWYAkAtWGnWci}).
+
+\begin{exe}
+\ex \label{ex:mWYAkAtWGnWci}
+\gll  ndʑi-ɣi ra, nɯni mɯ-ɲɤ-\rouge{k}-ɤtɯɣ-nɯ-\rouge{ci} \\
+\textsc{3du}.\textsc{poss}-relative \textsc{pl} \textsc{dem}:\textsc{du} \textsc{neg}-\textsc{ifr}-\textsc{peg}-meet-\textsc{pl}-\textsc{peg} \\
+\glt `Their relatives did not meet them (again).' (2003 zrantCWtWrme, 78)
+\end{exe}
+
+
+\subsection{Optionality of the suffixal element} \label{sec:peg.circumfix.optionality}
+The \forme{-ci} element of the circumfix is not always present, and thus in some cases only the peg prefix \forme{k-} occurs.\footnote{
+Elision of prefixal \forme{kɯ-} is also found in some rare forms, see (\ref{ex:WmAnWtWnWjmWtci}) below. 
+} Example (\ref{ex:YAkAtWGci.YAkAtWG}) with tail-head linkage (§\ref{sec:tail.head.linkeage}) for instance shows that the Inferential of \japhug{atɯɣ}{meet} can be either \forme{ɲɤ-k-ɤtɯɣ-ci} (the most common form) or \forme{ɲɤ-k-ɤtɯɣ} without the \forme{-ci}, without change of meaning.  In the whole corpus, out of 40 examples of \japhug{atɯɣ}{meet} in the Inferential, nine lack the \forme{-ci} suffix.
+
+\begin{exe}
+	\ex \label{ex:YAkAtWGci.YAkAtWG}
+	\gll  tɕendi tɕendi tɕe mtsʰu ci ɲɤ-k-ɤtɯɣ-ci. mtsʰu kɯ-ɲɯ\redp{}ɲaʁ ci ɲɤ-k-ɤtɯɣ-ci. tɕendɤre mtsʰu kɯ-ɲɯ\redp{}ɲaʁ ci ɲɤ-k-ɤtɯɣ tɕe tɕe, \\
+	west west \textsc{loc}  lake \textsc{indef} \textsc{ifr}-\textsc{peg}-meet-\textsc{peg}  lake \textsc{sbj}:\textsc{pcp}-\textsc{emph}\redp{}be.black \textsc{indef} \textsc{ifr}-\textsc{peg}-meet-\textsc{peg} \textsc{lnk} lake \textsc{sbj}:\textsc{pcp}-\textsc{emph}\redp{}be.black \textsc{indef} \textsc{ifr}-\textsc{peg}-meet \textsc{lnk} \textsc{lnk} \\
+	\glt `In the west, he found a lake, he found a lake that was very black. He found a lake that was very black, and...' (28-smAnmi 92-94)
+\end{exe}
+
+Forms with the simple prefixal peg \forme{k-} without \forme{-ci} are however never found in utterance-final contexts: they are always followed by a linker such as \forme{tɕe} (§\ref{sec:coordination}), as in (\ref{ex:YAkAtWGci.YAkAtWG}) above, where the two instances of \forme{ɲɤ-k-ɤtɯɣ-ci} have utterance final intonation and are followed by a pause, while \forme{ɲɤ-k-ɤtɯɣ} starts a new utterance group. 
+
+
+\subsection{Functions of the peg circumfix}
+The circumfix has two different functions in the Kamnyu dialect of Japhug.
+
+First, it occurs in contracting verbs (§\ref{sec:contraction}) to prevent vowel fusion when a D-type preverb is found before a contracting verb stem or prefix (§\ref{sec:preverbs.contracting.verbs}). In (\ref{ex:mWYAkAtWGnWci}) for instance, without the \forme{k-} prefixal element, the inferential \forme{ɲɤ-} would merge with the verb stem \forme{atɯɣ} as \ipa{ɲɤtɯɣ}, becoming undistinguishable from the corresponding Imperfective \forme{ɲɯ-ɤtɯɣ} (§\ref{sec:ipfv.morphology}). This function is not found in Xtokavian dialects of Japhug.
+
+Second, the peg circumfix is found together with Rhetorical Interrogative \forme{ɯβrɤ-} and Probabilitative \forme{ɯmɤ-} prefixes.  In these configurations, the negative prefixes cannot occur, and only type A orientation preverbs (Aorist, §\ref{sec:kamnyu.preverbs}) are possible.
+
+The minimal pair in (\ref{ex:kAtWnWtsxWB.WBrA}) between \forme{ɯβrɤ-ŋu} and \forme{ɯβrɤ-kɯ-ŋu-ci} provides an illustration of the semantic function of the circumfix: without it, the Rhetorical Interrogative generally denotes worry/apprehension that the action could take/have taken place (\ref{ex:kAtWnWtsxWB.WBrANu}), while the combination of the Rhetorical Interrogative and the circumfix has the negative epistemic modality value `it seems like $X$ did/does not $Y$' (\ref{ex:kAtWnWtsxWB.WBrAkWNuci}).
+ 
+\begin{exe}
+\ex \label{ex:kAtWnWtsxWB.WBrA}
+\begin{xlist}
+ \ex \label{ex:kAtWnWtsxWB.WBrANu}
+\gll nɤ-ŋga kɤ-tɯ-nɯ-tʂɯβ ɯβrɤ-ŋu ma   \\
+\textsc{2sg}.\textsc{poss}-clothes \textsc{aor}-2-\textsc{auto}-sew \textsc{rh}.\textsc{q}-\textsc{peg}-be-\textsc{peg} \textsc{lnk} \\
+\glt `You didn't sew your garment, did you? (worried that the subject might have sewed his/her garment)' (elicited)
+\ex \label{ex:kAtWnWtsxWB.WBrAkWNuci}
+\gll nɤ-ŋga kɤ-tɯ-nɯ-tʂɯβ ɯβrɤ-\rouge{kɯ}-ŋu-\rouge{ci} ma ɲɯ-nɯ-spoʁ ɕti \\
+\textsc{2sg}.\textsc{poss}-clothes \textsc{aor}-2-\textsc{auto}-sew \textsc{rh}.\textsc{q}-\textsc{peg}-be:\textsc{fact}-\textsc{peg} \textsc{lnk} \textsc{sens}-\textsc{auto}-have.a.hole be.\textsc{aff}:\textsc{fact} \\
+\glt `It looks like you haven't sewed your garment, it still has a hole.' (elicited)
+\end{xlist}
+\end{exe}
+
+With the Probabilitative \forme{ɯmɤ\trt}, the use of the circumfix (\ref{ex:WmAjAkWzGWtci}) is associated with a lesser degree of confidence than the corresponding form without it (\ref{ex:WmAjazGWt}). Tshendzin explains the meaning of (\ref{ex:WmAjAkWzGWtci}) with the Inferential (\ref{ex:WmAjakWzGWtci.gloss}).\footnote{
+Note that the Inferential preverbs are not compatible with the Probabilitative prefix (§\ref{sec:WmA}). }
+ 
+\begin{exe}
+ \ex 
+\begin{xlist}
+ \ex \label{ex:WmAjazGWt}
+\gll ɯmɤ-jɤ-azɣɯt  \\
+\textsc{prob}-\textsc{aor}-arrive \\
+\ex \label{ex:WmAjazGWt.gloss}
+\gll tʂʰɯɣ jɤ-azɣɯt tʰaŋ\\
+probably \textsc{aor}-arrive  \textsc{sfp} \\
+\glt `He probably has already arrived.' (elicited)
+ \ex \label{ex:WmAjAkWzGWtci}
+\gll ɯmɤ-jɤ-\rouge{kɯ}-zɣɯt-\rouge{ci}  \\
+\textsc{prob}-\textsc{aor}-\textsc{peg}-arrive-\textsc{peg} \\
+\ex \label{ex:WmAjakWzGWtci.gloss}
+\gll jo-zɣɯt ɯ-mdoʁ \\
+\textsc{ifr}-arrive \textsc{3sg}.\textsc{poss}-colour \\
+\glt `It seems that he has probably arrived.'  (elicited)
+\end{xlist}
+\end{exe}
+
+The  minimal pair above shows that the circumfix is not a simple secondary morphological exponent of the Inferential, but has a specific modal and evidential value. However, it is not obvious at this stage that the combination of the circumfix with Rhetorical Interrogative and Possible modality prefixes can be analyzed compositionally at the synchronic level in the Kamnyu dialect of Japhug, and I therefore use the arbitrary gloss `peg' for this formative.
+
+The \forme{kɯ-} prefixal element competes with indexation prefixes in slot -2 (§\ref{sec:outer.prefixal.chain}). Since the 2\fl{}1 portmanteau \forme{kɯ-} prefix has the same shape as the peg prefix, transitive verbs can present ambiguity between 2\fl{}1 (§\ref{sec:indexation.local}) and 1\fl{}3 (§\ref{sec:indexation.mixed}) configurations, as in (\ref{ex:WmAnWkWnWjmWta}), a verb forms with two possible interpretations.
+
+\begin{exe}
+\ex \label{ex:WmAnWkWnWjmWta}
+\gll ɯmɤ-nɯ-\rouge{kɯ}-nɯ-jmɯt-a-\rouge{ci} \\
+\textsc{prob}-\textsc{aor}-\textsc{peg}/2\fl{}1-\textsc{auto}-forget-\textsc{1sg}-\textsc{peg} \\
+\glt `It looks I forgot about it.' (\forme{kɯ-} = \textsc{peg})
+\glt `It looks like you have forgotten me.' (\forme{kɯ-} = 2\fl{}1)
+\end{exe}
+
+The second person \forme{tɯ-} and 1\fl{}2 portmanteau \forme{ta-} are dominant in slot -2, and the peg prefixal element  \forme{kɯ-} disappears in 2\fl{}3 (\ref{ex:WmAnWtWnWjmWtci}) and 1\fl{}2 configurations (\ref{ex:WmApWtamto}).  
+
+\begin{exe}
+\ex \label{ex:WmAnWtWnWjmWtci}
+\gll ɯmɤ-nɯ-tɯ-nɯ-jmɯt-\rouge{ci} \\
+\textsc{prob}-\textsc{aor}-2-\textsc{auto}-forget-\textsc{peg} \\
+\glt `It looks like you have forgotten about it.' (elicited)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:WmApWtamto}
+\gll ɯmɤ-pɯ-ta-mto-\rouge{ci}  \\
+\textsc{prob}-\textsc{aor}-1\fl{}2-see-\textsc{peg} \\
+\glt `It looks like I have seen you.' (elicited)
+\end{exe}
+%pjɤ-ta-mto ɯ-mdoʁ
+
+The inverse prefix, although located in slot -1, is incompatible with the peg circumfix: both $\dagger$\forme{ɯmɤ-nɯ́-wɣ-nɯ-jmɯt-a-ci} (\textsc{prob}-\textsc{aor}-\textsc{inv}-\textsc{auto}-forget-\textsc{1sg}-\textsc{peg}) and $\dagger$\forme{ɯmɤ-nɯ-kɯ́-wɣ-nɯ-jmɯt-a-ci} (\textsc{prob}-\textsc{aor}-\textsc{peg}-\textsc{inv}-\textsc{auto}-forget-\textsc{1sg}-\textsc{peg}) are incorrect, and the only way to express this meaning is with the Inferential in combination with the complement-taking noun \forme{ɯ-mdoʁ} (\ref{ex:YAwGnWjmWta.WmdoR}) (§\ref{sec:WmdoR.TAME}).
+
+\begin{exe}
+\ex \label{ex:YAwGnWjmWta.WmdoR}
+\gll ɯʑo kɯ ɲɤ́-wɣ-nɯ-jmɯt-a ɯ-mdoʁ \\
+ \textsc{3sg} \textsc{erg} \textsc{ifr}-\textsc{inv}-\textsc{auto}-forget-\textsc{1sg} \textsc{3sg}.\textsc{poss}-colour  \\
+\glt `It looks like he has forgotten about me.' (elicited)
+\end{exe}
+
+Although complex forms such as (\ref{ex:WmAjAkWzGWtci}), (\ref{ex:WmAnWkWnWjmWta}), (\ref{ex:WmAnWtWnWjmWtci}) or (\ref{ex:WmApWtamto}) can be elicited, in the corpus the combination of circumfix with Rhetorical Interrogative or Probabilitative prefixes only occur on stative verbs in \textsc{3sg} form, and mainly with copulas, existential or modal auxiliaries.
+
+The Japhug \forme{-ci} suffixal element is probably cognate with the Mediative \forme{-cə} in Tshobdun \citep{jackson17tshobdun} and the non-egophoric \forme{ki} in Zbu \citep{gong18these}, which however have a much larger distribution. The \forme{k(ɯ)-} prefixal element is relatable to the non-finite \forme{kɯ-} prefixes (§\ref{sec:velar.nmlz.history}) and some related finite forms (§\ref{sec:portmanteau.prefixes.history}).
+
+ 
+
+ \section{Templatic vs. layered morphology} \label{sec:templatic.verb}
+While the inner prefixal domain follows a layered structure (except for the autive prefix, §\ref{sec:inner.prefixal.chain}), the outer prefixal chain (§\ref{sec:outer.prefixal.chain}) and the suffixal chain (§\ref{sec:suffixes}) are rather to be described in terms of templatic morphology. Each of the slots in these chains is rigid in the Kamnyu dialect: there is no free affix ordering as in Kiranti languages like Chitang \citep{bickel07chintang}. We observe four specifically templatic features (\citealt[216--218]{bickel07inflectional}). 
+
+First, several non-adjacent dependencies (or mutual incompatibilities) are found between prefixes, suffixes and stems, reflecting the fact that some TAME categories and person configurations are encoded by formatives in different slots. Some conspicuous examples are listed below.
+
+\begin{itemize}
+\item Morphological transitivity is encoded by seven independent morphological and redundant features in various slots (§\ref{sec:transitivity.morphology}).
+\item The Aorist is marked by combining A-type orientation preverbs  (slot -3, §\ref{sec:kamnyu.preverbs}), Stem II (§\ref{sec:stem2}) and the past transitive \forme{-t} (slot +1, §\ref{sec:suffixes}).
+\item  The Irrealis (§\ref{sec:irrealis.morphology}) requires \forme{a-} in slot -6, a type A preverb in slot -3 and stem III (§\ref{sec:stem3.distribution}) when the person configuration allows it, as in (\ref{ex:aGWtAtWthe}) below.
+\item The peg circumfix  (slots -2 and +4, §\ref{sec:peg.circumfix} ) occurs in conjunction with either some modal prefixes (slot -6) or type D preverbs (slot -3).
+\item   Person configuration (direct vs. inverse, §\ref{sec:direct-inverse}) is marked by the inverse prefix (slot -1, §\ref{sec:allomorphy.inv}), the contrast between stem I and stem III (§\ref{sec:stem3.distribution}) and the past transitive \forme{-t} (slot +1, §\ref{sec:suffixes}). The former is incompatible with the latter two (which occur in complementary distribution). 
+\end{itemize}
+
+ Example (\ref{ex:aGWtAtWthe}) illustrates (coloured in red) the non-adjacent dependency between \forme{a-} (-6), the type A preverb (-3) and stem III.
+ 
+ \begin{exe}
+\ex \label{ex:aGWtAtWthe}
+\gll \rouge{a}-ɣɯ-\rouge{tɤ}-tɯ-\rouge{tʰe} \\
+ \rouge{\textsc{irr}}-\textsc{cisl}-\rouge{\textsc{aor}}-2-ask\rouge{[III]} \\
+\glt `Come and ask (for her in marriage).' (150826 liangshanbo zhuyingtai-zh, 131)
+\end{exe}
+ 
+  
+Second, the position of some prefixes in the chain is independent of the semantic scope of the outer prefixes between themselves, and of their scope with regards to the inner prefixes.  In particular, the causative prefix, located in the inner domain (§\ref{sec:inner.prefixal.chain}), has ambiguous scope with the negative (§\ref{sec:sig.caus.negation}) and associated motion prefixes (§\ref{sec:sig.caus.AM}).  
+
+Third, the allomorphy of more inwards prefixes is in some cases sensitive to more outward prefixes: for instance, the allomorphy of the inverse (§\ref{sec:allomorphy.inv}) in slot -1 depends on the preceding prefixes: in particular, modal prefixes in slot -6 do not select the same allomorph as the other prefixes. 
+
+Fourth, bipartite verbs (§\ref{sec:bipartite}) offer cases of verb forms with more than one head.
+
+
+ \section{Wordhood} \label{sec:wordhood.verb}
+
+\subsection{Criteria for wordhood} \label{sec:wordhood.criteria.verb}
+Some languages of the Trans-Himalayan family  like Bantawa or Galo present conflicting morphosyntactic and phonological domains (\citealt{post09disunity, schiering10prosodic, doornenbal09}) making an unambiguous definition of `words' problematic.
+ 
+In Japhug, the verb presents several phonological and morphological domains, represented in \tabref{tab:verbal.complex.domain}. Each of the domains is coloured in grey; slots partially included in the domain in certain contexts are represented in light grey.
+ 
+\begin{table}
+\caption{Morphological and phonological domains in the Japhug verb  }\label{tab:verbal.complex.domain}
+\begin{tabular}{l|llllll|l|llll|llll}
+\lsptoprule
+&-6 & -5 & -4 & -3 & -2 & -1 &   extended   & +1 & +2 & +3 & +4 & enclitics \\
+&&&&&&&stem &&&&\\
+A&\multicolumn{11}{l}{\cellcolor{gray} }  && \\
+B&\multicolumn{9}{l}{ \cellcolor{gray} }  & \cellcolor{lightgray} & \\
+C   &\multicolumn{7}{l}{ \cellcolor{gray} } &\cellcolor{lightgray}&& \\ 
+D  &\multicolumn{6}{l}{ \cellcolor{gray} } &&&&&& \\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+Domain A represents non-adjacent dependencies: as argued in  §\ref{sec:templatic.verb}, the suffixal element \forme{-ci} of the peg circumfix in slot +4 (§\ref{sec:peg.circumfix}) is selected by some modal prefixes in slot -6, showing that dependencies across formatives cover the whole verb complex from the beginning of the outer prefixal chain (§\ref{sec:outer.prefixal.chain}) to the end of the suffixal chain (§\ref{sec:suffixes}).  
+
+Domain B corresponds to the minimal obligatory free form: the suffixal element \forme{-ci} is not included because it is optional (§\ref{sec:peg.circumfix}) and the dual and plural suffixes in slot +3 are also optional in specific conditions (§\ref{sec:optional.indexation}).
+ 
+ Domain C indicates the slots that can receive stress. It general is found on the last syllable of the verb stem by default, but some prefixes attract stress (§\ref{sec:stress.prefixal.chain}). Slot -6 receives stress when it is filled by interrogative prefix \forme{ɯ́-} followed by a monosyllabic verb form (§\ref{sec:factual}), or when the other prefixes merge with the inverse \forme{-wɣ}. Tautosyllabic suffixes are never stressed (§\ref{sec:suffixes}), but \textsc{1sg} suffix \forme{-a} merges with the last syllabe in some cases (§\ref{sec:synizesis}).
+
+ Domain D correspond to the prefixal slots selecting the allomorph \forme{-wɣ} of the inverse prefix when directly followed by it, and able to interact with the contracting vowel of the verb stem (§\ref{sec:contraction}), either by undergoing vowel fusion or by insertion of an epenthetic \forme{-j-}. 
+
+These four domains, to which the extended verb stem (including the inner prefixes, §\ref{sec:inner.prefixal.chain}) can be added, are concentric: the domain boundaries do not overlap. In this grammar, \textbf{domain A} is chosen as the verbal word, because in addition to non-adjacent dependencies, all formatives contained within it have a fixed position, and no external element can be inserted. 
+
+There are no proclitic markers which could be candidates to be analyzed as prefixes in Japhug. Some enclitic linkers and particles are phonologically attached on the verb, but there is clear evidence that they cannot be analyzed as suffixes (§\ref{sec:verb.enclitics}). Bipartite verbs (§\ref{sec:bipartite}) offer a more serious challenge to the definition of wordhood, but problematic forms are extremely rare and limited.
+
+\subsection{Enclitics} \label{sec:verb.enclitics}
+Some particles and linkers are cliticized on the verb stem, and could seem to behave as suffixes.
+
+The sentence final particle \forme{wo} (§\ref{sec:fsp.imp}) is generally a free-standing word, but it can optionally be phonologically attached to the verb as in (\ref{ex:pWfCAto}). In these cases, it bears a stress, possibly analyzable as a effect of intonation.
+
+
+\begin{exe}
+\ex \label{ex:pWfCAto}
+\gll a-χpi ci pɯ-fɕɤt=ó \\
+\textsc{1sg}.\textsc{poss}-story \textsc{indef} \textsc{imp}-tell=\textsc{sfp} \\
+\glt `Tell me a story.' (140511 yiqianlingyiye yinzi-zh, 30)
+\end{exe}
+
+There are two pieces of evidence showing that \forme{=o} is not a verbal suffix. First, even in cliticized form, its locus is not specifically the verb, but rather the last word of the sentence: in (\ref{ex:WmdoRo}), \forme{=o} cliticized on the predicative noun   \japhug{ɯ-mdoʁ}{colour}, `it looks like...' (§\ref{sec:WmdoR.TAME}).
+
+\begin{exe}
+\ex \label{ex:WmdoRo}
+\gll ma qachɣa ɣɯ ɯ-me pjɤ-ɕti ɯ-mdoʁ=o. \\
+\textsc{lnk} fox \textsc{gen} \textsc{3sg}.\textsc{poss}-daughter \textsc{ifr}.\textsc{ipfv}-be.\textsc{aff} \textsc{3sg}.\textsc{poss}-colour=\textsc{sfp} \\
+\glt `It looks like she (the main character of the story) was the daughter of a fox.' (150909 xiaocui-zh, 177)
+\end{exe}
+
+Second, \forme{wo} actually occurs last in the chain of sentence final particles. It follows for instance the hearsay particle \forme{kʰi} in (\ref{ex:YWphAn.khi.wo}), 
+
+\begin{exe}
+\ex \label{ex:YWphAn.khi.wo}
+\gll <aizheng> ɲɯ-pʰɤn kʰi wo\\
+cancer \textsc{sens}-be.efficient \textsc{hearsay} \textsc{sfp} \\
+\glt `It can cure cancer, it is said.' (20-grWBgrWB, 73)
+\end{exe}
+
+This hearsay particle is never phonologically cliticized on the verb, and moreover can be separated from the verb by the emphatic particle \forme{ʑo} (§\ref{sec:degree.adverbs}), as in (\ref{ex:saXaR.Zo.khi}).
+
+\begin{exe}
+\ex \label{ex:saXaR.Zo.khi}
+\gll ɯ-tɯ-ɣɤndʐo saχaʁ ʑo kʰi. \\
+\textsc{3sg}.\textsc{poss}-\textsc{nmlz}:\textsc{deg}-be.cold be.extremely:\textsc{fact} \textsc{emph} \textsc{hearsay} \\
+\glt `It is said that (during an eclipse), it is extremely cold.' (29-mWBZi, 115)
+\end{exe}
+
+The additive linker \forme{nɤ} occurs in additive repetition (§\ref{sec:distributed.action} ) and in conditionals (§\ref{sec:real.conditional}). It is always an enclitic, as indicated by the vowel \forme{ɤ}, which can never stressed in word-final position in Japhug (§\ref{sec:vowels}).  Were \forme{nɤ} analyzed as a suffix, an additional +5 slot would be necessary, since it can follow the \forme{-ci} suffixal element, as in (\ref{ex:tokAtChWzci}).
+
+\begin{exe}
+\ex \label{ex:tokAtChWzci}
+\gll to-kɯ-ɤtɕʰɯz-ci=nɤ to-kɯ-ɤtɕʰɯz-ci \\
+\textsc{ifr}-\textsc{peg}-sneeze-\textsc{peg}=\textsc{add} \textsc{ifr}-\textsc{peg}-sneeze-\textsc{peg}  \\
+\glt `He sneezed again and again.' (140515 jiesu de laoren-zh, 143)
+\end{exe}
+
+In conditionals, this linker co-occurs with initial reduplication (§\ref{sec:redp.protasis}, §\ref{sec:real.conditional}). However, although \forme{nɤ} is the most common linker on the protasis on conditionals, it is not required, and other linkers such as \forme{tɕe} are also attested, as in (\ref{ex:tWtAtWtWt.tCe}), and there is no strict non-adjacent dependency between \forme{nɤ} and reduplication (§\ref{sec:wordhood.criteria.verb}).
+
+\begin{exe}
+\ex \label{ex:tWtAtWtWt.tCe}
+\gll nɯ tɯ\redp{}tɤ-tɯ-tɯt tɕe qʰe tɕe rcanɯ nɤʑo rdɤstaʁ ɲɯ-tɯ-ɤβzu \\
+\textsc{dem} \textsc{cond}\redp{}\textsc{aor}-2-say[II] \textsc{lnk} \textsc{lnk} \textsc{lnk} \textsc{unexp}:\textsc{deg} \textsc{2sg} stone \textsc{ipfv}-2-become \\
+\glt `If you tell (them) about it, you will be turned into stone and...' (150902 hailibu-zh, 84)
+\end{exe}
+
+In additive function, \forme{nɤ} is not specific to verbs (§\ref{sec:additive.nA}), and the emphatic \forme{ʑo} can be inserted between the verb and this linker (\ref{ex:jari.Zo.nA}).
+
+\begin{exe}
+\ex \label{ex:jari.Zo.nA}
+\gll tɕendɤre jɤ-ari nɤ jɤ-ari ʑo nɤ \\
+\textsc{lnk} \textsc{aor}-go[II] \textsc{add} \textsc{aor}-go[II] \textsc{emph} \textsc{add} \\
+\glt `He went again and again.' (Norbzang 2005, 277)
+\end{exe}
+
+For these reasons, \forme{nɤ} is not analyzed as a part of the verbal word in Japhug.
+
+\subsection{Bipartite verbs} \label{sec:bipartite}
+Bipartite verbs comprise two morphologically active stems, which despite having affixes of their own are combined together in one phonological word, sharing in some cases whole prefixal or suffixal chains \citep{jacques18bipartite}. Following the Kirantological tradition (for instance \citealt{doornenbal09} or \citealt{schackow15yakkha}), the first verb stem is referred to as $V_1$, and the second one as $V_2$.
+
+The main features of bipartite conjugation can be explained using  \japhug{stu=mbat}{try hard}, `do one's best', the most common bipartite verb. This verb has four possible conjugation patterns, illustrated in \tabref{tab:bipartite.ABCD} imperative second dual form `try hard (the two of you)', which contains one prefix (orientation preverb, slot -3, §\ref{sec:outer.prefixal.chain}) and one suffix (indexation suffix, slot +3, §\ref{sec:suffixes}).
+ 
+\begin{table}
+\caption{Four degrees of morphological integration}   \label{tab:bipartite.ABCD}
+\begin{tabular}{lllllll}
+\lsptoprule
+Type & Example & $V_1$ suffix & $V_2$ prefix \\
+\midrule
+A (quasi-SVC) & \forme{tɤ-stu-ndʑi} \forme{tɤ-mbat-ndʑi} &\Y &\Y \\
+ &\textsc{imp}-$V_1$-\textsc{du}  \textsc{imp}-$V_2$-\textsc{du} \\
+B (right-dominant) & \forme{tɤ-stu=tɤ-mbat-ndʑi} &\N  &\Y \\
+ &\textsc{imp}-$V_1$-\textsc{imp}-$V_2$-\textsc{du} \\
+C (left-dominant) & \forme{tɤ-stu-ndʑi=mbat-ndʑi} &\Y  &\N \\
+ &\textsc{imp}-$V_1$-\textsc{du}-$V_2$-\textsc{du} \\
+D (quasi-compound)& \forme{tɤ-stu-mbat-ndʑi} &\N  &\N \\
+ &\textsc{imp}-$V_1$-$V_2$-\textsc{du} \\
+\lspbottomrule
+\end{tabular}
+\end{table} 
+ 
+Type A bipartite verbs are lexicalized serial verb constructions (§\ref{sec:svc}): the two verb stems are not phonologically integrated, and each of them takes both prefixes and suffixes. No word can be inserted between \forme{stu} and \forme{mbat} in the corpus, unlike other examples of SVC in Japhug. This is however not the case with all bipartite verbs. For instance, in the case of \japhug{fse=raŋ}{happen so many things}, it is possible to repeat the subject, as in (\ref{ex:fse.rang}).
+ 
+ \begin{exe}
+\ex \label{ex:fse.rang}
+\gll  nɯra pɯ-fse nɯra pɯ-raŋ\\
+\textsc{dem}:\textsc{pl} \textsc{pst}.\textsc{ipfv}-be.like \textsc{dem}:\textsc{pl} \textsc{pst}.\textsc{ipfv}-last.a.long.time \\ 
+\glt `All these things happened.' (many attestations of this sentence, occurs in traditional stories typically to avoid repeating sentences when a character tells another character what has happened previously)
+\end{exe}
+ 
+ In types B and C, the two conjugated verb forms merge phonologically, and either the suffixal chain of the first verb (in the case of the right-dominant B type, where the $V_1$ has a reduced form and the $V_2$ preserves the full form) or the prefixal chain of the second one (left-dominant) are removed.   For instance, in (\ref{ex:atAtWstunatAtWmbatndZi}) the right-dominant bipartite verb has only one dual suffix \forme{-ndʑi}$^{+3}$ on the $V_2$, while the prefixal chain \forme{a$^{-6}$-tɤ$^{-3}$-tɯ$^{-2}$} (\textsc{irr}-\textsc{pfv}-2) is repeated on both the $V_1$ and the $V_2$. The boundary between the $V_1$ and the $V_2$, transcribed with a clitic sign =, does not conform to the phonological rules of word-internal morpheme boundaries: for instance, no vowel contraction occurs between the Irrealis \forme{a-} and the preceding \forme{-u} in (\ref{ex:atAtWstunatAtWmbatndZi}), either as \forme{u-a} $\Rightarrow$ \ipa{o} (§\ref{sec:contraction}) or \forme{u-a} $\Rightarrow$ \ipa{wa}  (§\ref{sec:intr.1}). In addition, this bipartite verb form has two stresses, one on each verb stem. 
+  
+\begin{exe}
+\ex \label{ex:atAtWstunatAtWmbatndZi}
+\gll \rouge{a-tɤ-tɯ}-stu=\rouge{a-tɤ-tɯ}-mbat-\bleu{ndʑi}  \\
+\textsc{irr}-\textsc{pfv}-\textsc{2}-try.hard(1)=\textsc{irr}-\textsc{pfv}-\textsc{2}-try.hard(2)-\textsc{du} \\
+\glt `(While I am gone),  may the two of you do your best.' (smanmi 2003.2, 56)
+\end{exe} 
+
+The prefixal chain must be complete: a partial copy such as $\dagger$\forme{a-tɤ-tɯ-stu=tɯ-mbat-ndʑi} with only the second person \forme{tɯ-} prefix on the $V_2$ is categorically rejected. Likewise, in left-dominant bipartite verbs, the suffixal chain has to be complete on both the $V_1$ and the $V_2$. This specificity is by no means universal even in Trans-Himalayan: in Kiranti languages  for instance, the $V_1$ generally only preserves a sub-set of the suffixal chain, as illustrated by the Bantawa example (\ref{ex:kharin}) below, where the chain \forme{-in-ka} occurs in reduced form \forme{-in} on the $V_1$ \forme{kʰat-} `go'.
+ 
+ 
+ \begin{exe}
+\ex  \label{ex:kharin}
+\gll kʰar-\rouge{in} lont-\rouge{in-ka}  \\
+go-\textsc{1/2pl} come.out-\textsc{1/2pl-excl} \\
+\glt `We shall rise again.' (\citealt[254]{doornenbal09})
+\end{exe} 
+ 
+ In type D, the two verbs come to share the same prefixal and suffixal chain, with no intervening affix between the two verb stems.
+ 
+ \tabref{tab:bipartite} summarizes all bipartite verbs discovered up to now in Japhug. Type C conjugation is only attested with \forme{stu=mbat}.\footnote{In Kiranti languages, by contrast, right-dominant bipartite verbs (with partial suffixal chain on the $V_1$, as in \ref{ex:kharin}) are by far the most common option \citep{jacques18bipartite}.  } Question marks indicate that the forms in question are only attested in a few non-finite forms.
+
+ Note the important proportion of Tibetan loanwords (\forme{=raŋ}, \forme{zdɯɣ=sŋɤl}, \forme{ntsʰɤβ=}, \forme{rga=}, from \tibet{རིང་}{riŋ}{long}, \tibet{སྡུག་བསྔལ་}{sdug.bsŋal}{torment}, \tibet{འཚབ་}{ⁿtsʰab}{anxious}, \tibet{དགའ་}{dga}{glad}), respectively.
+ 
+
+Bipartite verbs cannot be easily subjected to verbal derivations. The only example that could be elicited is the tropative verb (§\ref{sec:tropative}) \forme{nɤ-stu-mbat} `consider that X tries hard'. Only the quasi-compound form of the bipartite verb can be derived. The derivational prefix \forme{nɤ-} cannot be repeated on the $V_1$ and the $V_2$ (a form such as $\dagger$\forme{nɤ-stu=nɤ-stu} is incorrect).
+ 
+ \begin{table}[h]
+\caption{Bipartite verbs in Japhug} \label{tab:bipartite}  
+\begin{tabular}{lllllllllll}
+\lsptoprule
+Bipartite verb & A& B& C& D& \\
+\midrule
+\japhug{stu=mbat}{try hard}& \Y& \Y& \Y& \Y& \\ 
+\japhug{mu=cɯɣ}{be terrified}& \Y&&&& \\ 
+\japhug{χɕu=rnaʁ}{thank a lot}& \Y& \Y&&& \\ 
+\japhug{ntsʰɤβ=rlu}{be in a hurry}&& \Y&& \Y& \\ 
+\japhug{fse=raŋ}{happen so many things}& \Y&&&& \\ 
+\japhug{kʰrɯ=jɤβ}{be extremely dry}& \Y&&& \Y& \\ 
+\japhug{zdɯɣ=sŋɤl}{suffer extremely}& \Y?&&& \Y& \\ 
+\japhug{rga=le}{be extremely happy}& \Y?& \Y&&& \\ 
+\japhug{rga=χi}{be extremely happy}& \Y?& \Y&&& \\ 
+\midrule
+\japhug{\textsc{neg}+spa=\textsc{neg}+rka=tu/me}{be guilty/innocent}& \Y&&& \Y& \\ 
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+There is only one bipartite transitive verb, \japhug{\textsc{neg}+spa=\textsc{neg}+rka=tu/me}{be guilty/innocent}, which is actually even tripartite, since its always occur with an existential verb. It means `be guilty' when used with the affirmative existential verb \japhug{tu}{exist} and  `be innocent' with the negative one \japhug{me}{not exist} (§\ref{sec:suppletive.negative}). The $V_1$ and $V_2$ require a negative prefix (§\ref{sec:obligatory.negative}). Both type A (\ref{ex:mAtWspe1}, \ref{ex:mAspanW.mArkAnW.kWme}) and type D (\ref{ex:mAtWsparkandZi}) conjugations are attested. The existential verb is always an independent word, and never takes person/number indexation in this collocation. 
+
+\begin{exe}
+\ex \label{ex:mAtWspe1}
+\gll  mɤ-tɯ-spe mɤ-tɯ-rke me \\
+\textsc{neg}-2-be.innocent(1)[III]:\textsc{fact} \textsc{neg}-2-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+\glt `You$_{sg}$ are innocent.' (elicited)
+\end{exe} 
+ 
+\begin{exe}
+\ex \label{ex:mAtWsparkandZi}
+\gll  mɤ-tɯ-spa=rka-ndʑi me  \\
+\textsc{neg}-2-be.innocent(1)-be.innocent(2):\textsc{fact}-\textsc{du} not.exist:\textsc{fact} \\
+\glt `You$_{du}$ are innocent.' (elicited)
+\end{exe} 
+
+The verb stems \forme{spa} and \forme{rka} are always in finite form: only the existential verb takes non-finite prefixes. In (\ref{ex:mAspanW.mArkAnW.kWme}) the subject participle prefix \forme{kɯ-} occurs on the negative existential \forme{me}, while  \forme{spa} and \forme{rka} are found in Factual Non-Past. This example suggests that  \forme{spa} and \forme{rka} are located in a subject complement clause selected by the existential verb (§\ref{sec:existential.basic}).
+
+  \begin{exe}
+\ex \label{ex:mAspanW.mArkAnW.kWme}
+\gll [mkʰɤrmaŋ [mɤ-spa-nɯ mɤ-rka-nɯ] kɯ-me] nɯ ʑimkʰɤm pjɤ-sɯ-sat pjɤ-ra rcanɯ, tɯrme ra kɯ wuma ʑo pjɤ-qʰa-nɯ  \\
+people \textsc{neg}-be.innocent(1):\textsc{fact}-\textsc{pl} \textsc{neg}-be.innocent(2):\textsc{fact}-\textsc{pl} \textsc{sbj}:\textsc{pcp}-not.exist \textsc{dem} a.lot \textsc{ifr}-\textsc{caus}-kill \textsc{ifr}.\textsc{ipfv}-be.needed \textsc{unexpected} man \textsc{pl} \textsc{erg} really \textsc{emph} \textsc{ifr}-hate-\textsc{pl} \\
+ \glt `As he had to have many innocent people killed, people hated him.' (hist140514 xiee de shewang-zh, 82)
+\end{exe} 
+  
+ Although morphologically transitive (§\ref{sec:transitivity.morphology}), as shown by  the presence of stem III alternation in \textsc{sg}$\rightarrow$3 non-past forms (§\ref{sec:stem3.form}), in examples (\ref{ex:mAtWspe1}) and (\ref{ex:mAspea}), the direct object is dummy and cannot be overt.  
+  
+\begin{exe}
+\ex \label{ex:mAspea}
+\gll mɤ-spe-a mɤ-rke-a me  \\
+\textsc{neg}-be.innocent(1)[III]:\textsc{fact}-\textsc{1sg} \textsc{neg}-be.innocent(2)[III]:\textsc{fact}-\textsc{1sg} not.exist:\textsc{fact} \\
+\glt `I am innocent.' (elicited)
+\end{exe} 
+ 
+Example (\ref{ex:mAtWspe2}), where both \forme{spa} and \forme{rka} are in stem III form (\forme{spe=} and \forme{=rke}, respectively) reveals two facts about type D conjugation. First, stem III alternation, although historically partially suffixal in origin (§\ref{sec:stem3.form}), is synchronically disjunct from the suffixal chain. Second, although type D forms could appear at first glance to be simple compound verbs (§\ref{sec:denom.compound.verbs}), the presence of stem alternation on both $V_1$ and $V_2$, instead of having $\dagger$\forme{mɤ-tɯ-spa-rke} with alternation on the $V_2$ only, shows that the two verb roots are still morphologically active.
+
+\begin{exe}
+\ex \label{ex:mAtWspe2}
+\gll  mɤ-tɯ-spe=rke me  \\
+\textsc{neg}-2-be.innocent(1)[III]-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+\glt `You$_{sg}$ are innocent.' (elicited)
+\end{exe} 

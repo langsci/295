@@ -1,0 +1,589 @@
+\chapter{Phonology} \label{chap:phono}
+
+
+\section{Introduction}
+Japhug syllables follow the template (C)(C)(C)V(C) with initial clusters containing at most three consonants, and at most one consonant in the coda. Given the complexity of possible onsets, it is not practical to provide an exhaustive list of possible syllables in the language (unlike Naish languages for instance, see \citealt{boydalexis06}); onsets and rhymes can however be listed exhaustively.
+
+This chapter, partly based on previous publications (in particular \citealt{jacques04these} and \citealt{jacques19ipa}), presents the inventory of consonants and vowels, offers a focused discussion on syllabic structure and quasi-neutralization, and describes suprasegmental phenomena and speech errors. The complete inventory of consonant clusters is listed and analyzed in §\ref{sec:inventory.clusters} in the following chapter.
+
+This chapter does not treat the phonology of loanwords from Chinese (except highly nativized ones). Non-nativized Chinese loanwords are represented in this grammar in pinyin (even though this system is an imperfect way of rendering Sichuanese Mandarin) between angled brackets. 
+
+
+\section{Consonants}
+
+\subsection{Onsets} \label{sec:consonant.phonemes}
+There are fifty consonantal phonemes in Japhug (\tabref{tab:consonants}). All can occur as simple onsets. Stops and affricates have a four-way contrast between voiceless unaspirated, voiceless aspirated, voiced and prenasalized series.
+
+\begin{table}[h]
+	\caption{Consonantal phonemes}  \label{tab:consonants}   
+	\resizebox{\columnwidth}{!}{
+		\begin{tabular}{lllllllllll}
+			\lsptoprule
+			& &Bilabial& Dental/  & Retroflex &Alveolo-&Palatal & Velar&Uvular&Glottal\\
+			&&&Alveolar&&palatal \\
+			\midrule
+			Plosive&unv. & \ipa{p} & \ipa{t} & & & \ipa{c} & \ipa{k} & \ipa{q} \\
+			&asp. & \ipa{pʰ} & \ipa{tʰ} & & & \ipa{cʰ} & \ipa{kʰ} & \ipa{qʰ}\\
+			&voi. & \ipa{b} & \ipa{d} & & & \ipa{ɟ} & \ipa{g} &  \\
+			&pren.& \ipa{mb} & \ipa{nd} & & & \ipa{ɲɟ} & \ipa{ŋg} & \ipa{ɴɢ} \\
+			Affricate & unv. &   & \ipa{ts} & \ipa{tʂ} & \ipa{tɕ} &  &   &  \\
+			&asp. &  & \ipa{tsʰ} & \ipa{tʂʰ} & \ipa{tɕʰ} &  &   &  \\
+			&voi. &   & \ipa{dz} & \ipa{dʐ} & \ipa{dʑ} &  &   &  \\
+			&pren.&   & \ipa{ndz} & \ipa{ndʐ} & \ipa{ndʑ} &  &   &  \\
+			Nasal & & \ipa{m} & \ipa{n} &&& \ipa{ɲ} & \ipa{ŋ} \\
+			Fricative &unv.&  & \ipa{s} & \ipa{ʂ} & \ipa{ɕ} &  & \ipa{x} & \ipa{χ} & \ipa{h} \\
+			&voi.&  & \ipa{z} & & \ipa{ʑ} &  & \ipa{ɣ} & \ipa{ʁ}  \\
+			Approximant && \ipa{w} &&  && \ipa{j} &\\
+			Rhotic &&& & \ipa{r} &&\\
+			Lateral &voi. && \ipa{l} \\
+			&  unv. && \ipa{ɬ} \\
+			\lspbottomrule
+	\end{tabular}}
+\end{table}
+
+
+The voiced fricatives \ipa{ɣ} and \ipa{ʁ} should be classified as non-nasal sonorants (§\ref{sec:medials}), alongside the glides \ipa{j} and \ipa{w}, the lateral \ipa{l} and the rhotic \ipa{r}.
+
+\tabref{tab:consonants2}  provides examples of each of these phonemes, followed whenever possible by the vowel \ipa{ɯ}.  Among these consonants, four are only attested in borrowings from Tibetan and/or ideophones: \ipa{ʂ}, \ipa{dʐ}, \ipa{dʑ} and \ipa{g}.
+
+
+\begin{table}[h]
+	\caption{Examples of the consonant phonemes} \label{tab:consonants2}  
+	\resizebox{\columnwidth}{!}{
+		\begin{tabular}{lll|lllll}
+			\lsptoprule
+			\ipa{p} & 	 \ipa{ɯ-\textbf{pɯ}} & 	 `its young' & \ipa{tɕ} & 	\ipa{ɯ-\textbf{tɕɯ}}   & 	 `his boy' \\ 
+			\ipa{pʰ} & 	 \ipa{ɯ-\textbf{pʰɯ}} & 	 `its price' & \ipa{tɕʰ} & 	\ipa{to\textbf{tɕʰɯ}}   & 	 `it gore him/her' \\ 
+			\ipa{b} & 	 \ipa{ba\textbf{bɯ}} & 	 `blackcurrant' & \ipa{dʑ} & 	\ipa{\textbf{dʑɯ}}   & 	 `it is oily' \\ 
+			\ipa{mb} & 	 \ipa{\textbf{mbɯt}} & 	 `collapse'  & \ipa{ndʑ} & 	\ipa{ko\textbf{ndʑɯ}}   & 	 `s/he accused him/her' \\ 
+			\ipa{m} & 	  \ipa{tɯ\textbf{mɯ}}  & 	 `sky' & \ipa{ɕ} & 	\ipa{\textbf{ɕɯ}}   & 	 `who' \\ 
+			\ipa{w} & 	  \ipa{\textbf{wɯ}wɯ}  & 	 `Boletus sp.' & \ipa{ʑ} & 	\ipa{mɤ\textbf{ʑɯ}}   & 	 `not only' \\ 
+			\ipa{t} & 	  \ipa{\textbf{tɯ}boʁ}  & 	 `one group' & \ipa{c} & 	\ipa{\textbf{cɯ}} & 	 `stone' \\ 
+			\ipa{tʰ} & 	  \ipa{\textbf{tʰɯ}}  & 	 `be serious ' & \ipa{cʰ} & 	\ipa{tɤ\textbf{cʰɯ}} & 	 `wedge' \\ 
+			&&(of a disease)&&\\
+			\ipa{d} & 	  \ipa{\textbf{dɯ}dɯt}  & 	 `turtledove' & \ipa{ɟ} & 	\ipa{wa\textbf{ɟɯ}} & 	 `earthquake' \\ 
+			\ipa{nd} & 	  \ipa{\textbf{ndɯ}}  & 	 `appear (rainbow)' & \ipa{ɲɟ} & 	\ipa{\textbf{ɲɟɯ}} & 	 `open (it)' \\ 
+			\ipa{ts} & 	  \ipa{konɤ\textbf{tsɯ}}   & 	`s/he hid it' & \ipa{ɲ} & 	\ipa{\textbf{ɲɯɣ}ɲɯɣ} & 	 `soft and powdery' \\ 
+			\ipa{tsʰ} & 	  \ipa{\textbf{tsʰɯ}tʰo}   & 	 `kid' & \ipa{j} & 	\ipa{ɯ-\textbf{jɯ}}   & 	 `its handle' \\ 
+			\ipa{dz} & 	  \ipa{\textbf{dzɯr}dzɯr}   & 	 `straight' & \ipa{k} & 	\ipa{\textbf{kɯ}ki}   & 	 `this' \\ 
+			\ipa{ndz} & 	  \ipa{\textbf{ndzɯ}pe}   & 	 `way of sitting' & \ipa{kʰ} & 	\ipa{\textbf{kʰɯ}na}   & 	 `dog' \\ 
+			\ipa{n} & 	  \ipa{\textbf{nɯ}ŋa}   & 	 `cow' & \ipa{g} & 	\ipa{\textbf{gɯ}gɯɣ}   & 	 `very dark (sky)' \\ 
+			\ipa{s} & 	  \ipa{\textbf{sɯ}mat}   & 	 `fruit' & \ipa{ŋg} & 	\ipa{ɯ-\textbf{ŋgɯ}}   & 	 `inside' \\ 
+			\ipa{z} & 	  \ipa{\textbf{zɯ}mi}   & 	 `almost' & \ipa{ŋ} & 	\ipa{ɕa\textbf{ŋɯ}}   & 	 `heat (deer)' \\ 
+			\ipa{l} & 	      \ipa{rɯ\textbf{lɯ}}  & `medicine' &\ipa{x} & 	\ipa{\textbf{xɯr}xɯr}   & 	 `round' \\ 
+			\ipa{ɬ} & 	  \ipa{\textbf{ɬɯɣ}nɤɬɯɣ}   & 	 `breathing movement' & \ipa{ɣ} & 	\ipa{\textbf{ɣɯ}}   & 	 `genitive' \\ 
+			\ipa{tʂ} & 	 \ipa{\textbf{tʂɯm}pa}   & 	 `apron' & \ipa{q} & 	\ipa{\textbf{qɯ}qli}   & 	 `staring' \\ 
+			\ipa{tʂʰ} & 	  \ipa{\textbf{tʂʰɯɣ}}   & 	 `maybe' & \ipa{qʰ} & 	\ipa{kɯ-sɤ\textbf{qʰɯ}qʰa}   & 	 `naughty' \\ 
+			\ipa{dʐ} & 	\ipa{\textbf{dʐɯɣ}dʐɯɣ}   & 	 `strong (of tea)' & \ipa{ɴɢ} & 	\ipa{mɯ\textbf{ɴɢɯ}}  & 	 `\textit{Ligularia fischeria}' \\ 
+			\ipa{ndʐ} & 	\ipa{\textbf{ndʐɯ}nbu}   & 	 `guest' & \ipa{χ} & 	\ipa{\textbf{χɯχɯ}}   & 	 `having big nostrils' \\ 
+			\ipa{ʂ} & 	\ipa{\textbf{ʂɯŋ}ʂɯŋ}   & 	 `clear' & \ipa{ʁ} & 	\ipa{naŋ\textbf{ʁɯ}}   & 	 `shirt' \\ 
+			\ipa{r} & 	\ipa{\textbf{rɯ}}   & 	 `temporary place' & 	  \ipa{h}&\ipa{\textbf{ha}nɯni} 	 & `a little'	 \\ 
+			&&(nomads)&&\\
+			\lspbottomrule
+	\end{tabular}}
+\end{table}
+
+The phoneme \ipa{w}  is realized as a fricative \phonet{f} or \phonet{ɸ} before voiceless obstruents and as \phonet{v} or \phonet{β} before voiced ones, and can also be fricativized when it occurs as coda. In the orthography used in this work, it is transcribed as 	<\forme{f}> when followed by an voiceless stop, affricate or fricative, and as 	<\forme{β}> when followed by a voiced one (§\ref{sec:wC.clusters}), or in coda position (§\ref{sec:codas.inventory}).
+
+As in many languages of the Tibetan area, the \ipa{r} is a trilled retroflex voiced fricative \phonet{ɽ͡ʐ} in onset position, sometimes realized as a simple voiced fricative \phonet{ʐ}. It is devoiced to \phonet{ʂ} (with neutralization of the contrast with \ipa{ʂ}) when followed by a voiceless consonant in clusters (§\ref{sec:rC.clusters}).
+
+The prenasalized voiced stops and affricates \ipa{mb}, \ipa{nd}, \ipa{ndz}, \ipa{ndʑ}, \ipa{ndʐ}, \ipa{ɲɟ}, \ipa{ŋg} and \ipa{ɴɢ} all have voiceless and voiceless aspirated counterparts such as \ipa{mp(ʰ)}, \ipa{nt(ʰ)}, \ipa{nts(ʰ)}, \ipa{ntɕ(ʰ)}, \ipa{ntʂ(ʰ)}, \ipa{ɲc(ʰ)}, \ipa{ŋk(ʰ)} and \ipa{ɴq(ʰ)} (§\ref{sec:NC.clusters}). Yet, there are several pieces of evidence showing that the prenasalized voiced stops and affricates are of a different nature from the prenasalized voiceless ones. 
+
+First, the former can appear in clusters preceded by fricatives or non-nasal sonorants, as in \ipa{ʑmbr}, \ipa{jndʐ} or \ipa{rɴɢl}, while the latter cannot. Clusters such as *\ipa{ʑmp(ʰ)r}, *\ipa{jntʂ(ʰ)} or *\ipa{rɴq(ʰ)l} are not permitted in Japhug. Clusters of this type may have existed, but have been removed by voicing the stop/affricate (§\ref{sec:voicing.alternation.non.anticausative}).
+
+Second, the uvular voiced prenasalized \ipa{ɴɢ} has no simple voiced counterpart *\ipa{ɢ}, a fact which therefore precludes analyzing \ipa{ɴɢ} as a cluster \ipa{n+ɢ}.
+
+There is a three-way contrast between \ipa{tɕ}, \ipa{c} and \ipa{k} before the front vowel \ipa{i}, as shown by the triplet comprising the correlative additive focus marker \japhug{tɕi}{also} (§\ref{sec:ri.additive}), the highly polyfunctional \japhug{ci}{one} (§\ref{sec:ci.someone}, §\ref{sec:other.pro}, §\ref{sec:partitive.pronouns}, §\ref{sec:identity.modifier}, §\ref{sec:one.to.ten}, §\ref{sec:indef.article} and §\ref{sec:tense.aspect.adverbs}) and the demonstrative \japhug{ki}{this} (§\ref{sec:demonstrative.pronouns}). 
+
+The palatal stops \ipa{c}, \ipa{cʰ}, \ipa{ɟ} and \ipa{ɲɟ} cannot be analyzed as velar+\ipa{j} clusters, as a clear contrast exists between the palatal series and velar stops followed by \ipa{j} (§\ref{sec:Cj.clusters}), in minimal pairs such as \japhug{ɲɟo}{have damages} and \japhug{ŋgio}{slip}, `glide'.\footnote{The grapheme \forme{<i>} represents an allophone of \ipa{j} in medial position with dental and dorsal initials (§\ref{sec:Cj.clusters}).} That the onsets \ipa{ɲɟ-} and \ipa{ŋgj-} have a different syllabic structure is confirmed by their reduplication patterns (§\ref{sec:partial.redp}): while in the former the palatalization is present on the reduplicant \forme{pɯ-nɤ-ɲɟɯ\tld{}ɲɟo} `have damages everywhere' (in the distributed action derivation, §\ref{sec:distributed.action}), in the latter the \ipa{j} is not reduplicated as  \forme{pɯ-nɤ-ŋgɯ\tld{}ŋgio} `he slipped everywhere'. 
+
+The alveolo-palatal affricates \ipa{tɕ}, \ipa{tɕʰ}, \ipa{dʑ} and \ipa{ndʑ} are also contrastive with dental affricates+\forme{j} clusters, as shown by the minimal pair \japhug{ndziaʁ}{be tight} (of knot) vs. \japhug{ndʑaʁ}{swim} (§\ref{sec:Cj.clusters}). There is also a contrast with dental stops+\forme{j}, though no good minimal pairs can be found due to the rarity of these clusters.
+
+The attested contrasts between coronal affricates and dorsal stops with and without the \forme{j} medial are illustrated in \tabref{tab:coronal.dorsal} in combination with the vowel \ipa{o}. 
+
+\begin{table}
+	\caption{Palatalization contrasts in coronal and dorsal onsets } \label{tab:coronal.dorsal}  
+	\begin{tabular}{llll}
+		\lsptoprule		
+		Onset & Example   \\
+		\midrule
+		\ipa{ts} &\japhug{tɤtsoʁ}{Potentilla anserina} \\
+		\ipa{tsj} & \japhug{tɤ-mtsioʁ}{beak} \\
+		\ipa{tʂ} &\japhug{tʂoʁ}{add water} \\
+		\ipa{tɕ} &\japhug{mtɕoʁ}{be sharp} \\
+		\ipa{c} & \japhug{co}{valley} \\
+		\ipa{k} & \japhug{ko}{prevail over} \\
+		\ipa{kj} & \japhug{kio}{cause to glide} \\
+		\ipa{q} & \japhug{rqoʁ}{hug} \\
+		\ipa{qj} & \japhug{qioʁ}{vomits} \\
+		\lspbottomrule
+	\end{tabular} 
+\end{table} 
+
+The voiceless lateral  \ipa{ɬ} (realized by some speakers as a postaspirated lateral \phonet{lʰ}), is a marginal phoneme in Japhug, which does not appears in clusters (except heterosyllabic ones, as in \ipa{cɯɣɬaj} `symptom in which the oral cavity becomes white') and is very rare in the native vocabulary. Yet, its phonemic status is justified by the fact that it contrasts with \ipa{lx}; there are no minimal pairs contrasting the two, but the contrast can be indirectly illustrated by examples such as \japhug{alxaj}{not properly put} (of clothes) and \japhug{lxɯlxi}{thick and cumbersome} on the one hand, and \japhug{ɬɤt}{become old} and \japhug{ɬɤndʐi}{ghost} on the other hand.
+
+
+\subsection{Codas}  \label{sec:codas.inventory}
+The inventory of consonants in coda position in Japhug is more restricted than in initial position.  In particular, the voicing and aspiration contrasts are neutralized in codas.
+
+Only twelve consonants out of fifty appear as codas:  \ipa{-p}, \ipa{-w}, \ipa{-m}, \ipa{-t}, \ipa{-z}, \ipa{-n}, \ipa{-l}, \ipa{-r}, \ipa{-j}, \ipa{-ɣ}, \ipa{-ŋ}, \ipa{-ʁ}. The stop \ipa{-p} is restricted to a few ideophones (§\ref{sec:coda.idph}), and is not found in the inherited non-ideophonic vocabulary and in Tibetan loanwords, except as first element of the heterosyllabic cluster \ipa{pt} in the word \ipa{sqap.tɯɣ} `eleven' (§\ref{sec:heterosyllabic.clusters} ). The codas \ipa{-n}, \ipa{-l} and \ipa{-ŋ} are extremely rare (but not entirely absent) in the non-ideophonic native vocabulary. 
+
+A list of possible combinations between codas and vowels in Japhug is described in §\ref{sec:rhyme.inventory}.
+
+In word-final position, codas are voiced when followed by a word beginning with a voiced consonant or a vowel, but are devoiced in phrase-final position, before a pause or before a voiceless segment (even across word boundaries, §\ref{sec:sandhi.word}). In isolation, word-final \ipa{-z}, \ipa{-r}, \ipa{-j}, \ipa{-ɣ} and \ipa{-ʁ} in particular are realized as \phonet{s}, \phonet{r̥}, \phonet{j̥}, \phonet{x} and \phonet{χ}, respectively. The coda \ipa{-ʁ} can also be realized alternatively as pharyngealization of the preceding vowel.  
+
+Since the voicing contrast between the voiceless fricatives \ipa{s}, \ipa{x}, \ipa{χ} and  the voiced ones \ipa{z}, \ipa{ɣ}, \ipa{ʁ} is neutralized in coda position, it could seem better to argue that the fricative codas, whatever their phonetic realization, are archiphonemes \archi{s,z}, \archi{x,ɣ} and \archi{χ,ʁ}, and that any discussion of their underlying voicing is futile \citep{hill16refutation}. However, in the case of Japhug at least, some morphophonological rules are easier to describe if one assumes that fricative codas are underlyingly voiced.\footnote{I owe the idea that final \forme{-z} is voiced to \citet{jackson05yingao}, where a similar analysis is implicitly proposed about Tshobdun. } 
+
+First, when the \textsc{1sg} \forme{-a} suffix is added to a verb stem ending in a fricative coda, that coda is resyllabified, becoming the onset of the syllable with \forme{a} as rhyme. In these cases, the voiced allophone always surfaces (§\ref{sec:intr.1}): for instance the \textsc{1sg\fl{}3sg} Imperfective of \japhug{ntɕʰoz}{use} is \forme{tu-ntɕʰóz-a}, syllabified as \ipa{tu.ntɕʰo.za}. If one were to assume that the fricative coda \forme{-z} were voiceless or underspecified for voicing, a context-specific voicing rule would have to be assumed to have taken place, since \forme{V́sa} is a permissible sequence in Japhug, as in \forme{pjɤ́-wɣ-sat} \textsc{ifr}-\textsc{inv}-kill (see for instance example \ref{ex:pjArwGrzWrzWG} in §\ref{sec:denom.tr.rA}). It is more economical to assume that \forme{-z} and the other fricative codas are underlying voiced, and become  devoiced in the same contexts as the sonorants.
+
+Second, the locative postposition \forme{zɯ} (§\ref{sec:core.locative}) is the result of the degrammaticalization of the locative \forme{*-s} suffix still attested in Situ (§\ref{ex:word.vs.clitic.postp}). The fact that it has a voiced, rather than an voiceless onset, suggests that the fricative was voiced when it was a suffix.
+
+
+\section{Vowels and rhymes}
+\subsection{Vowels} \label{sec:vowels}
+
+\subsubsection{Vowel phonemes} \label{sec:vowel.phonemes}
+Japhug has eight vowel phonemes, listed in \tabref{tab:vowels}. The mid-open unrounded vowels \ipa{ɤ} and \ipa{e} are only marginally contrastive: \ipa{ɤ} does not occur in word-final open syllables except in unaccented clitics (like the additive \forme{nɤ}, §\ref{sec:additive.nA}), and \ipa{e} only occurs in the last (accented) syllable of a word. They are clearly contrastive only with the coda \ipa{-t} (§\ref{sec:rhyme.inventory}).
+
+\begin{table}
+	\caption{List of vowels in Japhug} \label{tab:vowels}   
+	\begin{tabular}{lllll}
+		\lsptoprule
+		Vowel & Example & Meaning \\
+		\midrule
+		\ipa{a} &	\ipa{qa\textbf{la}} & `rabbit'\\
+		\ipa{e} &	\ipa{qa\textbf{le}} & `wind'\\
+		\ipa{i} &	\ipa{ɟu\textbf{li}} & `flute'\\
+		\ipa{ɤ} &	\ipa{\textbf{lɤ}pɯɣ} &  `radish'\\
+		\ipa{ɯ} &	\ipa{rɯ\textbf{lɯ}} & `medicine' \\
+		\ipa{y} &	\ipa{qa\textbf{ɟy}} & `fish'\\
+		\ipa{o} &	\ipa{\textbf{lo}} & \textsc{upstream}\\
+		\ipa{u} &	\ipa{tɤ\textbf{lu}} & `milk'\\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+Not all speakers of Kamnyu Japhug have a phoneme \ipa{y} in the native vocabulary. Even for those speakers, it is only attested in the word `fish' and the verbs derived from it. It nevertheless contrasts with \ipa{ɯ} and \ipa{u}, as shown by the quasi-minimal pairs \ipa{qaɟy} `fish', \ipa{waɟɯ} `earthquake' and \ipa{ɟuli} `flute'. Other speakers pronounce `fish' with a medial \ipa{w} as \ipa{qaɟwi}. However, \phonet{y} is found in the speech of all Japhug speakers in Chinese loanwords such as \ch{洋芋}{yángyù}{potato}.
+
+\subsubsection{Vowel assimilation} \label{sec:vowel.harmony}
+When followed by a syllable containing a rounded vowel (\ipa{u} or \ipa{o}), the back unrounded vowels \ipa{ɯ} and \ipa{ɤ} optionally undergo rounding harmony to \phonet{u} and \phonet{o}, respectively. For instance, \ipa{ɣɤʑu} `exist (sensory)' (§\ref{sec:existential.basic}) is generally pronounced as  \phonet{ɣoʑu}, and the reduplicated form \forme{tɯ\redp{}tu-dɤn} `more and more' (§\ref{sec:redp.gradual.increase}) is realized as \phonet{tutudɛn}.
+
+The phoneme \ipa{ɤ} in prefixes tends to be pronounced more open as \phonet{ɐ} when followed by a syllable whose main vowel is \ipa{a}, making it sometimes difficult to perceive the contrast, for instance between \japhug{ta-ma}{work} and \japhug{tɤ-ma}{mother} (honorific). In the verbal system, the \textsc{1sg} \forme{-a} suffix triggers obligatory regressive assimilation \forme{ɤ} \fl{} \forme{a} on the preceding syllable (see \tabref{tab:verb.stem.1sg}, §\ref{sec:intr.1}).
+
+\subsubsection{Synizesis} \label{sec:synizesis}
+While no true diphthongs exist in Japhug, when the \textsc{1sg} \forme{-a} suffix is added to a verb stem ending in an open syllable, the two syllables undergo synizesis (§\ref{sec:intr.1}). When the verb stem contains the mid vowels \ipa{-e} and \ipa{-o}, they become the corresponding high vowels \ipa{-i} and \ipa{-u} due to merging with \forme{a}, and the contrasts between \ipa{e} and \ipa{i} on the one hand, and \forme{o} and \forme{u} on the other hand, are neutralized. For instance, \forme{tso-a} \phonet{tsua} `I understand' and \forme{βze-a} \phonet{βzia} `I (will) do it' are homophonous with \forme{tsu-a} `I have time' and \forme{βzi-a} `I (will) be drunk', respectively. Three pseudo-diphthongs are thus attested: \forme{ia} (from \forme{e-a} and \forme{i-a}), \forme{ua} (from \forme{o-a} and \forme{u-a}) and \forme{ɯa} (from \forme{ɯ-a}).
+
+Synizesis results in syllables homophonous to the rhymes \forme{-wa} and \forme{-ja} in clusters ending in \forme{-w-} (§\ref{sec:Cw.clusters}) or \forme{-j-} (§\ref{sec:Cj.clusters}) followed by the vowel \forme{-a}. For instance, \forme{aro-a} `I own' (§\ref{sec:semi.transitive}) is homophonous with \forme{a-rwa} `my tent' (§\ref{sec:Cw.clusters}). 
+
+Apart from synizesis, two other types of vowel contraction are found in Japhug. First, verb stems with initial \forme{a-} have specific conjugation patterns, where initial \forme{a-} merges with the immediately preceding prefix following rules that are not completely trivial (§\ref{sec:contraction}). Second, the \textsc{1sg} \forme{-a} suffix merges with \forme{-a} stems as \forme{a}, without vowel lengthening in Kamnyu Japhug (§\ref{sec:intr.1}).\footnote{However, vowel lengthening is found in some dialects, such as that of Sarndzu. }
+
+\subsubsection{Zero onset} \label{sec:zero.onset}
+There are strong phonotactic restrictions on vowel-initial stems and words in Japhug. 
+
+In word-initial position, only \forme{a-} and \forme{ɯ-} are found. These vowels can merge with previous open syllables (§\ref{sec:sandhi.word}), and no glottal stop appears, unlike in many Trans-Himalayan languages such as Khaling \citep{jacques12khaling}. Phonetic  \phonet{u\trt}, \phonet{o\trt}, \phonet{i-} do appear in word-initial position, but are preferably analyzed as \ipa{wu\trt}, \ipa{wo-} and \ipa{ji-} with a glide.
+
+The only possible stem-initial vowel in verbal stems is \forme{a-} (§\ref{sec:contraction}). It is relatively common due to the fact that it appears in many derivational prefixes (§\ref{sec:denom.contracting}, §\ref{sec:passive}, §\ref{sec:reciprocal}, §\ref{sec:distributed.amW}). Stem-initial \forme{a-} undergoes vowel contraction with all preceding prefixes. By contrast, stem-initial \forme{wu-} or \forme{ji-} (for instance, \japhug{wum}{gather} and \japhug{ji}{plant}) never merge with preceding prefixes.
+
+In noun stems, initial \forme{a-} also exists and interacts with prefixes (§\ref{sec:a.nouns}), but is considerably rarer.
+
+Comparison with other Gyalrongic languages indicates that word-initial \forme{a-} and \forme{ɯ-} (in the native vocabulary, excluding loanwords and interjections) are secondary. Word-initial \forme{ɯ-} is only attested in a few interjections (such as \forme{ɯtɕʰɯtɕʰɯ}, §\ref{sec:interjections}) and in the third possessive prefix (§\ref{sec:possessive.paradigm}). The form $\dagger$\forme{ɣɯ-} (homophonous with the inverse prefix, §\ref{sec:allomorphy.inv}) would be expected, and the unexpected form \forme{ɯ-} in Japhug might be due to false segmentation in sandhi (§\ref{sec:3sg.possessive.form}). Word-initial \forme{a-} originates mainly from \forme{*ŋa-} \citep{jacques07passif}, due to loss of the simple initial \forme{*ŋ-} in non-stressed syllables (including \japhug{wuma}{really} from \tibet{ངོ་མ་}{ŋo.ma}{real, true}, but excluding monosyllabic verb stems such as \japhug{ŋu}{be} and \japhug{ŋa}{buy on credit, owe}).
+
+\subsection{Rhymes} \label{sec:rhyme.inventory}
+There are strong phonotactic constraints on possible rhymes in Japhug. \tabref{tab:rhymes} lists all attested rhymes; the coda \ipa{-w} is transcribed as \forme{-β} in the orthography used in this grammar.
+
+\begin{table}
+	\caption{List of possible rhymes in Japhug} \label{tab:rhymes} 
+	\resizebox{\columnwidth}{!}{
+		\begin{tabular}{l|llllllllllllll}
+			\lsptoprule 
+			&	\ipa{w} &	\ipa{p} &	\ipa{m} &	\ipa{t} &	\ipa{n} &	\ipa{z} &	\ipa{l} &	\ipa{r} &	\ipa{j } &	\ipa{ɣ} &	\ipa{ŋ} &	\ipa{ʁ} \\
+			\midrule
+			\ipa{a} &	\ipa{aw} &	\ipa{ap} &	\ipa{am} &	\ipa{at} &	\ipa{an} &	\ipa{az} &	\ipa{al} &	\ipa{ar} &	 	\ipa{aj}&	 &	\ipa{aŋ} &	\ipa{aʁ} \\
+			\ipa{e} &	 &	 &	 &	\ipa{et} &	 &	 &	 &	 &	 &	 &	 &	 \\
+			\ipa{i} &	 &	 &	 &	\ipa{it} &	 &	 &	\ipa{il} &	 &	 &	 &	 &	 \\
+			\ipa{ɤ} &	\ipa{ɤw} &	 &	\ipa{ɤm} &	\ipa{ɤt} &	\ipa{ɤt} &	\ipa{ɤz} &	\ipa{ɤl} &	\ipa{ɤr} &	\ipa{ɤj} &	\ipa{ɤɣ} &	 &	 \\
+			\ipa{ɯ} &	\ipa{ɯw} &	\ipa{ɯp} &	\ipa{ɯm} &	\ipa{ɯt} &	\ipa{ɯn} &	\ipa{ɯz} &	\ipa{ɯl} &	\ipa{ɯr} &\ipa{ɯr}	 &	\ipa{ɯɣ} &	\ipa{ɯŋ} &	 \\
+			\ipa{y} &	 &	 &	 &	\ipa{yt} &	 &	 &	 &	 &	 &	 &	 &	 \\
+			\ipa{o} &	 &	 &	\ipa{om} &	\ipa{ot} &	\ipa{on} &	\ipa{oz} &	\ipa{ol} &	\ipa{or} &	\ipa{oj} &	 &	\ipa{oŋ} &	\ipa{oʁ} \\
+			\ipa{u} &	 &	 &	 &	\ipa{ut} &	 &	\ipa{uz} &	 &	 &	\ipa{uj} &	 &	 &	 \\
+			\lspbottomrule
+	\end{tabular}}
+\end{table}
+
+The only coda attested with all  vowels is \ipa{-t} (\tabref{tab:t.rhymes}). Among these rhymes, \ipa{-et} and \ipa{-yt} are only attested in verb forms with the past transitive \forme{-t} suffix (§\ref{sec:suffixes}, §\ref{sec:other.TAME}, §\ref{sec:indexation.mixed}), which occurs in word-final position only in \textsc{2sg}\fl{}3  forms.
+
+\begin{table}
+	\caption{Examples of closed syllable rhymes in \ipa{-t}} \label{tab:t.rhymes}  
+	\begin{tabular}{llll}
+		\lsptoprule
+		Vowel & Rhyme & Example & Meaning/Gloss \\
+		\midrule
+		\ipa{a} &	   	\ipa{at} &\ipa{tɤtɯsɤlat} &`you boiled it'\\
+		&&\forme{tɤ-tɯ-sɯ-ɤla-t} & \textsc{aor}-2-\textsc{caus}-boil-\textsc{pst}:\textsc{tr} \\
+				\midrule
+		\ipa{e} &	  	\ipa{et} &\ipa{tɤtɯnɤmɤlet} & `you did it'\\
+		&&\forme{tɤ-tɯ-nɤmɤle-t} & \textsc{aor}-2-do-\textsc{pst}:\textsc{tr} \\
+				\midrule
+		\ipa{i} &	   	\ipa{it} &\ipa{tɤtɯrɤlit} & `you reimbursed it'\\
+		&&\forme{tɤ-tɯ-rɤli-t} & \textsc{aor}-2-reimburse-\textsc{pst}:\textsc{tr} \\
+				\midrule
+		\ipa{ɤ} &	   	\ipa{ɤt} &\ipa{jɤtɯlɤt} & `you threw it'\\
+		&&\forme{tɤ-tɯ-lɤt} & \textsc{aor}-2-release  \\
+				\midrule
+		\ipa{ɯ} &	   	\ipa{ɯt} &\ipa{tʰɯtɯplɯt} & `you destroyed it' \\
+		&&\forme{tʰɯ-tɯ-plɯt} & \textsc{aor}-2-destroy  \\
+				\midrule
+		\ipa{y} &	 \ipa{yt} &\ipa{lotɯznɯqaɟyt} & `you let him fish'\\
+		&&\forme{lo-tɯ-z-nɯ-qaɟy-t} & \textsc{ifr}-2-\textsc{denom}-fish-\textsc{pst}:\textsc{tr}  \\
+				\midrule
+		\ipa{o} & 	\ipa{ot} &\ipa{nɯtɯsɤwlot} & `you took care of him'\\
+		&&\forme{nɯ-tɯ-sɤβlo-t} & \textsc{aor}-2-take.care-\textsc{pst}:\textsc{tr}  \\
+				\midrule
+		\ipa{u} & 	\ipa{ut} & \ipa{pɯtɯnɤlut} & `you milked it'\\
+		&&\forme{pɯ-tɯ-nɤ-lu-t} & \textsc{aor}-2-\textsc{denom}-milk-\textsc{pst}:\textsc{tr}  \\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+In closed syllables with an alveolo-palatal or a palatal consonant preceding the vowel, \ipa{ɯ} is fronted and its contrast with \ipa{i} is neutralized (§\ref{sec:W.i.closed.syllables}). It is only maintained before \ipa{-t} in forms with the past transitive \forme{-t}  suffix. For instance, we find the minimal pair \ipa{tɤ-tɯ-cɯ-t} `you opened it' (\textsc{aor}-2-open-\textsc{pst}) and \ipa{lɤ-tɯ-cit} `you moved' (\textsc{aor}-2-move).
+
+With the coda \ipa{-j}, the contrasts between \ipa{ɯ} and \ipa{i} on the one hand, and \ipa{ɤ} and \ipa{e} on the other hand, are neutralized. The rhyme \ipa{-aj} is realized as \phonet{ɛj} or \phonet{æj}.
+
+\subsection{Historical phonology} \label{sec:historical.phono}
+Some notions of Japhug historical phonology are useful to account for the gaps in the distribution of rhymes (§\ref{sec:rhyme.inventory}) as well as some vowel alternations (§\ref{sec:stem3.form}). 
+
+Comparison of inherited vocabulary between Japhug and extra-Rgyalrongic languages shows that the codas \forme{*-l}, \forme{*-n} and \forme{*-ŋ} have been lost in the native vocabulary (\tabref{tab:lnN.coda}). Words with these codas are either borrowed from Tibetan or have an ideophonic origin.
+
+\begin{table}
+	\caption{Loss of \forme{*-l}, \forme{*-n} and \forme{*-ŋ} in Japhug } \label{tab:lnN.coda}
+	\begin{tabular}{llll}
+		\lsptoprule
+		Japhug & Other languages \\
+		\midrule
+		\japhug{qaɕpa}{frog} & \tibet{སྦལ་པ་}{sbal.pa}{frog} \\
+		\japhug{tɤjpa}{snow} &  Dulong \forme{tɯ³¹ wɑ̆n⁵³ } `snow' \citep{sunhk82dulong}\\
+		\japhug{tɯrmɯ}{dusk} & \tibet{མུན་པ་}{mun.pa}{darkness} \\
+		\japhug{tɯ-mtsʰi}{liver} &  \tibet{མཆིན་པ་}{mtɕʰin.pa}{liver} \\
+		\japhug{pɣo}{spin} &  \tibet{འཕང་མ་}{ⁿpʰaŋ.ma}{spindle} \\
+		\japhug{mto}{see} &  \tibet{མཐོང་}{mtʰoŋ}{see} \\
+		\japhug{zri}{be long} & \tibet{རིང་པོ་}{riŋ.po}{long} \\
+		\japhug{tɤ-rmi}{name} & \tibet{མིང་}{miŋ}{name} \\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+The proto-Gyalrong rhyme \forme{*-aŋ} corresponds to Japhug \forme{-o} (Situ \forme{-o}, Tshobdun \forme{-i}, Zbu \forme{-æ}, \citealt[228--231]{jacques04these}); this correspondence is also found in some early loanwords. A secondary \forme{-aŋ} rhyme has been created from several sources (§\ref{sec:aN.oN.free}), most importantly Tibetan borrowings postdating the sound change  \forme{*-aŋ} \fl{} \forme{-o}.
+
+A chain shift has taken place, as Proto-Gyalrong \forme{*-o} has regularly changed to \forme{-u} and \forme{*-u} to \forme{-ɯ} (\citealt[239]{jacques04these}).
+
+In closed syllables, rounded vowels have become unrounded in the native vocabulary. In the earliest layer of Tibetan loanwords, \forme{-od}, \forme{-or}, \forme{-ob}, \forme{-ol} and \forme{-os} correspond to \forme{-ɤt}, \forme{-ɤr}, \forme{-ɤβ}, \forme{-ɤl} and \forme{-ɤz}, respectively, but are unchanged in the later layers (\tabref{tab:unrounding.loanwords}). 
+
+\begin{table}
+	\caption{Unrounding of vowels in Tibetan loanwords} \label{tab:unrounding.loanwords}
+	\begin{tabular}{llll}
+		\lsptoprule
+		Japhug & Tibetan \\
+		\midrule
+		\japhug{mtɕʰɤtkʰo}{house shrine} &  \tibet{མཆོད་ཁང་}{mtɕʰod.kʰaŋ}{shrine, chapel} \\
+		\japhug{pjɤl}{go around, cross, avoid}&  \tibet{བྱོལ་}{bʲol}{turn away} \\
+		\japhug{χtɤr}{scatter} &  \tibet{གཏོར་}{gtor}{scatter} \\
+		\japhug{slɤβkʰaŋ}{school} &  \tibet{སློབ་ཁང་}{slob.kʰaŋ}{school} \\
+		\japhug{tɯkrɤz}{discussion} &  \tibet{གྲོས་}{gros}{discussion} \\
+		\midrule
+		\japhug{ɣot}{warm light} &  \tibet{འོད་}{ɦod}{light} \\
+		\japhug{kʰaŋfkot}{architect} &  \tibet{ཁང་བཀོད་}{kʰaŋ.bkod}{founding a house} \\
+		\japhug{nor}{make a mistake} &  \tibet{ནོར་}{nor}{make a mistake} \\
+		\japhug{spoz}{incense} &  \tibet{སྤོས་}{spos}{incense} \\
+		\lspbottomrule
+	\end{tabular}
+\end{table} 
+
+This sound change did not affect rhymes with uvular codas: proto-Gyalrong  \forme{*-oq} remained \forme{-oʁ}.
+
+The rhymes \forme{*-aj}, \forme{*-oj} and \forme{*-uj} on the other hand have merged as \forme{-e}, \forme{-e} and \forme{-i}, respectively. These vowel fusions occurred before \forme{*-o} \fl{} \forme{-u}, as shown by the \forme{-u} / \forme{-e} alternation in Stem III (§\ref{sec:stem3.form}, \citealt[357]{jacques04these}, \citealt[234]{jacques08zh}), which is cognate to the `transitivity marker' \forme{-jə} in Tshobdun (\citealt[496]{jackson03caodeng}), as illustrated in \tabref{sec:stem3.sound.change}.
+
+\begin{table}
+	\caption{Sound changes and stem III alternation in Japhug} \label{sec:stem3.sound.change}
+	\begin{tabular}{lllll}
+		\lsptoprule
+		Stem I & Proto-form & Stem III & Proto-form & meaning \\
+		\midrule
+		\forme{ndza} & \forme{*ndza} & \forme{ndze} & \forme{*ndza-j} & `eat' \\
+		\forme{rku} & \forme{*rko} & \forme{rke} & \forme{*rko-j} & `put in' \\
+		\forme{βlɯ} & \forme{*plu} & \forme{βli} & \forme{*plu-j} & `burn' \\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+After this sound change had removed all \forme{-j} codas, secondary \forme{-oj} and \forme{-uj} rhymes were later analogically created by addition of the locative \forme{*-j} suffix to stems in \forme{-o} and \forme{-u}; a handful of examples remain in Japhug (§\ref{sec:locative.j}). The origin of the rhyme \forme{-aj} in Japhug is an unsolved problem, and may be due to contextual vowel breaking (Gong Xun, p.c.).
+
+The only other closed rhymes with \forme{o} in the native vocabulary are \forme{-oz}, which originates from \forme{*-aŋs}, as in \japhug{soz}{morning}, and \forme{-ot} (in the case of verb stems in \forme{-o} with the past transitive \forme{-t} suffix, §\ref{sec:suffixes}).
+
+
+\section{Syllabic constraints} 
+\subsection{Rhotic dissimilation} \label{sec:rhotic.dissimilation}
+The rhotic coda \forme{-r} cannot co-occur with a rhotic or a retroflex consonant in the onset: syllables of the type $\dagger$\forme{CrVr}, $\dagger$\forme{rCVr} or $\dagger$\forme{tʂVr} are not attested. However, a \forme{-r} preinitial can be preceded by a syllable containing a \ipa{r} or a retroflex fricative or affricate in its onset, in reduplicated forms such as \japhug{rdardɯl}{dust, dirt} (§\ref{sec:redp.coll}), or a compound like \japhug{qrorni}{red ant} (§\ref{sec:second.member.alternation}). Since the \ipa{r} sounds in \ipa{rda.rdɯl} and \ipa{qro.rni} are heterosyllabic, they do not violate the rhotic dissimilation constraint (§\ref{sec:heterosyllabic.clusters}).
+
+\subsection{Uvular harmony} \label{sec:uvular.harmony}
+Velars and uvulars do not coexist well within the same syllable in Japhug. There are no syllables of the type $\dagger$\forme{QCVɣ} or $\dagger$\forme{KCVʁ} (where K and Q  represent any velar and uvular initial consonant, respectively): the onset and the coda have to be both velars, or both uvulars. Thus, syllables such as \japhug{qraʁ}{ploughshare} and \japhug{krɤɣ}{shear, mow} are possible, but not $\dagger$\forme{kraʁ} or $\dagger$\forme{qrɤɣ}. 
+
+With preinitials and medial consonants, the constraint depends on the context. Several cases have to be distinguished.
+
+First, the uvular coda \ipa{-ʁ} is compatible with the velar medial \ipa{-ɣ\trt}, as shown by examples such as \japhug{pɣaʁ}{turn over} (§\ref{sec:CG.clusters}); the opposite case is not attested, but given the relative rarity of medial \ipa{-ʁ\trt}, this may be accidental.
+
+Second, the uvular preinitial  \ipa{ʁ-} is attested before velar initials in some Tibetan loanwords, such as \japhug{ʁgra}{enemy} (§\ref{sec:Cr.clusters}, from Tibetan \tibet{དགྲ་}{dgra}{enemy}). The Tibetan preinitial \forme{d-} normally corresponds to \forme{r-} before velars, but the expected $\dagger$\forme{rgra} would have violated the rhotic dissimilation rule (§\ref{sec:rhotic.dissimilation}).
+
+Third, a uvular preinitial with the velar medial \ipa{-ɣ-} is only found in the dialectal word \japhug{tɯ-χpɣi}{thigh} (§\ref{sec:CG.clusters}).
+
+These constraints do not apply across syllables, as shown by words such as \japhug{kóʁmɯz}{only after}, in which the \ipa{ʁ} is the preinitial of the second syllable.
+
+The discrimination of uvulars and velars is due to a recent sound change that occurred in Japhug and affected both native words and Tibetan loanwords, viz. the uvularization of velar initial consonants in syllables with uvular \ipa{-ʁ}. This sound change explains for instance why Japhug words such as \japhug{tɯ-qʰoχpa}{organs, state of mind} (phonologically \ipa{qʰoʁ.pa} with internal sandhi) from Tibetan \tibet{ཁོག་པ་}{kʰog.pa}{insides}\footnote{See §\ref{sec:body.part} for an account of the prefix \forme{tɯ-}.} has a uvular \ipa{qʰ-} corresponding to a velar \ipa{kʰ-} in Tibetan: dorsal codas (transcribed as \forme{-g}) are realized as uvulars after \forme{a} and \forme{o} in most Tibetan varieties \citep{gong16amdo}, so that a correspondence of Tibetan \forme{-ag} and \forme{-og} to Japhug \ipa{-aʁ} and \ipa{-oʁ} is expected. At an earlier stage, \forme{tɯ-qʰoχpa} has probably been borrowed as *\forme{tɯ-kʰoʁpa} and the sound law *\textsc{velar} \fl{} \textsc{uvular} /\_V\forme{ʁ} applied to it like in the rest of the vocabulary. In Tshobdun, there is a doublet of loanwords corresponding to the same Tibetan etymon:   \forme{o-kʰoχpe} `its abdominal cavity' \citep[413]{jackson19tshobdun} without uvularization and \forme{o-qʰɔ́χpe} `her heart' \citep[704]{jackson19tshobdun} with uvularization.
+% Misantla Totonac, McKay 1999 uvular assimilation
+
+An older example of uvular harmony is found in the noun \japhug{qʰaqʰu}{back of the house}, `behind the house' from \japhug{kʰa}{house} and \japhug{ɯ-qʰu}{behind}: this word has a Tshobdun exact cognate \forme{qʰɐqʰu} \citep[172]{jackson19tshobdun}, showing that the assimilation occurred in the common ancestor of the two languages.
+
+\section{Neutralization, quasi-neutralization and free variation}
+The present section discusses four particularly thorny problems of synchronic Kamnyu Japhug phonology, which are the source of uncertainty in some transcriptions. They involve quasi-neutralization and interdialectal contact, which constitute challenging problems for phonologists (see \citealt{michaud06neutralisation}). 
+
+\subsection{The contrast between \ipa{-oŋ} and \ipa{-aŋ}} \label{sec:aN.oN.free}
+Inherited Japhug words never have final \forme{-ŋ} (in particular, proto-Gyalrong \forme{*-aŋ} shifts to \forme{-o}, see §\ref{sec:historical.phono}); words with this coda belong to four groups: Tibetan loanwords, ideophones, borrowings from other Gyalrong varieties (in the case of \japhug{rkaŋ}{be robust}, the corresponding inherited Japhug etymon is \japhug{rko}{be hard}) or function words with irregular syllable fusion (\japhug{koŋla}{really} from \forme{kɯŋula}, see §\ref{sec:intensifier.adverbs}).
+
+Despite some minimal pairs (\japhug{caŋ}{dammed wall} vs. \japhug{coŋ}{damage, loss} from \tibet{གྱང་}{gʲaŋ}{dammed wall} and \tibet{གྱོང་}{gʲoŋ}{loss}, respectively), the contrast between \ipa{-oŋ} and \ipa{-aŋ} in Kamnyu Japhug has some degree of instability: some words in \ipa{-oŋ} and \ipa{-aŋ}, but not all, allow free variation between the two pronunciations. This free variation is presumably due to influence from neighbouring dialects of Japhug such as that of Rqakyo, where words with \ipa{-oŋ} and \ipa{-oʁ} in Kamnyu are pronounced with a more open vowel.
+
+Words with stable \forme{-aŋ} in final syllable include \japhug{rkaŋ}{be robust}, \japhug{fsaŋ}{fumigation}, \japhug{kʰɯrtʰaŋ}{administrative position}, \japhug{mkʰɤrmaŋ}{people}, \japhug{praʁkʰaŋ}{cave}, \japhug{rɲaŋ}{be old}. In non-final position, stable  \forme{-aŋ} is found in particular in words whose final syllable contains \ipa{a}, as in \japhug{fsraŋma}{protecting deity} (as opposed to unstable \forme{fsroŋ} / \forme{fsraŋ} `protect', see \tabref{tab:aN.oN.free}).
+
+Words with stable \forme{-oŋ} in the final syllable include \japhug{ɕoŋtɕa}{wood} (as opposed to \forme{ɕaŋβzu} / \forme{ɕoŋβzu} `carpentry' with unstable rhyme), \japhug{koŋla}{really}, \japhug{pʰoŋ}{bottle}, \japhug{qɯmdroŋ}{wild goose}, \japhug{ʁmbroŋ}{wild yak} or \japhug{tɯ-phoŋbu}{body}.
+
+\tabref{tab:aN.oN.free} presents a list of words with unstable \ipa{-oŋ} / \ipa{-aŋ}, mostly loanwords from Tibetan, coming either from rhymes in \ipa{a}+nasal or from rhymes in rounded vowel+nasal. It also includes the egressive postpositions with \forme{ɕaŋ-} as first element such as \forme{ɕoŋtaʁ} / \japhug{ɕaŋtaʁ}{up from} (see §\ref{sec:egressive}).
+
+For all these words, the orthography used in this work and in the corpus generalizes the \forme{-aŋ} variant,  which is considered by Tshendzin to be more `correct'.
+
+\begin{table}[H]
+	\caption{Words with free variation between \ipa{-oŋ} and \ipa{-aŋ} in Kamnyu Japhug} \label{tab:aN.oN.free}
+	\begin{tabular}{llllll}
+		\lsptoprule
+		\ipa{-aŋ} variant & \ipa{-oŋ} variant &Etymology \\
+		\midrule
+		\japhug{raŋri}{each} & \forme{roŋri} & \tibet{རང་རེ་}{raŋ.re}{each} \\
+		\japhug{fsraŋ}{protect, save} & \forme{fsroŋ} & \tibet{བསྲུངས་}{bsruŋs}{save} \\
+		\japhug{tʂaŋka}{(gold, silver) coin} & \forme{tʂoŋka} & \tibet{	ཊམ་ཀ}{ṭam.ka}{coin} \\
+		\forme{ɕaŋ-} `egressive' &\forme{ɕoŋ-} & \\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{The contrast between \ipa{ɯ} and \ipa{i} after palatal and alveolo-palatal consonants} \label{sec:W.i.contrast}
+The contrast between \ipa{ɯ} and \ipa{i} is partially or completely neutralized after palatals (\ipa{c}, \ipa{cʰ}, \ipa{ɟ}, \ipa{ɲɟ}, \ipa{ɲ} and \ipa{j}) and alveolo-palatal (\ipa{tɕ}, \ipa{tɕʰ}, \ipa{dʑ}, \ipa{ndʑ}, \ipa{ɕ}, \ipa{ʑ}) consonants in some contexts.
+
+In stressed open syllables, in particular in word-final position, the contrast between \ipa{ɯ} and \ipa{i} is nevertheless very clear after all consonants. The existence of minimal pairs such as \japhug{cɯ}{stone} and \japhug{ci}{one} or the stem alternations between \forme{ndʑɯ} (stem I) and \forme{ndʑi} (stem III) in the paradigm of the verb \japhug{ndʑɯ}{accuse} (§\ref{sec:stem3}), show that this contrast is not neutralized after palatal and alveolo-palatal consonants in this context.
+
+The contrast between \ipa{ɯ} and \ipa{i} is completely neutralized in most closed syllables and near-neutralized in unstressed syllables, including verbal suffixes, prefixes, and non-final elements of compounds; each of these contexts is extensively discussed below.
+
+\subsubsection{Neutralization in closed syllables} \label{sec:W.i.closed.syllables}
+In closed syllables, the contrast between \ipa{ɯ} and \ipa{i} is almost completely neutralized after palatals (\ipa{c}, \ipa{cʰ}, \ipa{ɟ}, \ipa{ɲɟ}, \ipa{ɲ} and \ipa{j}) and alveolo-palatal (\ipa{tɕ}, \ipa{tɕʰ}, \ipa{dʑ}, \ipa{ndʑ}, \ipa{ɕ}, \ipa{ʑ}) consonants; the archiphoneme \archi{ɯ,i}  is realized as \phonet{ɯ} before \forme{-ɣ}, \forme{-β} (and the rare \forme{-p}), and as \phonet{i} before \forme{-m}, \forme{-r}, \forme{-n} and \forme{-l}, as shown by \tabref{tab:palatal.WC.iC}. In the orthography adopted in the present work, the archiphoneme \archi{ɯ,i} is transcribed as \forme{ɯ} in all these contexts.
+
+\begin{table}
+	\caption{Realizations of the archiphoneme \archi{ɯ,i} following palatal and alveolo-palatal consonants in close syllables} \centering \label{tab:palatal.WC.iC}
+	\begin{tabular}{lllll}
+		\toprule
+		Coda & Example & Realization \\
+		\midrule
+		\forme{-β}/\forme{-p} & \japhug{cʰɯβ}{ideophone of an object breaking} &\phonet{cʰɯβ} \\
+		\forme{-ɣ}  & \japhug{rɟɯɣ}{run} &\phonet{rɟɯɣ} \\
+		\midrule
+		\forme{-m}  & \japhug{jɯm}{be nice (of weather)} &\phonet{jim} \\
+		\forme{-n}  & \japhug{jaftɕɯn}{stirrup} &\phonet{jaftɕin} \\
+		\forme{-r}  & \japhug{mtɕɯr}{turn} &\phonet{mtɕir} \\
+		\forme{-l}  & \japhug{rɲɯl}{wither} &\phonet{rɲil} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The proof that the underlying phoneme is \ipa{ɯ} rather than \ipa{i} is provided by the rhyme reduplication of \japhug{mtɕɯr}{turn} in the distributed action form \japhug{nɤmtɕɯrlɯr}{turn in all directions} (§\ref{sec.distributed.action.l}): if \ipa{i} had been the underlying vowel, a form such as $\dagger$\phonet{nɤmtɕirlir} would have been expected.
+
+The contrast between \ipa{ɯ} and \ipa{i} used to be neutralized before the codas \forme{-z} and \forme{-t}, with the archiphoneme \archi{ɯ,i} realized as \phonet{i}. However, new rhymes \forme{-ɯt} and \forme{-ɯz} contrasting with \forme{-it} and \forme{-iz} have been reintroduced by the transitive 1/2\textsc{sg}\fl{}3 past suffix \forme{-t} or \forme{-z} (depending on the dialect of Japhug, see §\ref{sec:suffixes}, §\ref{sec:other.TAME}).
+
+Minimal pairs between open syllable \forme{-ɯ} stem verbs taking the \forme{-t} suffix (such as \ipa{tɤ-tɯ-cɯ-t} `you opened it' \textsc{aor}-2-open-\textsc{pst}) and \forme{-it} stem verbs (\ipa{lɤ-tɯ-cit} `you moved' \textsc{aor}-2-move) can easily be found (§\ref{sec:rhyme.inventory}). Even if this contrast is extremely marginal and restricted to this morphological context, \ipa{ɯ} and \ipa{i} cannot be considered to be neutralized before \forme{-z} or \forme{-t} (depending on the dialect of Japhug).
+
+\subsubsection{Non-final elements of compounds} \label{sec:W.i.compounds}
+In compounds and other polysyllabic stems, the contrast between \ipa{ɯ} and \ipa{i} is very difficult to perceive in non-final open syllables with palatal or alveolo-palatal consonant onsets, and Tshendzin has, during our decade-long collaboration, expressed conflicting views about whether a contrast does or does not exist in this context.
+
+While there are no minimal pairs only distinguished by the \ipa{ɯ} vs. \ipa{i} contrast in non-final syllables after palatal or alveolo-palatal consonants, it now seems clear that some words are consistently pronounced with \forme{ɯ} rather than \forme{i} in this context. This unstable contrast, which does not carry much information load, is likely to differ at the idiolectal level. The orthography used in this work reflects a normalization based on Tshendzin's judgements (rechecked several times).
+
+\begin{paragraph}{\forme{tɕʰi°} vs. \forme{tɕʰɯ°}}
+Many nouns in Japhug have \forme{tɕʰi°} or \forme{tɕʰɯ°} as first element, in particular due to words of Tibetan origin containing \tibet{ཆུ་}{tɕʰu}{water} or \tibet{མཆུ་}{mtɕʰu}{lip}. The variant \forme{tɕʰi°}  is found in the great majority of these words. In some cases like \japhug{tɕʰira}{water jar} (from \tibet{ཆུ་ར་}{tɕʰu.ra}{water container}), I have used an etymologizing transcription with \forme{ɯ} (\forme{tɕʰɯra}) in previous works (in particular \citealt{jacques15japhug}), but changed my mind after careful rechecking (using for instance the stems I and III of the verb \japhug{tɕʰɯ}{gore} for comparison). 
+	
+The variant \forme{tɕʰɯ°} is essentially restricted to words with a cluster with a uvular or a labial fricative as first element (such as \japhug{rtɕʰɯʁjɯ}{caterpillar}, \japhug{tɕʰɯχpri}{newt}, \japhug{tɕʰɯβroʁ}{type of tsampa}), but also found in \japhug{tɕʰɯmɲɯɣ}{water hole} (from \tibet{ཆུ་མིག་}{tɕʰu.mig}{water hole}) and \japhug{tɕʰɯzɯ}{type of weaving tool}.
+	
+The noun \japhug{tɯ-mtɕʰi}{mouth} (from \tibet{མཆུ་}{mtɕʰu}{lip}) has an unexpected \forme{i} (the expected form would be $\dagger$\forme{mtɕʰɯ}). It is possible that it was extracted from a compound (like \japhug{tɯ-mtɕʰirme}{moustaches}) where \ipa{ɯ} and \ipa{i} are neutralized as \phonet{i}, and that this phonetic variant was then reinterpreted as an independent root.
+\end{paragraph}
+\begin{paragraph}{\forme{ndʑi°} vs. \forme{ndʑɯ°} } \label{sec:compounds.ndZi.ndZW}
+Compounds with \forme{ndʑi°} or \forme{ndʑɯ°} as non-final element are not common, but social relation collective nouns (§ §\ref{sec:social.collective}) containing the prefix \forme{kɤndʑi\trt}, are particularly numerous. Words with the variant \forme{ndʑɯ°} are very rare: the two verbs \japhug{ndʑɯrpɯt}{be numb} and \japhug{andʑɯβri}{protect each other} (with the rare reciprocal prefix \forme{andʑɯ-}/\forme{andʑi-} of denominal origin, see §\ref{sec:denom.andZi}), and the nouns \japhug{ndʑɯrwɯz}{Sonchus sp} and \japhug{ndʑɯnɯ}{Angelica} (minimal pair with \forme{ndʑi-nɯ} `their breast', see § §\ref{sec:verbal.suffixes.possessive.prefixes.i.W}).
+\end{paragraph}
+\begin{paragraph}{\forme{ci°} vs. \forme{cɯ°} }
+	Compounds comprising \japhug{cɯ}{stone} or the root of \japhug{tɯ-ci}{water} as non-final element are common, and the majority of these words have the variant \forme{ci°}, even when the noun comes from \japhug{cɯ}{stone} (for instance \japhug{ciχɕiz}{stony earth}). Exceptions include \japhug{cɯrmbɯ}{stone heap}, \japhug{scɯʁzɯɣ}{appearance} (from \tibet{སྐྱེ་གཟུགས་}{skʲe.gzugs}{physical appearance}) and \japhug{ɣɤcɯqʰlɯβ}{making noise (of water when agitated)}.\footnote{This verb is a denominal verbalization from a noun-ideophone compound (§\ref{sec.n.idph.compounds}).}
+\end{paragraph}
+\begin{paragraph}{\forme{cʰi°} vs. \forme{cʰɯ°} } \label{sec:compounds.chi.chW}
+	Nouns with \forme{cʰi°} or \forme{cʰɯ°} include in particular Tibetan loanwords in \tibet{ཁྱི་}{kʰʲi}{dog}. The form \forme{cʰi°} occurs in most cases (for instance \japhug{cʰisɲu}{rabies} from \tibet{ཁྱི་སྨྱོ་}{kʰʲi.smʲo}{rabies}), but exceptions include \japhug{cʰɯmu}{female dog}, \japhug{cʰɯrdom}{roaming dog} and \japhug{nɯcʰɯra}{keep guard} (rechecked using the minimal pair \japhug{cʰi}{be sweet} vs. \japhug{tɤ-cʰɯ}{wedge}).
+\end{paragraph}
+\begin{paragraph}{\forme{ɟi°} vs. \forme{ɟɯ°} }
+	Words containing the status contructus of \japhug{ɟu}{bamboo} can have either the vowel \ipa{i} (as \japhug{ɟispjɤt}{person making bamboo baskets}) or \ipa{ɯ} (\japhug{ɟɯmɢom}{bamboo tweezers}). Other words in  \forme{ɟi°} include \japhug{ɟiga}{tortuous path} and its derived forms.
+	
+	The root of \japhug{tɯ-rɟɯ}{fortune} commonly occur as first element of compounds, and have the vowel \ipa{ɯ}, as in \japhug{rɟɯrŋom}{coveting other people's fortune}. The syllable \forme{-rɟɯ-} also occurs as the status constructus of \japhug{tɤ-rɟit}{child} in the word \japhug{tɤrɟɯsti}{only child}.
+	
+\end{paragraph}
+\begin{paragraph}{\forme{ji°} vs. \forme{jɯ°} } \label{sec:compounds.ji.jW}
+	Compounds with non-final \forme{jɯ°}  are extremely rare, limited to the two Tibetan loanwords \japhug{jɯɣi}{writing} (from \tibet{ཡི་གེ་}{ji.ge}{letter}) and \japhug{pjɯrɯ}{coral} (from \tibet{བྱུ་རུ་}{bʲu.ru}{coral}).
+\end{paragraph}
+
+
+\subsubsection{Verbal prefixes and reduplicated forms}
+The vowels \ipa{ɯ} and \ipa{ɤ} are by far the most common ones in prefixes in Japhug. In the case of verbal prefixes with palatal and alveolo-palatal onsets, the same phonological problem as in compounds (§ §\ref{sec:W.i.compounds}) is observed, namely the question whether the contrast between \ipa{ɯ} and \ipa{i} has been neutralized or not, and whether the vowel should be transcribed as \forme{i} rather than as \forme{ɯ}.
+
+The prefixes in which this problem arises are few, and are exhaustively listed in \tabref{tab:pref.palatal}. For prefixes in \forme{ɕV-} and \forme{cʰV\trt}, testing the vowel is possible using minimal pairs (\japhug{ɕɯ}{who} vs. \japhug{ɕi}{polar interrogative} and \japhug{cʰi}{be sweet} vs. \japhug{tɤ-cʰɯ}{wedge} as in § §\ref{sec:compounds.chi.chW}). For \forme{pjV-} and \forme{jV} prefixes, comparison is possible with the first syllable of the nouns \japhug{jɯɣi}{writing} and \japhug{pjɯrɯ}{coral} (§ §\ref{sec:compounds.ji.jW}). 
+
+The main consultants on the basis of whose expertise this work has been written have presented conflicting judgments regarding the nature of the vowel in these prefixes. After some hesitation, Tshendzin considers it to be \forme{i} for all of these prefixes (for instance, she considers the vowel of \japhug{pjɯrɯ}{coral} to be different from that of \forme{pjɯ-ɣi} `he comes down'). I nevertheless keep here the orthographic `etymological' transcription with the vowel \forme{ɯ} for three reasons.
+
+First, the contrast is marginal, if existent at all, for most speakers, and given the limited number of prefixes affected, it is possible to automatically change the transcription from \forme{ɯ} to \forme{i} only in these prefixes without loss of information (this can be necessary for instance as a pre-treatment for the purposes of automatic transcription training). 
+
+Second, the prefixes in \tabref{tab:pref.palatal} are affected by vowel fusion (§\ref{sec:contraction}) and coalescence with the inverse prefix \forme{-wɣ} (§\ref{sec:allomorphy.inv}) like other prefixes in \forme{Cɯ\trt}, and these morphophonological phenomena are easier to state by assuming the underlying vowel \forme{ɯ} for all prefixes. 
+
+Third, the assimilation from \forme{ɯ} to \forme{i} following palatal and alveolo-palatal consonants appears to be general in the morphology of the language, including partially reduplicated forms, whose rhyme is replaced by \forme{-ɯ} (§\ref{sec:partial.redp}). For instance, Tshendzin judges that the reduplicant here transcribed as \forme{-ɕɯ-} of the reduplicated form \japhug{nɤɕɯɕe}{go everywhere} (from \japhug{ɕe}{go}) to be phonetically closer to \japhug{ɕi}{polar interrogative} than to \japhug{ɕɯ}{who}. Adopting a transcription with \forme{i} in the prefixes in \tabref{tab:pref.palatal} would therefore only make sense if reduplicated forms of syllables with palatal and alveolo-palatal consonants are also transcribed with \forme{i} (thus \forme{nɤɕiɕe} instead of \forme{nɤɕɯɕe}). However, such an orthography would cause unnecessary problems when automatically researching for reduplicated forms in the corpus, and since in this case too the pronunciation of the grapheme \forme{ɯ} as \ipa{i} is completely predictable, and could be corrected automatically without difficulty, I choose to keep an etymological transcription. 
+
+\begin{table}
+	\caption{Verbal prefixes with palatal or alveolo-palatal onsets and high unrounded vowels} \centering \label{tab:pref.palatal}
+	\begin{tabular}{lll}
+		\lsptoprule
+		Prefix & Function & Reference \\
+		\midrule
+		\forme{pjɯ/i-} & Orientation prefix, B-type, downwards & §\ref{sec:kamnyu.preverbs} \\
+		\forme{cʰɯ/i-} & Orientation prefix, B-type, downstream & §\ref{sec:kamnyu.preverbs}  \\
+		\forme{ɲɯ/i-} & Orientation prefix, B-type, westwards; sensory & §\ref{sec:kamnyu.preverbs}  \\
+		\forme{jɯ/i-} & Proximative & §\ref{sec:proximative} \\
+		\forme{ɕɯ/i-} & translocative associated motion & § §\ref{sec:translocative.morpho} \\
+		\forme{ɕɯ/i-} & apprehensive & § §\ref{sec:apprehensive} \\
+		\forme{ɕɯ/i-} & causative & §\ref{sec:caus.CW} \\
+		\forme{ɕɯ/i-} & denominal & §\ref{sec:denom.sW.caus.instr} \\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+In other words, in the transcription adopted in this work I transcribe the contrast between \forme{ɯ} and \forme{i} before palatal and alveolo-palatals when non-predictable (in noun and verb stems), but neglect it and use \forme{ɯ} throughout in verbal prefixes and reduplicated syllables.
+
+\subsubsection{Verbal suffixes and possessive prefixes} \label{sec:verbal.suffixes.possessive.prefixes.i.W}
+A few unstressed verb suffixes have alveolo-palatal onsets and high unrounded vowels: the dual indexation suffixes \textsc{1du} \forme{-tɕi} and \textsc{2/3du} \forme{-ndʑi} (§\ref{sec:intr.1},  §\ref{sec:indexation.mixed}) and the suffix \forme{-ci} (§\ref{sec:peg.circumfix}). It is clear that these suffixes originally had a schwa-like vowel rather than a front vowel as in most Gyalrong languages (see §\ref{sec:indexation.suffixes.history}), but here too Tshendzin considers the vowel of these suffixes to be \ipa{i} rather than \ipa{ɯ} (the suffix \forme{-ci}, for instance, according to her resembles \japhug{ci}{one} more than \japhug{cɯ}{stone}), and since no vowel fusion or other phenomena takes place with these suffixes (unlike verbal prefixes), using an etymological notation was an unnecessary complication.
+
+In the prefixal possessive paradigm (§ §\ref{sec:possessive.paradigm}), we also find a series of prefixes with palatal and alveolo-palatal onsets and high unrounded vowels: \textsc{1du} \forme{tɕi\trt}, \textsc{1pl} \forme{ji-} and \textsc{2/3du} \forme{ndʑi-}. Unlike verbal prefixes, but like the verbal indexation suffixes, possessive prefixes in the Kamnyu dialect of Japhug never undergo vowel fusion and remain invariable. The vowel is phonologically \ipa{i}, as shown by the minimal pair between \japhug{ndʑɯnɯ}{Angelica} and the dual possessive \forme{ndʑi-nɯ} `their$_{du}$ breast' (§ §\ref{sec:compounds.ndZi.ndZW}). For these reasons, a phonological (with \forme{-i}) rather than etymological (with \forme{-ɯ}) transcription was preferred for these prefixes.
+
+\subsection{The contrast between \ipa{ɤ} and \ipa{e} after palatal and alveolo-palatal consonants}
+The vowels \ipa{ɤ} and \ipa{e} in Kamnyu Japhug contrast in very few contexts. In word-final stressed open syllables, only \ipa{e} is found, \ipa{ɤ} being attested only in clitics and unstressed final syllables in words such as \japhug{kɯnɤ}{also}. In closed syllables, \ipa{e} is only found with the coda \ipa{-t} in the past \textsc{2sg}\fl{}3 of transitive \forme{-e} stem verbs (§\ref{sec:rhyme.inventory}); the word-final \forme{-et} vs. \forme{-ɤt} are the only cases where \ipa{ɤ} and \ipa{e} are clearly contrastive.
+
+In non-final open syllables, there are no examples of minimal pairs involving a contrast between \ipa{ɤ} and \ipa{e}. Phonetic \phonet{e} is clearly heard after palatal and alveolo-palatal consonants when the vowel of the following syllable is \ipa{e}, for instance in words such as \japhug{tɕʰeme}{girl} or \japhug{sɤrɲɟele}{extend (limbs)}, but in other contexts I generally transcribe \forme{ɤ} throughout, except when the word is an obvious compound whose elements are recognized by the speakers (for instance \japhug{tɕetʰa}{soon} from \japhug{tɕe}{then} and \japhug{tʰa}{soon}). 
+
+\subsection{The contrast between \ipa{ɤ} and \ipa{a}} \label{sec:A.vs.a.prefixes}
+The contrast between \ipa{ɤ} and \ipa{a}, while clear in most contexts, is difficult to perceive in unstressed syllables when followed by a uvular (in particular when followed by a cluster with a uvular preinitial) and in syllables containing \forme{a} (due to regressive assimilation of height, §\ref{sec:vowel.harmony}).
+
+In slow syllable-by-syllable pronunciation, Tshendzin makes it clear that some unstressed syllables preceding a uvular have \ipa{a} rather than \ipa{ɤ}. This concerns the indefinite possessor prefix in words such as \japhug{ta-ʁi} {younger sibling}, \japhug{ta-ʁrɯ}{horn}, \japhug{ta-ʁri}{dirt}, \japhug{ta-ʁjɯβ}{shadow}, \japhug{ta-ʁrɯm}{light, shadow}, \japhug{ta-χpi}{shape, model}, \japhug{ta-ʁrɤt}{charcoal}, \japhug{ta-ʁɟaz}{soot} and \japhug{ta-ʁa}{free time} (§ §\ref{sec:inalienably.possessed}), and the fossilized prefix in nouns such as \japhug{taqaβ}{needle}. The noun \japhug{tɤ-ʁar}{wing}, however, has \forme{tɤ-} rather \forme{ta-}.
+
+Another context where the variant \forme{ta-} is found is with the \forme{m-} initial nouns \japhug{ta-ma}{work} and \japhug{ta-mar}{butter}. Note that a contrast exists with the honorific noun \japhug{tɤ-ma}{mother} (§\ref{sec:inalienably.possessed}), showing that the two allomorphs \forme{tɤ-} and \forme{ta-} are synchronically contrastive in the Kamnyu variety at least for some speakers.
+
+With some verbal prefixes, in particular the antipassive prefixes \forme{rɤ-/ra-} and \forme{sɤ-/sa-} (§\ref{sec:antipassive}) , the proprietive \forme{sɤ-/sa-} (§\ref{sec:proprietive}) and the tropative \forme{nɤ(ɣ)-/na-} (§\ref{sec:tropative.allomorphy}) and several denominal prefixes), the \forme{a} allomorph is found where followed by a stem with a uvular preinitial. For instance, the antipassive of \japhug{χtɯ}{buy} is \japhug{raχtɯ}{buy (things)} with the variant \forme{ra-} rather than \forme{rɤ-}. Not all prefixes in \forme{ɤ} present this alternation: for instance, the causative, facilitative and denominal prefixes \forme{ɣɤ-} never have a variant $\dagger$\forme{ɣa-}.
+
+With inflectional morphology, however, in particular orientation preverbs (§\ref{sec:kamnyu.preverbs}), no such phonologically determined alternation is found. For instance, the A-type preverb \forme{tɤ-} \textsc{upwards} remains unchanged when preceding stems with a uvular preinitial as in \forme{tɤ-χtɯ-t-a} (\textsc{aor}-buy-\textsc{pst}:\textsc{tr}-\textsc{1sg}) `I bought it', where the prefix \forme{tɤ-} is different from the corresponding C-type preverb \forme{ta-} in \forme{ta-χtɯ} (\textsc{aor}:3\fl{}3'-buy) `he bought it'.
+
+\section{Speech errors and self-corrections} \label{sec:self.corrections}
+The Japhug corpus, being exclusively an oral one, contains many speech errors, and immediate self corrections by the speakers, which have been systematically transcribed. \tabref{tab:self.corrections} presents examples of phonological errors that are followed by self-corrections in the corpus.
+
+\begin{table}
+	\caption{Examples of self-corrections in the Japhug corpus} \label{tab:self.corrections}
+	\begin{tabular}{llllll}
+		\lsptoprule
+		Erroneous& Correct form & Error &Reference \\
+		form &&type& \\
+		\midrule
+		\phonet{sqi} `ten'& \japhug{sqʰi}{tripod} & aspiration& (160703 poucet3, 48) \\
+		\midrule
+		\phonet{tɯsŋɤr} & \forme{tɯ-skɤrma} `one &  nasal/oral  &(150825 baishe zhuan, 72) \\
+		&cent'&&\\
+		\midrule
+		\phonet{tsʰo-} & \japhug{tɕʰorzi}{jar} & dental/alveolo-  &(160703 araR, 49) \\
+		\phonet{tɕʰɯr-} & \japhug{tsʰɯrɟɯn}{often} &  palatal &(160630 abao, 112) \\
+		\midrule
+		\phonet{sara-} & \forme{saχaʁ} `it is &rhotic/uvular   &(160712 smAG, 21) \\
+		&extremely...'&\\
+		\phonet{qapri}   & \japhug{qapi}{white stone} &    &(160630 poucet1, 47) \\
+		`snake' &&&\\
+		\midrule
+		\phonet{tɤrɣaʁ} & \forme{tɤrʁaʁkɕi} `hunting &  velar/uvular  &(niulan li de lu, 4) \\
+		&dog'&&\\
+		\midrule
+		\phonet{ɯmɲo} & \forme{ɯ-jmŋo} `his dream' & yod metathesis  &(160630 abao, 114) \\
+		\phonet{pjɤka} & \japhug{pɤjka}{squash} &   &(150827 mengjiangnv, 15) \\
+		\midrule
+		\phonet{ɯʁri} & \forme{ɯ-ʁrɯ ɯ-ntsi}  &  vowels &(160715 nWNa, 10) \\
+		&`one of her horns' &\\
+		\lspbottomrule
+	\end{tabular}
+\end{table}
+
+Phonological errors can result in the replacement of a word by a similar-sounding one (as in the case of \japhug{sqi}{ten} for \japhug{sqʰi}{tripod}), but more often by a non-sense form. Errors generally involve one phonological feature at a time, including aspiration, nasality and place of articulation, especially the contrast between dental and alveolo-palatal affricates, and that between uvular and velars. A more puzzling replacement is that of \ipa{χ} by \ipa{r} (\forme{saχaʁ} \fl{} \forme{sara}) despite the absence of any common phonological feature between these two phonemes.
+
+The phoneme \ipa{j} is particularly prone to metathesis, either within initial clusters (\forme{ɯjmŋo} \fl{} \forme{ɯmɲo}, with fusion of \ipa{j} and \ipa{ŋ} as \ipa{ɲ}, see §\ref{sec:NC.clusters}), or across vowels (\forme{pɤjka} \fl{} \forme{pjɤka}).
+
+
+\section{Suprasegmentals} \label{sec:stress}
+Unlike all other Rgyalrong languages, including Tshobdun \citep{jackson05yingao}, Situ \citep{linyj12tone} and Zbu  \citep{gong18these}, Japhug has no tonal contrasts. However, there is morphologically determined stress. Phonological words only have one stress, which is located by default on the final syllable of the word (§\ref{sec:wordhood}, §\ref{sec:wordhood.criteria.verb}). 
+
+The personal agreement suffixes (§\ref{sec:intransitive.paradigm}, §\ref{sec:suffixes}) and the peg suffix \forme{-ci} (§\ref{sec:peg.circumfix}) never receive stress, and their vowels are optionally devoiced. For instance, \forme{tɤ-ndza-t-a} `I ate it' (\textsc{aor}-eat-\textsc{pst}-\textsc{1sg}) is realized as \phonet{tɤndzátḁ} or \phonet{tɤndzáta}. Stress can be antepenultimate in the case of verb forms with two suffixes as in \forme{to-k-ɤmɯ-rpú-ndʑi-ci} `they bumped into each other' (\textsc{ifr}-\textsc{peg}-\textsc{recip}-bump-\textsc{du}-\textsc{peg}).
+
+There are only three verbal prefixes which can attract stress: the inverse \forme{-wɣ-} (§\ref{sec:allomorphy.inv}), the negative Sensory \forme{mɯ́j-} (§\ref{sec:neg.allomorphs}, §\ref{sec:sensory.morphology}), and the interrogative \forme{ɯ-} (§\ref{sec:interrogative.W.morpho}). Outside of verbal morphology, the only other process that affects stress is the comitative adverb derivation (§\ref{sec:comitative.adverb}).
+
+Some ideophones have emphatic stress on the first syllable (§\ref{sec:emphatic.idph}), but it is not phonologically distinctive.
+
+A few function words have penultimate stress: \forme{kɯ́nɤ} `also' (§\ref{sec:kWnA}), \forme{cínɤ} `not even one' (§\ref{sec:cinA}), \forme{nóʁmɯz} and \japhug{kóʁmɯz}{only after} (§\ref{sec:temporal.postpositions}). 
+
+\section{Word structure}  
+
+\subsection{Wordhood} \label{sec:wordhood}
+Although no native expression exists to designate `words' in Japhug (as in the immense majority of the world's languages, \citealt{dixon02word}), speakers have an intuitive notion of a minimal unit  which can be object of metalinguistic discourse, as opposed to prefixes and suffixes.
+
+The intuitive notion of `word' can be correlated with some phonological and morphological criteria.
+
+The clearest phonological criterion for wordhood is stress. Stress is by default word-final, and words have at most one stress. Most function words, including linkers (§\ref{sec:coordination}), determiners (§\ref{sec:determiners}), postpositions (§\ref{ex:postpositions}) and even relator nouns (§\ref{sec:relator.nouns}) lack stress (unless they receive special emphasis). In example (\ref{ex:clitics.words}), the stressed syllables are indicated by an acute accent, and the unstressed function words by a grave.
+
+\begin{exe}
+	\ex \label{ex:clitics.words}
+	\gll  tɕè ʁzɤ\textbf{mí} cì pjɤ-\textbf{tú}-ndʑi tɕè tɤ-\textbf{rʑáβ} nɯ̀ ɬa\textbf{mú} pjɤ-\textbf{rmí}. tɤ-\textbf{tɕɯ́} nɯ̀ tsʰɯ\textbf{ráŋ} pjɤ-\textbf{rmí}. \\
+	\textsc{lnk} couple \textsc{indef} \textsc{ifr}.\textsc{ipfv}-exist-\textsc{du} \textsc{lnk} \textsc{indef}.\textsc{poss}-wife \textsc{dem}  \textsc{anthr} \textsc{ipfv}.\textsc{ipfv}-be.called \textsc{indef}.\textsc{poss}-son \textsc{dem}   \textsc{anthr} \textsc{ipfv}.\textsc{ipfv}-be.called  \\
+	\glt `There was a couple, the wife was called Lhamo, and the man Tshering.' (28-qajdoskAt, 2)
+\end{exe}
+
+There are only three groups of exceptions to word-final stress placement (for instance the unstressed suffix \forme{-ndʑi} in \ref{ex:clitics.words}), as seen in the previous section (§\ref{sec:stress}). Given its predictability, stress is not noted in the transcription employed in this grammar, except on stress-attracting prefixes.
+
+Among the morphological criteria for wordhood (§\ref{sec:wordhood.verb}), the scope of partial reduplication can be employed, at least for the word classes that allow it. Initial reduplication, almost exclusively restricted to verb forms (§\ref{sec:verb.initial.redp}), applies to the \textit{first syllable of the word} almost without exception.\footnote{The only exception is the reduplicated subject participle \forme{kɯ\redp{}kɯ-tu} of the existential verb \japhug{tu}{exist}, which can take (non-reduplicated) possessive prefixes, but this may be a lexicalized form (§\ref{sec:totalitative.redp}). }   In the case of verbs, several additional morphological tests converge to indicate the same left boundary. For the right boundary of the words, partial reduplication is less useful, as it only applies to stems (§\ref{sec:verb.stem.redp}): inflectional suffixes are never reduplicated.
+
+Inflectional suffixes (§\ref{sec:suffixes}), in particular person indexation suffixes (§\ref{sec:intr.1}, §\ref{sec:intr.23}), do present clitic-like properties, since they are not stressed, and are outside the scope of reduplication. However, these morphemes cannot be isolated, follow a rigid order, have non-adjacent dependencies with verbal prefixes (§\ref{sec:peg.circumfix}), and no external element can be inserted between them. Moreover, the \textsc{1sg} marker \forme{-a}, despite being unstressed when following consonant-final verb stems, undergoes fusion with vowel-final stems (§\ref{sec:synizesis}), causing vowel mergers. The verbal word in Japhug is thus slightly larger than the prosodic domains of stress and partial reduplication \citep{schiering10prosodic}.
+
+There are, however, three problems challenging the notion of `word' in Japhug: clitized sentence final particles (§\ref{sec:verb.enclitics}), bipartite verbs (§\ref{sec:bipartite}) and  prenominal attributes (§\ref{ex:attributive.prenominal}) when they receive no stress. These issues are discussed in more details in the relevant sections. 
+
+\subsection{Non-final syllables} \label{sec:non.final.syllable}
+Putting aside function words, monosyllables are considerably less common than polysyllables in Japhug; in particular, verbs can be monosyllabic only in one form of their paradigm (\textsc{3sg} Factual Non-past, §\ref{sec:fact.morphology}), and inalienably possessed nouns are always at least disyllabic (§\ref{sec:inalienably.possessed}).
+
+The stem-final syllable (excluding inflectional suffixes), in addition to having stress by default, is also generally the part of the word with the maximum of phonological contrasts. Since polysyllabic roots are rare, non-final syllables are in the immense majority of cases either prefixes or compound roots.
+
+Prefixes have strong phonotactic constraints: with the sole exception of some orientation preverbs (§\ref{sec:kamnyu.preverbs}), their main vowels are always \ipa{ɯ} (including \phonet{i} in contexts where the contrast is neutralized or quasi-neutralized §\ref{sec:W.i.contrast}), \ipa{ɤ} and \ipa{a}, and they cannot have aspirated or plain voiced consonants. Specific classes of prefixes have even stricter constraints: productive nominalization prefixes can only be obstruents (§\ref{chap:non-finite}) and  verbal derivation prefixes (Chapters \ref{chap:valency.increasing.derivation}, \ref{chap:valency.decreasing.derivation}, \ref{chap:other.derivations} and \ref{chap:denominal}) can only contain nine consonants: \ipa{m}, \ipa{n}, \ipa{s}, \ipa{z},  \ipa{ɕ}, \ipa{ʑ},  \ipa{r}, \ipa{j} and \ipa{ɣ} (a subset of the consonants that occur as preinitials, §\ref{sec:inventory.clusters}).
+
+Roots occurring as non-final elements of compounds do not have such stringent constraints on consonants, but due to a process of rhyme reduction (\textit{status constructus}, §\ref{sec:vowel.alternations.compounds}), most vowels are converted to either \ipa{ɯ} or \ipa{ɤ}.
+
+Hence, in non-final syllables, the vowels are mostly restricted to \ipa{a}, \ipa{ɯ}, or \ipa{ɤ}, the latter two being subject to rounding by vowel harmony (§\ref{sec:vowel.harmony}) or assimilation with \ipa{w} (§\ref{sec:wC.clusters}, §\ref{sec:Cr.clusters}, §\ref{sec:allomorphy.inv}). An example of a typical Japhug word is the verb form \ipa{atɤtɯʑɣɤɣɤ\textbf{ʑó}} (\ref{ex:atAtWZGAGAZo.vowels}), which has a vowel other than \ipa{a}, \ipa{ɯ}, or \ipa{ɤ} only in the last syllable.
+
+\begin{exe}
+	\ex \label{ex:atAtWZGAGAZo.vowels}
+	\gll a-tɤ-tɯ-ʑɣɤ-ɣɤ-ʑo \\
+	\textsc{irr}-\textsc{pfv}-2-\textsc{refl}-\textsc{caus}-be.light \\
+	\glt `Make yourself light.' (from \ref{ex:atAtWGAZo.AtAZGAGAmbjom}, §\ref{sec:refl.caus.volitional})
+\end{exe}
+
+
+Vowels other than \ipa{a}, \ipa{ɯ}, or \ipa{ɤ} in non-final syllables of verb and nouns stems are only found in four cases. First, there is a handful of synchronically unanalyzable polysyllabic nominal and verbal stems with \ipa{o}, \ipa{u} or \ipa{i} in non-final syllables, for instance \japhug{ɴɢoɕna}{spider}, \japhug{ɟuli}{flute} or \japhug{nɯpodɯdi}{tickle}. Second, compounds whose first element does not undergo \textit{status constructus} can preserve any vowel (for instance \japhug{qrormbɯ}{anthill} from \japhug{qro}{ant} and \japhug{rmbɯ}{pile up}). Third,  Tibetan loanwords, especially in the most recent layers (§\ref{sec:historical.phono}), are not subject to the phonotactic constraints of native nouns and allow any combination of vowels (for instance \japhug{loŋbutɕʰi}{elephant} from \tibet{གླང་པོ་ཆེ་}{glaŋ.po.tɕʰe}{elephant}).
+

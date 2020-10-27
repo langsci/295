@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%     Language Science Press Master File       %%%
+%%%         follow the instructions below        %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+
+\documentclass[output=book,
+  nonflat,
+  modfonts,
+  colorlinks,
+showindex
+		  ]{langsci/langscibook}    
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%          additional packages                 %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\bibliography{bibliogj} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Frontmatter                      %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newcommand{\japhug}[2]{\ili{\forme{#1} `#2'}}
+ \newcommand{\forme}[1]{#1}
+\begin{document}     
+\input{localcommands.tex} 
+ 
+ \japhug{abc}{123}
+%\maketitle                
+%\frontmatter
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+\tableofcontents
+% \include{chapters/preface}
+ \include{chapters/acknowledgments}
+ \include{chapters/abbreviations} 
+\mainmatter         
+\linenumbers
+%\include{chapters/draft_intro_2} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Chapters                         %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \include{chapters/1-01}  %Japhug language, corpus and culture
+% \include{chapters/1-02} %A sketch of Japhug
+% \include{chapters/2-01} %Phonological inventory
+% \include{chapters/2-02} %Consonant clusters and partial reduplication
+% \include{chapters/3-01} %Nominal morphology
+% \include{chapters/3-02} %Pronouns, Demonstratives and Indefinites
+% \include{chapters/3-03} %Numerals and counted nouns
+% \include{chapters/3-04} %Postpositions and relator nouns
+% \include{chapters/3-05} %The noun phrase
+% \include{chapters/3-06} %Ideophones
+% \include{chapters/4-01} %The verbal template
+% \include{chapters/4-01b} %Non-concatenative verbal morphology
+% \include{chapters/4-01c} %Negation
+% \include{chapters/4-02} %Person indexation
+% \include{chapters/4-03} %Orientation and associated motion
+% \include{chapters/4-04} %Non-finite verbal morphology
+% \include{chapters/4-05} %Voice derivations (valency-increasing)%
+% \include{chapters/4-05b} %Voice derivations (valency-decreasing)
+% \include{chapters/4-05c} %Voice derivations (valency-neutral)
+% \include{chapters/4-06} %Denominal derivations
+% \include{chapters/4-07} %TAME
+% \include{chapters/5-01} %Basic sentences
+% \include{chapters/5-02} %Relativization
+% \include{chapters/5-03} %Complementation
+% \include{chapters/5-04} %Other subordinate clauses
+% \include{chapters/5-05} %Comparison
+% \include{chapters/6-01} %Kinship
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Backmatter                       %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{localseealso.tex} 
+% There is normally no need to change the backmatter section
+\input{backmatter.tex} 
+\end{document} 
+
+

@@ -1,2 +1,2 @@
-# 295
-Guillaume Jacques -- A grammar of Japhug
+# langsci-fonts
+Fonts for Language Science Press publications

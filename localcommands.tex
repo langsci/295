@@ -1,0 +1,80 @@
+%add all your local new commands to this file
+
+\newcommand{\smiley}{:)}
+
+\renewbibmacro*{index:name}[5]{%
+  \usebibmacro{index:entry}{#1}
+    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
+% \newcommand{\noop}[1]{}
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\fnref}[1]{Appendix \ref{#1}}
+\newcommand{\regel}[1]{#1}
+\newcommand{\vernacular}[1]{\emph{#1}}
+\newcommand{\gloss}[1]{#1}
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newfontfamily\tibetain{Microsoft Himalaya} 
+\newfontfamily\tangoute{Tangut Yinchuan} 
+\newcommand{\ipa}[1]{\mbox{\phon/#1/}}  
+\newcommand{\archi}[1]{\mbox{\{\phon#1\}}}
+\newcommand{\phonet}[1]{\mbox{\phon[#1]}}  
+\newcommand{\ipab}[1]{{\phon#1}}  
+\newcommand{\forme}[1]{\textit{\phon#1}}  
+\newcommand{\japhug}[2]{\textit{\phon#1} `#2'}  
+\newcommand{\stau}[2]{\textit{\phon#1} `#2'}  
+\newcommand{\tibn}[1]{{\tibetain#1}}  
+\newcommand{\tibt}[2]{\tibn{#1} \textit{\phon#2}}  
+\newcommand{\tibet}[3]{\tibt{#1}{\phon#2} `#3'}
+\newcommand{\deux}[1]{\ipa{#1}\addtocounter{2clusters}{1}}
+\newcommand{\trois}[1]{\ipa{#1}\addtocounter{3clusters}{1}}
+\newcommand{\redp}{\textasciitilde}
+\newcommand{\tangut}[4]{{\tangoute#1}$^{#2}$ \forme{#3}$^{#4}$}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha#1}}
+\newcommand{\trt}{\nobreakdash-}
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\ch}[3]{\zh{#1} <#2> `#3'}
+\newcommand{\idroot}[1]{\forme{|#1|}}
+
+%	\definecolor{lavende}{rgb}{0.75, 0.58, 0.89}
+%		\definecolor{aquamarine}{rgb}{0.5, 1.0, 0.83}
+\newcommand{\medial}{\cellcolor{lsLightOrange}}
+\newcommand{\initial}{\cellcolor{lsLightBlue}}
+\newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
+\newcommand{\tld}{\textasciitilde{}}
+\newcommand{\fl}{$\rightarrow$}
+
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\resetcounters}[2]{
+\newcounter{#1}
+\newcounter{#2}
+\setcounter{#1}{\value{2clusters}}
+\setcounter{#2}{\value{3clusters}}
+ \setcounter{2clusters}{0}
+  \setcounter{3clusters}{0}
+}
+ \newcommand{\addition}[2]{\ADD{\value{#1}}{\value{#2}}{\solution}\solution}
+\newcommand{\ro}{\grec{Σ}} 
+\newcommand{\siga}{\ro$_1$} 
+\newcommand{\sigc}{\ro$_3$}   
+ \newcommand{\bleu}[1]{{\color{lsMidDarkBlue}#1}}
+\newcommand{\rouge}[1]{{\color{lsRed}#1}} 
+\newcommand{\blanc}[1]{{\color{white}#1}} 
+\newcommand{\acell}{\cellcolor{lsLightBlue}}
+\newcommand{\bcell}{\cellcolor{lsSoftGreen}}
+\newcommand{\ccell}{\cellcolor{lsLightWine}}
+\newcommand{\noeud}[2]{\textsc{#2}}%\begin{tabular}{l}\forme{#1}\\\textsc{#2}\end{tabular}}
+%\textsc{#2}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
