@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.3" bltxversion="3.7" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.7" bltxversion="3.15a" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -99,6 +99,10 @@
       <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
+      <bcf:key>maxsortnames</bcf:key>
+      <bcf:value>99</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
       <bcf:value>3</bcf:value>
     </bcf:option>
@@ -115,11 +119,39 @@
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
+      <bcf:key>minsortnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
       <bcf:key>minitems</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
+      <bcf:key>nohashothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>noroman</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nosortothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
       <bcf:key>singletitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbib</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbiblist</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skiplab</bcf:key>
       <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
@@ -131,16 +163,20 @@
       <bcf:value>english</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
-      <bcf:key>sortscheme</bcf:key>
+      <bcf:key>sortingtemplatename</bcf:key>
       <bcf:value>nyt</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
+      <bcf:key>sortsets</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>minyear</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>false</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -160,7 +196,218 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useafterword</bcf:key>
       <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useannotator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usebookauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usecommentator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditora</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorc</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useforeword</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useholder</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useintroduction</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamea</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenameb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamec</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usetranslator</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshortauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshorteditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+  </bcf:options>
+  <!-- online -->
+  <bcf:options component="biblatex" type="online">
+    <bcf:option type="singlevalued">
+      <bcf:key>labelalpha</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labelnamespec</bcf:key>
+      <bcf:value order="1">shortauthor</bcf:value>
+      <bcf:value order="2">author</bcf:value>
+      <bcf:value order="3">shorteditor</bcf:value>
+      <bcf:value order="4">editor</bcf:value>
+      <bcf:value order="5">translator</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeltitlespec</bcf:key>
+      <bcf:value order="1">shorttitle</bcf:value>
+      <bcf:value order="2">title</bcf:value>
+      <bcf:value order="3">maintitle</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitleyear</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeldateparts</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeldatespec</bcf:key>
+      <bcf:value order="1" type="field">date</bcf:value>
+      <bcf:value order="2" type="field">year</bcf:value>
+      <bcf:value order="3" type="field">eventdate</bcf:value>
+      <bcf:value order="4" type="field">origdate</bcf:value>
+      <bcf:value order="5" type="field">urldate</bcf:value>
+      <bcf:value order="6" type="field">pubstate</bcf:value>
+      <bcf:value order="7" type="string">nodate</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxalphanames</bcf:key>
+      <bcf:value>3</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxbibnames</bcf:key>
+      <bcf:value>99</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxcitenames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxsortnames</bcf:key>
+      <bcf:value>99</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxitems</bcf:key>
+      <bcf:value>3</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minalphanames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minbibnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>mincitenames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minsortnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minitems</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nohashothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>noroman</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nosortothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>singletitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbib</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skiplab</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbiblist</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquelist</bcf:key>
+      <bcf:value>minyear</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquename</bcf:key>
+      <bcf:value>false</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniqueprimaryauthor</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquetitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquebaretitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquework</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useprefix</bcf:key>
+      <bcf:value>0</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -243,8 +490,9 @@
     <bcf:option datatype="xml">inheritance</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">uniquenametemplate</bcf:option>
-    <bcf:option datatype="xml">sortingnamekey</bcf:option>
-    <bcf:option datatype="xml">sortscheme</bcf:option>
+    <bcf:option datatype="xml">sortingnamekeytemplate</bcf:option>
+    <bcf:option datatype="xml">sortingtemplate</bcf:option>
+    <bcf:option datatype="xml">extradatespec</bcf:option>
     <bcf:option datatype="xml">labelnamespec</bcf:option>
     <bcf:option datatype="xml">labeltitlespec</bcf:option>
     <bcf:option datatype="xml">labeldatespec</bcf:option>
@@ -254,16 +502,23 @@
     <bcf:option datatype="string">presort</bcf:option>
     <bcf:option datatype="string">texencoding</bcf:option>
     <bcf:option datatype="string">bibencoding</bcf:option>
-    <bcf:option datatype="string">sorting</bcf:option>
-    <bcf:option datatype="string">sortlos</bcf:option>
+    <bcf:option datatype="string">sortingtemplatename</bcf:option>
     <bcf:option datatype="string">sortlocale</bcf:option>
     <bcf:option datatype="string">language</bcf:option>
-    <bcf:option datatype="string">babel</bcf:option>
     <bcf:option datatype="string">autolang</bcf:option>
+    <bcf:option datatype="string">langhook</bcf:option>
+    <bcf:option datatype="string">indexing</bcf:option>
+    <bcf:option datatype="string">hyperref</bcf:option>
     <bcf:option datatype="string">backrefsetstyle</bcf:option>
     <bcf:option datatype="string">block</bcf:option>
+    <bcf:option datatype="string">pagetracker</bcf:option>
+    <bcf:option datatype="string">citecounter</bcf:option>
+    <bcf:option datatype="string">citetracker</bcf:option>
+    <bcf:option datatype="string">ibidtracker</bcf:option>
+    <bcf:option datatype="string">idemtracker</bcf:option>
+    <bcf:option datatype="string">opcittracker</bcf:option>
+    <bcf:option datatype="string">loccittracker</bcf:option>
     <bcf:option datatype="string">labeldate</bcf:option>
-    <bcf:option datatype="string">datelabel</bcf:option>
     <bcf:option datatype="string">labeltime</bcf:option>
     <bcf:option datatype="string">dateera</bcf:option>
     <bcf:option datatype="string">date</bcf:option>
@@ -280,9 +535,14 @@
     <bcf:option datatype="string">gregorianstart</bcf:option>
     <bcf:option datatype="string">autocite</bcf:option>
     <bcf:option datatype="string">notetype</bcf:option>
+    <bcf:option datatype="string">uniquelist</bcf:option>
+    <bcf:option datatype="string">uniquename</bcf:option>
     <bcf:option datatype="string">refsection</bcf:option>
     <bcf:option datatype="string">refsegment</bcf:option>
     <bcf:option datatype="string">citereset</bcf:option>
+    <bcf:option datatype="string">sortlos</bcf:option>
+    <bcf:option datatype="string">babel</bcf:option>
+    <bcf:option datatype="string">datelabel</bcf:option>
     <bcf:option datatype="string">backrefstyle</bcf:option>
     <bcf:option datatype="string">arxiv</bcf:option>
     <bcf:option datatype="boolean">familyinits</bcf:option>
@@ -312,24 +572,15 @@
     <bcf:option datatype="boolean">safeinputenc</bcf:option>
     <bcf:option datatype="boolean">sortcase</bcf:option>
     <bcf:option datatype="boolean">sortupper</bcf:option>
-    <bcf:option datatype="boolean">firstinits</bcf:option>
-    <bcf:option datatype="boolean">sortfirstinits</bcf:option>
-    <bcf:option datatype="boolean">sortgiveninits</bcf:option>
     <bcf:option datatype="boolean">terseinits</bcf:option>
     <bcf:option datatype="boolean">abbreviate</bcf:option>
     <bcf:option datatype="boolean">dateabbrev</bcf:option>
     <bcf:option datatype="boolean">clearlang</bcf:option>
-    <bcf:option datatype="boolean">indexing</bcf:option>
     <bcf:option datatype="boolean">sortcites</bcf:option>
-    <bcf:option datatype="boolean">hyperref</bcf:option>
+    <bcf:option datatype="boolean">sortsets</bcf:option>
     <bcf:option datatype="boolean">backref</bcf:option>
-    <bcf:option datatype="boolean">pagetracker</bcf:option>
-    <bcf:option datatype="boolean">citecounter</bcf:option>
-    <bcf:option datatype="boolean">citetracker</bcf:option>
-    <bcf:option datatype="boolean">ibidtracker</bcf:option>
-    <bcf:option datatype="boolean">idemtracker</bcf:option>
-    <bcf:option datatype="boolean">opcittracker</bcf:option>
-    <bcf:option datatype="boolean">loccittracker</bcf:option>
+    <bcf:option datatype="boolean">backreffloats</bcf:option>
+    <bcf:option datatype="boolean">trackfloats</bcf:option>
     <bcf:option datatype="boolean">parentracker</bcf:option>
     <bcf:option datatype="boolean">labeldateusetime</bcf:option>
     <bcf:option datatype="boolean">datecirca</bcf:option>
@@ -350,18 +601,28 @@
     <bcf:option datatype="boolean">labeltitle</bcf:option>
     <bcf:option datatype="boolean">labeltitleyear</bcf:option>
     <bcf:option datatype="boolean">labeldateparts</bcf:option>
-    <bcf:option datatype="boolean">labelyear</bcf:option>
-    <bcf:option datatype="boolean">uniquelist</bcf:option>
-    <bcf:option datatype="boolean">uniquename</bcf:option>
+    <bcf:option datatype="boolean">nohashothers</bcf:option>
+    <bcf:option datatype="boolean">nosortothers</bcf:option>
+    <bcf:option datatype="boolean">noroman</bcf:option>
     <bcf:option datatype="boolean">singletitle</bcf:option>
     <bcf:option datatype="boolean">uniquetitle</bcf:option>
     <bcf:option datatype="boolean">uniquebaretitle</bcf:option>
     <bcf:option datatype="boolean">uniquework</bcf:option>
     <bcf:option datatype="boolean">uniqueprimaryauthor</bcf:option>
     <bcf:option datatype="boolean">defernumbers</bcf:option>
+    <bcf:option datatype="boolean">locallabelwidth</bcf:option>
     <bcf:option datatype="boolean">bibwarn</bcf:option>
     <bcf:option datatype="boolean">useprefix</bcf:option>
+    <bcf:option datatype="boolean">skipbib</bcf:option>
+    <bcf:option datatype="boolean">skipbiblist</bcf:option>
+    <bcf:option datatype="boolean">skiplab</bcf:option>
+    <bcf:option datatype="boolean">dataonly</bcf:option>
     <bcf:option datatype="boolean">defernums</bcf:option>
+    <bcf:option datatype="boolean">firstinits</bcf:option>
+    <bcf:option datatype="boolean">sortfirstinits</bcf:option>
+    <bcf:option datatype="boolean">sortgiveninits</bcf:option>
+    <bcf:option datatype="boolean">labelyear</bcf:option>
+    <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="boolean">isbn</bcf:option>
     <bcf:option datatype="boolean">url</bcf:option>
     <bcf:option datatype="boolean">doi</bcf:option>
@@ -378,6 +639,8 @@
     <bcf:option datatype="integer">minbibnames</bcf:option>
     <bcf:option datatype="integer">maxcitenames</bcf:option>
     <bcf:option datatype="integer">mincitenames</bcf:option>
+    <bcf:option datatype="integer">maxsortnames</bcf:option>
+    <bcf:option datatype="integer">minsortnames</bcf:option>
     <bcf:option datatype="integer">maxitems</bcf:option>
     <bcf:option datatype="integer">minitems</bcf:option>
     <bcf:option datatype="integer">maxalphanames</bcf:option>
@@ -389,6 +652,18 @@
     <bcf:option datatype="string">alphaothers</bcf:option>
     <bcf:option datatype="string">sortalphaothers</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
+    <bcf:option datatype="string">indexing</bcf:option>
+    <bcf:option datatype="string">citetracker</bcf:option>
+    <bcf:option datatype="string">ibidtracker</bcf:option>
+    <bcf:option datatype="string">idemtracker</bcf:option>
+    <bcf:option datatype="string">opcittracker</bcf:option>
+    <bcf:option datatype="string">loccittracker</bcf:option>
+    <bcf:option datatype="string">uniquelist</bcf:option>
+    <bcf:option datatype="string">uniquename</bcf:option>
+    <bcf:option datatype="boolean">familyinits</bcf:option>
+    <bcf:option datatype="boolean">giveninits</bcf:option>
+    <bcf:option datatype="boolean">prefixinits</bcf:option>
+    <bcf:option datatype="boolean">suffixinits</bcf:option>
     <bcf:option datatype="boolean">useafterword</bcf:option>
     <bcf:option datatype="boolean">useannotator</bcf:option>
     <bcf:option datatype="boolean">useauthor</bcf:option>
@@ -407,26 +682,37 @@
     <bcf:option datatype="boolean">usetranslator</bcf:option>
     <bcf:option datatype="boolean">useshortauthor</bcf:option>
     <bcf:option datatype="boolean">useshorteditor</bcf:option>
-    <bcf:option datatype="boolean">indexing</bcf:option>
+    <bcf:option datatype="boolean">terseinits</bcf:option>
+    <bcf:option datatype="boolean">abbreviate</bcf:option>
+    <bcf:option datatype="boolean">dateabbrev</bcf:option>
+    <bcf:option datatype="boolean">clearlang</bcf:option>
     <bcf:option datatype="boolean">labelnumber</bcf:option>
     <bcf:option datatype="boolean">labelalpha</bcf:option>
     <bcf:option datatype="boolean">labeltitle</bcf:option>
     <bcf:option datatype="boolean">labeltitleyear</bcf:option>
     <bcf:option datatype="boolean">labeldateparts</bcf:option>
-    <bcf:option datatype="boolean">labelyear</bcf:option>
-    <bcf:option datatype="boolean">uniquelist</bcf:option>
-    <bcf:option datatype="boolean">uniquename</bcf:option>
+    <bcf:option datatype="boolean">nohashothers</bcf:option>
+    <bcf:option datatype="boolean">nosortothers</bcf:option>
+    <bcf:option datatype="boolean">noroman</bcf:option>
     <bcf:option datatype="boolean">singletitle</bcf:option>
     <bcf:option datatype="boolean">uniquetitle</bcf:option>
     <bcf:option datatype="boolean">uniquebaretitle</bcf:option>
     <bcf:option datatype="boolean">uniquework</bcf:option>
+    <bcf:option datatype="boolean">uniqueprimaryauthor</bcf:option>
     <bcf:option datatype="boolean">useprefix</bcf:option>
     <bcf:option datatype="boolean">skipbib</bcf:option>
-    <bcf:option datatype="boolean">skiplos</bcf:option>
     <bcf:option datatype="boolean">skipbiblist</bcf:option>
     <bcf:option datatype="boolean">skiplab</bcf:option>
     <bcf:option datatype="boolean">dataonly</bcf:option>
-    <bcf:option datatype="xml">labelalphanametemplate</bcf:option>
+    <bcf:option datatype="boolean">skiplos</bcf:option>
+    <bcf:option datatype="boolean">labelyear</bcf:option>
+    <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
+    <bcf:option datatype="boolean">isbn</bcf:option>
+    <bcf:option datatype="boolean">url</bcf:option>
+    <bcf:option datatype="boolean">doi</bcf:option>
+    <bcf:option datatype="boolean">eprint</bcf:option>
+    <bcf:option datatype="boolean">related</bcf:option>
+    <bcf:option datatype="boolean">mergedate</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
@@ -440,6 +726,8 @@
     <bcf:option datatype="integer">minbibnames</bcf:option>
     <bcf:option datatype="integer">maxcitenames</bcf:option>
     <bcf:option datatype="integer">mincitenames</bcf:option>
+    <bcf:option datatype="integer">maxsortnames</bcf:option>
+    <bcf:option datatype="integer">minsortnames</bcf:option>
     <bcf:option datatype="integer">maxitems</bcf:option>
     <bcf:option datatype="integer">minitems</bcf:option>
     <bcf:option datatype="integer">maxalphanames</bcf:option>
@@ -447,53 +735,112 @@
   </bcf:optionscope>
   <bcf:optionscope type="ENTRY">
     <bcf:option datatype="string">noinherit</bcf:option>
-    <bcf:option datatype="string">sortnamekeyscheme</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
-    <bcf:option datatype="boolean">useafterword</bcf:option>
-    <bcf:option datatype="boolean">useannotator</bcf:option>
-    <bcf:option datatype="boolean">useauthor</bcf:option>
-    <bcf:option datatype="boolean">usebookauthor</bcf:option>
-    <bcf:option datatype="boolean">usecommentator</bcf:option>
-    <bcf:option datatype="boolean">useeditor</bcf:option>
-    <bcf:option datatype="boolean">useeditora</bcf:option>
-    <bcf:option datatype="boolean">useeditorb</bcf:option>
-    <bcf:option datatype="boolean">useeditorc</bcf:option>
-    <bcf:option datatype="boolean">useforeword</bcf:option>
-    <bcf:option datatype="boolean">useholder</bcf:option>
-    <bcf:option datatype="boolean">useintroduction</bcf:option>
-    <bcf:option datatype="boolean">usenamea</bcf:option>
-    <bcf:option datatype="boolean">usenameb</bcf:option>
-    <bcf:option datatype="boolean">usenamec</bcf:option>
-    <bcf:option datatype="boolean">usetranslator</bcf:option>
-    <bcf:option datatype="boolean">useshortauthor</bcf:option>
-    <bcf:option datatype="boolean">useshorteditor</bcf:option>
-    <bcf:option datatype="boolean">indexing</bcf:option>
-    <bcf:option datatype="boolean">uniquelist</bcf:option>
-    <bcf:option datatype="boolean">uniquename</bcf:option>
-    <bcf:option datatype="boolean">useprefix</bcf:option>
-    <bcf:option datatype="boolean">skipbib</bcf:option>
-    <bcf:option datatype="boolean">skiplos</bcf:option>
-    <bcf:option datatype="boolean">skipbiblist</bcf:option>
-    <bcf:option datatype="boolean">skiplab</bcf:option>
-    <bcf:option datatype="boolean">dataonly</bcf:option>
-    <bcf:option datatype="integer">maxnames</bcf:option>
-    <bcf:option datatype="integer">minnames</bcf:option>
-    <bcf:option datatype="integer">maxbibnames</bcf:option>
-    <bcf:option datatype="integer">minbibnames</bcf:option>
-    <bcf:option datatype="integer">maxcitenames</bcf:option>
-    <bcf:option datatype="integer">mincitenames</bcf:option>
-    <bcf:option datatype="integer">maxitems</bcf:option>
-    <bcf:option datatype="integer">minitems</bcf:option>
-    <bcf:option datatype="integer">maxalphanames</bcf:option>
-    <bcf:option datatype="integer">minalphanames</bcf:option>
+    <bcf:option datatype="string" backendout="1">indexing</bcf:option>
+    <bcf:option datatype="string" backendout="1">citetracker</bcf:option>
+    <bcf:option datatype="string" backendout="1">ibidtracker</bcf:option>
+    <bcf:option datatype="string" backendout="1">idemtracker</bcf:option>
+    <bcf:option datatype="string" backendout="1">opcittracker</bcf:option>
+    <bcf:option datatype="string" backendout="1">loccittracker</bcf:option>
+    <bcf:option datatype="string">uniquelist</bcf:option>
+    <bcf:option datatype="string">uniquename</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">familyinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">giveninits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">prefixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">suffixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useafterword</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useannotator</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useauthor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usebookauthor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usecommentator</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useeditor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useeditora</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useeditorb</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useeditorc</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useforeword</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useholder</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useintroduction</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usenamea</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usenameb</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usenamec</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usetranslator</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useshortauthor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useshorteditor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">terseinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">abbreviate</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">dateabbrev</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">clearlang</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">labelnumber</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">labelalpha</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">labeltitle</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">labeltitleyear</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">labeldateparts</bcf:option>
+    <bcf:option datatype="boolean">nohashothers</bcf:option>
+    <bcf:option datatype="boolean">nosortothers</bcf:option>
+    <bcf:option datatype="boolean">noroman</bcf:option>
+    <bcf:option datatype="boolean">singletitle</bcf:option>
+    <bcf:option datatype="boolean">uniquetitle</bcf:option>
+    <bcf:option datatype="boolean">uniquebaretitle</bcf:option>
+    <bcf:option datatype="boolean">uniquework</bcf:option>
+    <bcf:option datatype="boolean">uniqueprimaryauthor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useprefix</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">skipbib</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">skipbiblist</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">skiplab</bcf:option>
+    <bcf:option datatype="boolean" backendin="uniquename=false,uniquelist=false,skipbib=true,skipbiblist=true,skiplab=true">dataonly</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">skiplos</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">isbn</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">url</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">related</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">mergedate</bcf:option>
+    <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
+    <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">maxbibnames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">minbibnames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">maxcitenames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">mincitenames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">maxsortnames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">minsortnames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">maxitems</bcf:option>
+    <bcf:option datatype="integer" backendout="1">minitems</bcf:option>
+    <bcf:option datatype="integer" backendout="1">maxalphanames</bcf:option>
+    <bcf:option datatype="integer" backendout="1">minalphanames</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAMELIST">
-    <bcf:option datatype="string">sortnamekeyscheme</bcf:option>
-    <bcf:option datatype="boolean">useprefix</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
+    <bcf:option datatype="string">uniquelist</bcf:option>
+    <bcf:option datatype="string">uniquename</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">familyinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">giveninits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">prefixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">suffixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">terseinits</bcf:option>
+    <bcf:option datatype="boolean">nohashothers</bcf:option>
+    <bcf:option datatype="boolean">nosortothers</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useprefix</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAME">
-    <bcf:option datatype="string">sortnamekeyscheme</bcf:option>
-    <bcf:option datatype="boolean">useprefix</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
+    <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
+    <bcf:option datatype="string">uniquename</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">familyinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">giveninits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">prefixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">suffixinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">terseinits</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useprefix</bcf:option>
   </bcf:optionscope>
   <!-- DATAFIELDSETS -->
   <bcf:datafieldset name="setnames">
@@ -545,7 +892,7 @@
     </bcf:maps>
   </bcf:sourcemap>
   <!-- LABELALPHA NAME TEMPLATE -->
-  <bcf:labelalphanametemplate type="global">
+  <bcf:labelalphanametemplate name="global">
     <bcf:namepart order="1" use="1" pre="1" substring_width="1" substring_compound="1">prefix</bcf:namepart>
     <bcf:namepart order="2">family</bcf:namepart>
   </bcf:labelalphanametemplate>
@@ -561,6 +908,13 @@
       <bcf:labelpart substring_width="2" substring_side="right">year</bcf:labelpart>
     </bcf:labelelement>
   </bcf:labelalphatemplate>
+  <!-- EXTRADATE -->
+  <bcf:extradatespec>
+    <bcf:scope>
+      <bcf:field order="1">labelyear</bcf:field>
+      <bcf:field order="2">year</bcf:field>
+    </bcf:scope>
+  </bcf:extradatespec>
   <!-- INHERITANCE -->
   <bcf:inheritance>
     <bcf:defaults inherit_all="true" override_target="false">
@@ -660,6 +1014,7 @@
       <bcf:type_pair source="periodical" target="suppperiodical"/>
       <bcf:field source="title" target="journaltitle"/>
       <bcf:field source="subtitle" target="journalsubtitle"/>
+      <bcf:field source="titleaddon" target="journaltitleaddon"/>
       <bcf:field source="shorttitle" skip="true"/>
       <bcf:field source="sorttitle" skip="true"/>
       <bcf:field source="indextitle" skip="true"/>
@@ -685,66 +1040,36 @@
       <bcf:field source="sortkey" skip="true"/>
     </bcf:inherit>
   </bcf:inheritance>
-  <!-- UNIQUENAME TEMPLATE -->
-  <bcf:uniquenametemplate>
+  <!-- UNIQUENAME TEMPLATES -->
+  <bcf:uniquenametemplate name="global">
     <bcf:namepart order="1" use="1" base="1">prefix</bcf:namepart>
     <bcf:namepart order="2" base="1">family</bcf:namepart>
     <bcf:namepart order="3">given</bcf:namepart>
   </bcf:uniquenametemplate>
-  <!-- SORTING NAME KEY -->
-  <bcf:sortingnamekey keyscheme="global">
+  <!-- SORTING NAME KEY TEMPLATES -->
+  <bcf:sortingnamekeytemplate name="global">
     <bcf:keypart order="1">
       <bcf:part type="namepart" order="1" use="1">prefix</bcf:part>
+      <bcf:part type="namepart" order="2">family</bcf:part>
     </bcf:keypart>
     <bcf:keypart order="2">
-      <bcf:part type="namepart" order="1">family</bcf:part>
-    </bcf:keypart>
-    <bcf:keypart order="3">
       <bcf:part type="namepart" order="1">given</bcf:part>
     </bcf:keypart>
-    <bcf:keypart order="4">
+    <bcf:keypart order="3">
       <bcf:part type="namepart" order="1">suffix</bcf:part>
     </bcf:keypart>
-    <bcf:keypart order="5">
+    <bcf:keypart order="4">
       <bcf:part type="namepart" order="1" use="0">prefix</bcf:part>
     </bcf:keypart>
-  </bcf:sortingnamekey>
-  <!-- SORTING -->
-  <bcf:sorting>
-    <bcf:presort>mm</bcf:presort>
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sorting>
+  </bcf:sortingnamekeytemplate>
+  <bcf:presort>mm</bcf:presort>
   <!-- DATA MODEL -->
   <bcf:datamodel>
     <bcf:constants>
       <bcf:constant type="list" name="gender">sf,sm,sn,pf,pm,pn,pp</bcf:constant>
       <bcf:constant type="list" name="nameparts">family,given,prefix,suffix</bcf:constant>
       <bcf:constant type="list" name="optiondatatypes">boolean,integer,string,xml</bcf:constant>
+      <bcf:constant type="list" name="multiscriptforms">default,transliteration,transcription,translation</bcf:constant>
     </bcf:constants>
     <bcf:entrytypes>
       <bcf:entrytype>article</bcf:entrytype>
@@ -762,6 +1087,7 @@
       <bcf:entrytype>customd</bcf:entrytype>
       <bcf:entrytype>custome</bcf:entrytype>
       <bcf:entrytype>customf</bcf:entrytype>
+      <bcf:entrytype>dataset</bcf:entrytype>
       <bcf:entrytype>inbook</bcf:entrytype>
       <bcf:entrytype>incollection</bcf:entrytype>
       <bcf:entrytype>inproceedings</bcf:entrytype>
@@ -792,13 +1118,14 @@
       <bcf:entrytype>standard</bcf:entrytype>
       <bcf:entrytype>suppbook</bcf:entrytype>
       <bcf:entrytype>suppcollection</bcf:entrytype>
+      <bcf:entrytype>suppperiodical</bcf:entrytype>
       <bcf:entrytype>thesis</bcf:entrytype>
       <bcf:entrytype>unpublished</bcf:entrytype>
       <bcf:entrytype>video</bcf:entrytype>
       <bcf:entrytype skip_output="true">xdata</bcf:entrytype>
     </bcf:entrytypes>
     <bcf:fields>
-      <bcf:field fieldtype="field" datatype="integer">number</bcf:field>
+      <bcf:field fieldtype="field" datatype="integer">sortyear</bcf:field>
       <bcf:field fieldtype="field" datatype="integer">volume</bcf:field>
       <bcf:field fieldtype="field" datatype="integer">volumes</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">abstract</bcf:field>
@@ -827,9 +1154,11 @@
       <bcf:field fieldtype="field" datatype="literal">issue</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">issuesubtitle</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">issuetitle</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">issuetitleaddon</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">iswc</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">journalsubtitle</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">journaltitle</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">journaltitleaddon</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">label</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">langid</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">langidopts</bcf:field>
@@ -839,6 +1168,7 @@
       <bcf:field fieldtype="field" datatype="literal">maintitleaddon</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">nameaddon</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">note</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">number</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">origtitle</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">pagetotal</bcf:field>
       <bcf:field fieldtype="field" datatype="literal">part</bcf:field>
@@ -862,7 +1192,6 @@
       <bcf:field fieldtype="field" datatype="literal" label="true">shortjournal</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" label="true">shortseries</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" label="true">shorttitle</bcf:field>
-      <bcf:field fieldtype="field" datatype="integer" skip_output="true">sortyear</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sorttitle</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sortshorthand</bcf:field>
       <bcf:field fieldtype="field" datatype="literal" skip_output="true">sortkey</bcf:field>
@@ -907,11 +1236,11 @@
       <bcf:field fieldtype="field" datatype="key">nameatype</bcf:field>
       <bcf:field fieldtype="field" datatype="key">namebtype</bcf:field>
       <bcf:field fieldtype="field" datatype="key">namectype</bcf:field>
-      <bcf:field fieldtype="field" datatype="key">origlanguage</bcf:field>
       <bcf:field fieldtype="field" datatype="key">pagination</bcf:field>
       <bcf:field fieldtype="field" datatype="key">pubstate</bcf:field>
       <bcf:field fieldtype="field" datatype="key">type</bcf:field>
       <bcf:field fieldtype="list" datatype="key">language</bcf:field>
+      <bcf:field fieldtype="list" datatype="key">origlanguage</bcf:field>
       <bcf:field fieldtype="field" datatype="entrykey">crossref</bcf:field>
       <bcf:field fieldtype="field" datatype="entrykey">xref</bcf:field>
       <bcf:field fieldtype="field" datatype="date" skip_output="true">date</bcf:field>
@@ -1005,11 +1334,25 @@
       <bcf:field>authortype</bcf:field>
       <bcf:field>bookpagination</bcf:field>
       <bcf:field>crossref</bcf:field>
+      <bcf:field>day</bcf:field>
+      <bcf:field>doi</bcf:field>
+      <bcf:field>eprint</bcf:field>
+      <bcf:field>eprintclass</bcf:field>
+      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>endday</bcf:field>
+      <bcf:field>endhour</bcf:field>
+      <bcf:field>endminute</bcf:field>
+      <bcf:field>endmonth</bcf:field>
+      <bcf:field>endseason</bcf:field>
+      <bcf:field>endsecond</bcf:field>
+      <bcf:field>endtimezone</bcf:field>
+      <bcf:field>endyear</bcf:field>
       <bcf:field>entryset</bcf:field>
       <bcf:field>entrysubtype</bcf:field>
       <bcf:field>execute</bcf:field>
       <bcf:field>file</bcf:field>
       <bcf:field>gender</bcf:field>
+      <bcf:field>hour</bcf:field>
       <bcf:field>ids</bcf:field>
       <bcf:field>indextitle</bcf:field>
       <bcf:field>indexsorttitle</bcf:field>
@@ -1027,13 +1370,31 @@
       <bcf:field>listd</bcf:field>
       <bcf:field>liste</bcf:field>
       <bcf:field>listf</bcf:field>
+      <bcf:field>minute</bcf:field>
+      <bcf:field>month</bcf:field>
+      <bcf:field>namea</bcf:field>
+      <bcf:field>nameb</bcf:field>
+      <bcf:field>namec</bcf:field>
+      <bcf:field>nameatype</bcf:field>
+      <bcf:field>namebtype</bcf:field>
+      <bcf:field>namectype</bcf:field>
       <bcf:field>nameaddon</bcf:field>
       <bcf:field>options</bcf:field>
       <bcf:field>origday</bcf:field>
       <bcf:field>origendday</bcf:field>
+      <bcf:field>origendhour</bcf:field>
+      <bcf:field>origendminute</bcf:field>
       <bcf:field>origendmonth</bcf:field>
+      <bcf:field>origendseason</bcf:field>
+      <bcf:field>origendsecond</bcf:field>
+      <bcf:field>origendtimezone</bcf:field>
       <bcf:field>origendyear</bcf:field>
+      <bcf:field>orighour</bcf:field>
+      <bcf:field>origminute</bcf:field>
       <bcf:field>origmonth</bcf:field>
+      <bcf:field>origseason</bcf:field>
+      <bcf:field>origsecond</bcf:field>
+      <bcf:field>origtimezone</bcf:field>
       <bcf:field>origyear</bcf:field>
       <bcf:field>origlocation</bcf:field>
       <bcf:field>origpublisher</bcf:field>
@@ -1044,6 +1405,8 @@
       <bcf:field>relatedoptions</bcf:field>
       <bcf:field>relatedstring</bcf:field>
       <bcf:field>relatedtype</bcf:field>
+      <bcf:field>season</bcf:field>
+      <bcf:field>second</bcf:field>
       <bcf:field>shortauthor</bcf:field>
       <bcf:field>shorteditor</bcf:field>
       <bcf:field>shorthand</bcf:field>
@@ -1056,6 +1419,22 @@
       <bcf:field>sortshorthand</bcf:field>
       <bcf:field>sorttitle</bcf:field>
       <bcf:field>sortyear</bcf:field>
+      <bcf:field>timezone</bcf:field>
+      <bcf:field>url</bcf:field>
+      <bcf:field>urlday</bcf:field>
+      <bcf:field>urlendday</bcf:field>
+      <bcf:field>urlendhour</bcf:field>
+      <bcf:field>urlendminute</bcf:field>
+      <bcf:field>urlendmonth</bcf:field>
+      <bcf:field>urlendsecond</bcf:field>
+      <bcf:field>urlendtimezone</bcf:field>
+      <bcf:field>urlendyear</bcf:field>
+      <bcf:field>urlhour</bcf:field>
+      <bcf:field>urlminute</bcf:field>
+      <bcf:field>urlmonth</bcf:field>
+      <bcf:field>urlsecond</bcf:field>
+      <bcf:field>urltimezone</bcf:field>
+      <bcf:field>urlyear</bcf:field>
       <bcf:field>usera</bcf:field>
       <bcf:field>userb</bcf:field>
       <bcf:field>userc</bcf:field>
@@ -1067,27 +1446,18 @@
       <bcf:field>verbc</bcf:field>
       <bcf:field>xdata</bcf:field>
       <bcf:field>xref</bcf:field>
+      <bcf:field>year</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>set</bcf:entrytype>
       <bcf:field>entryset</bcf:field>
-      <bcf:field>crossref</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>article</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>journaltitle</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
@@ -1097,14 +1467,14 @@
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
       <bcf:field>eid</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>issn</bcf:field>
       <bcf:field>issue</bcf:field>
       <bcf:field>issuetitle</bcf:field>
       <bcf:field>issuesubtitle</bcf:field>
+      <bcf:field>issuetitleaddon</bcf:field>
       <bcf:field>journalsubtitle</bcf:field>
+      <bcf:field>journaltitle</bcf:field>
+      <bcf:field>journaltitleaddon</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>note</bcf:field>
       <bcf:field>number</bcf:field>
@@ -1113,15 +1483,9 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>version</bcf:field>
       <bcf:field>volume</bcf:field>
     </bcf:entryfields>
@@ -1132,19 +1496,11 @@
     <bcf:entryfields>
       <bcf:entrytype>book</bcf:entrytype>
       <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
       <bcf:field>chapter</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
@@ -1154,9 +1510,7 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1175,33 +1529,19 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>mvbook</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
@@ -1211,9 +1551,6 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1227,15 +1564,9 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
@@ -1243,24 +1574,16 @@
       <bcf:entrytype>inbook</bcf:entrytype>
       <bcf:entrytype>bookinbook</bcf:entrytype>
       <bcf:entrytype>suppbook</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>booktitle</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>booktitle</bcf:field>
       <bcf:field>bookauthor</bcf:field>
       <bcf:field>booksubtitle</bcf:field>
       <bcf:field>booktitleaddon</bcf:field>
       <bcf:field>chapter</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
@@ -1270,9 +1593,7 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1290,36 +1611,20 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>booklet</bcf:entrytype>
+      <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
+      <bcf:field>chapter</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editortype</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
-      <bcf:field>addendum</bcf:field>
-      <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>howpublished</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
@@ -1328,34 +1633,20 @@
       <bcf:field>pagetotal</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>type</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>collection</bcf:entrytype>
       <bcf:entrytype>reference</bcf:entrytype>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
       <bcf:field>chapter</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
+      <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
@@ -1363,9 +1654,7 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1384,34 +1673,20 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>mvcollection</bcf:entrytype>
       <bcf:entrytype>mvreference</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
@@ -1421,9 +1696,6 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1435,15 +1707,9 @@
       <bcf:field>publisher</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
@@ -1451,25 +1717,17 @@
       <bcf:entrytype>incollection</bcf:entrytype>
       <bcf:entrytype>suppcollection</bcf:entrytype>
       <bcf:entrytype>inreference</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>booktitle</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>afterword</bcf:field>
       <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>booksubtitle</bcf:field>
+      <bcf:field>booktitle</bcf:field>
       <bcf:field>booktitleaddon</bcf:field>
       <bcf:field>chapter</bcf:field>
       <bcf:field>commentator</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
+      <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
@@ -1477,9 +1735,7 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>foreword</bcf:field>
       <bcf:field>introduction</bcf:field>
       <bcf:field>isbn</bcf:field>
@@ -1497,37 +1753,42 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>translator</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
-      <bcf:entrytype>manual</bcf:entrytype>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
+      <bcf:entrytype>dataset</bcf:entrytype>
       <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
-      <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>edition</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editortype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>language</bcf:field>
+      <bcf:field>location</bcf:field>
+      <bcf:field>note</bcf:field>
+      <bcf:field>number</bcf:field>
+      <bcf:field>organization</bcf:field>
+      <bcf:field>publisher</bcf:field>
+      <bcf:field>pubstate</bcf:field>
+      <bcf:field>series</bcf:field>
+      <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
+      <bcf:field>titleaddon</bcf:field>
+      <bcf:field>type</bcf:field>
+      <bcf:field>version</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>manual</bcf:entrytype>
+      <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>chapter</bcf:field>
+      <bcf:field>edition</bcf:field>
+      <bcf:field>editor</bcf:field>
+      <bcf:field>editortype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>isbn</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
@@ -1540,38 +1801,18 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>type</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>version</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>misc</bcf:entrytype>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
+      <bcf:entrytype>software</bcf:entrytype>
       <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
-      <bcf:field>doi</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editortype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>howpublished</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
@@ -1579,93 +1820,45 @@
       <bcf:field>organization</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>type</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>version</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>online</bcf:entrytype>
-      <bcf:field>title</bcf:field>
-      <bcf:field>url</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>author</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editortype</bcf:field>
       <bcf:field>language</bcf:field>
-      <bcf:field>month</bcf:field>
       <bcf:field>note</bcf:field>
       <bcf:field>organization</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>urlhour</bcf:field>
-      <bcf:field>urlminute</bcf:field>
-      <bcf:field>urlsecond</bcf:field>
-      <bcf:field>urltimezone</bcf:field>
-      <bcf:field>urlendhour</bcf:field>
-      <bcf:field>urlendminute</bcf:field>
-      <bcf:field>urlendsecond</bcf:field>
-      <bcf:field>urlendtimezone</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>version</bcf:field>
-      <bcf:field>year</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>patent</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>number</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>holder</bcf:field>
       <bcf:field>location</bcf:field>
       <bcf:field>note</bcf:field>
+      <bcf:field>number</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
       <bcf:field>type</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>version</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>periodical</bcf:entrytype>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
-      <bcf:field>doi</bcf:field>
+      <bcf:field>editor</bcf:field>
       <bcf:field>editora</bcf:field>
       <bcf:field>editorb</bcf:field>
       <bcf:field>editorc</bcf:field>
@@ -1673,49 +1866,42 @@
       <bcf:field>editoratype</bcf:field>
       <bcf:field>editorbtype</bcf:field>
       <bcf:field>editorctype</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>issn</bcf:field>
       <bcf:field>issue</bcf:field>
       <bcf:field>issuesubtitle</bcf:field>
       <bcf:field>issuetitle</bcf:field>
+      <bcf:field>issuetitleaddon</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>note</bcf:field>
       <bcf:field>number</bcf:field>
       <bcf:field>pubstate</bcf:field>
+      <bcf:field>season</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
+      <bcf:field>title</bcf:field>
+      <bcf:field>titleaddon</bcf:field>
       <bcf:field>volume</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>mvproceedings</bcf:entrytype>
+      <bcf:field>addendum</bcf:field>
       <bcf:field>editor</bcf:field>
       <bcf:field>editortype</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
-      <bcf:field>addendum</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1730,39 +1916,33 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>venue</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>proceedings</bcf:entrytype>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>editortype</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
       <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>editor</bcf:field>
+      <bcf:field>editortype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1782,44 +1962,38 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>venue</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>inproceedings</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>editor</bcf:field>
-      <bcf:field>editortype</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>booktitle</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>booksubtitle</bcf:field>
+      <bcf:field>booktitle</bcf:field>
       <bcf:field>booktitleaddon</bcf:field>
       <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>editor</bcf:field>
+      <bcf:field>editortype</bcf:field>
+      <bcf:field>eid</bcf:field>
       <bcf:field>eventday</bcf:field>
       <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
       <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
       <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
       <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
       <bcf:field>eventyear</bcf:field>
       <bcf:field>eventtitle</bcf:field>
       <bcf:field>eventtitleaddon</bcf:field>
@@ -1838,36 +2012,19 @@
       <bcf:field>pubstate</bcf:field>
       <bcf:field>series</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
       <bcf:field>venue</bcf:field>
       <bcf:field>volume</bcf:field>
       <bcf:field>volumes</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>report</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>type</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
+      <bcf:field>institution</bcf:field>
       <bcf:field>isrn</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
@@ -1877,34 +2034,18 @@
       <bcf:field>pagetotal</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
+      <bcf:field>type</bcf:field>
       <bcf:field>version</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>thesis</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>type</bcf:field>
-      <bcf:field>institution</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
       <bcf:field>chapter</bcf:field>
-      <bcf:field>doi</bcf:field>
-      <bcf:field>eprint</bcf:field>
-      <bcf:field>eprintclass</bcf:field>
-      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eid</bcf:field>
+      <bcf:field>institution</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
       <bcf:field>note</bcf:field>
@@ -1912,41 +2053,99 @@
       <bcf:field>pagetotal</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
+      <bcf:field>type</bcf:field>
     </bcf:entryfields>
     <bcf:entryfields>
       <bcf:entrytype>unpublished</bcf:entrytype>
-      <bcf:field>author</bcf:field>
-      <bcf:field>title</bcf:field>
-      <bcf:field>day</bcf:field>
-      <bcf:field>endday</bcf:field>
-      <bcf:field>endmonth</bcf:field>
-      <bcf:field>endyear</bcf:field>
-      <bcf:field>month</bcf:field>
-      <bcf:field>year</bcf:field>
       <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>eventday</bcf:field>
+      <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
+      <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
+      <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
+      <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
+      <bcf:field>eventyear</bcf:field>
+      <bcf:field>eventtitle</bcf:field>
+      <bcf:field>eventtitleaddon</bcf:field>
       <bcf:field>howpublished</bcf:field>
       <bcf:field>language</bcf:field>
       <bcf:field>location</bcf:field>
       <bcf:field>note</bcf:field>
       <bcf:field>pubstate</bcf:field>
       <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
       <bcf:field>titleaddon</bcf:field>
-      <bcf:field>url</bcf:field>
-      <bcf:field>urlday</bcf:field>
-      <bcf:field>urlendday</bcf:field>
-      <bcf:field>urlendmonth</bcf:field>
-      <bcf:field>urlendyear</bcf:field>
-      <bcf:field>urlmonth</bcf:field>
-      <bcf:field>urlyear</bcf:field>
+      <bcf:field>type</bcf:field>
+      <bcf:field>venue</bcf:field>
     </bcf:entryfields>
+    <bcf:multiscriptfields>
+      <bcf:field>abstract</bcf:field>
+      <bcf:field>addendum</bcf:field>
+      <bcf:field>afterword</bcf:field>
+      <bcf:field>annotator</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>bookauthor</bcf:field>
+      <bcf:field>booksubtitle</bcf:field>
+      <bcf:field>booktitle</bcf:field>
+      <bcf:field>booktitleaddon</bcf:field>
+      <bcf:field>chapter</bcf:field>
+      <bcf:field>commentator</bcf:field>
+      <bcf:field>editor</bcf:field>
+      <bcf:field>editora</bcf:field>
+      <bcf:field>editorb</bcf:field>
+      <bcf:field>editorc</bcf:field>
+      <bcf:field>foreword</bcf:field>
+      <bcf:field>holder</bcf:field>
+      <bcf:field>institution</bcf:field>
+      <bcf:field>introduction</bcf:field>
+      <bcf:field>issuesubtitle</bcf:field>
+      <bcf:field>issuetitle</bcf:field>
+      <bcf:field>issuetitleaddon</bcf:field>
+      <bcf:field>journalsubtitle</bcf:field>
+      <bcf:field>journaltitle</bcf:field>
+      <bcf:field>journaltitleaddon</bcf:field>
+      <bcf:field>location</bcf:field>
+      <bcf:field>mainsubtitle</bcf:field>
+      <bcf:field>maintitle</bcf:field>
+      <bcf:field>maintitleaddon</bcf:field>
+      <bcf:field>nameaddon</bcf:field>
+      <bcf:field>note</bcf:field>
+      <bcf:field>organization</bcf:field>
+      <bcf:field>origlanguage</bcf:field>
+      <bcf:field>origlocation</bcf:field>
+      <bcf:field>origpublisher</bcf:field>
+      <bcf:field>origtitle</bcf:field>
+      <bcf:field>part</bcf:field>
+      <bcf:field>publisher</bcf:field>
+      <bcf:field>relatedstring</bcf:field>
+      <bcf:field>series</bcf:field>
+      <bcf:field>shortauthor</bcf:field>
+      <bcf:field>shorteditor</bcf:field>
+      <bcf:field>shorthand</bcf:field>
+      <bcf:field>shortjournal</bcf:field>
+      <bcf:field>shortseries</bcf:field>
+      <bcf:field>shorttitle</bcf:field>
+      <bcf:field>sortname</bcf:field>
+      <bcf:field>sortshorthand</bcf:field>
+      <bcf:field>sorttitle</bcf:field>
+      <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
+      <bcf:field>titleaddon</bcf:field>
+      <bcf:field>translator</bcf:field>
+      <bcf:field>venue</bcf:field>
+    </bcf:multiscriptfields>
     <bcf:constraints>
       <bcf:entrytype>article</bcf:entrytype>
       <bcf:entrytype>book</bcf:entrytype>
@@ -1984,7 +2183,6 @@
       <bcf:entrytype>set</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>entryset</bcf:field>
-        <bcf:field>crossref</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
     <bcf:constraints>
@@ -2045,6 +2243,12 @@
       </bcf:constraint>
     </bcf:constraints>
     <bcf:constraints>
+      <bcf:entrytype>dataset</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
+    <bcf:constraints>
       <bcf:entrytype>manual</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>title</bcf:field>
@@ -2052,6 +2256,7 @@
     </bcf:constraints>
     <bcf:constraints>
       <bcf:entrytype>misc</bcf:entrytype>
+      <bcf:entrytype>software</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>title</bcf:field>
       </bcf:constraint>
@@ -2060,7 +2265,11 @@
       <bcf:entrytype>online</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>title</bcf:field>
-        <bcf:field>url</bcf:field>
+        <bcf:fieldor>
+          <bcf:field>url</bcf:field>
+          <bcf:field>doi</bcf:field>
+          <bcf:field>eprint</bcf:field>
+        </bcf:fieldor>
       </bcf:constraint>
     </bcf:constraints>
     <bcf:constraints>
@@ -2082,7 +2291,6 @@
       <bcf:entrytype>proceedings</bcf:entrytype>
       <bcf:entrytype>mvproceedings</bcf:entrytype>
       <bcf:constraint type="mandatory">
-        <bcf:field>editor</bcf:field>
         <bcf:field>title</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
@@ -2146,99 +2354,812 @@
     <bcf:datasource type="file" datatype="bibtex">bibliogj.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">gabelentz1881chinesische</bcf:citekey>
-    <bcf:citekey order="1">chao68chinese</bcf:citekey>
-    <bcf:citekey order="2">jacques12khaling</bcf:citekey>
-    <bcf:citekey order="3">valentine01grammar</bcf:citekey>
-    <bcf:citekey order="4">chao68chinese</bcf:citekey>
-    <bcf:citekey order="5">aikhenvald00classifiers</bcf:citekey>
+    <bcf:citekey order="1">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="2">jackson00puxi</bcf:citekey>
+    <bcf:citekey order="2">jacques17stau</bcf:citekey>
+    <bcf:citekey order="3">jackson00puxi</bcf:citekey>
+    <bcf:citekey order="4">jacques.michaud11naish</bcf:citekey>
+    <bcf:citekey order="5">Sagart19ST</bcf:citekey>
     <bcf:citekey order="6">linxr93jiarong</bcf:citekey>
-    <bcf:citekey order="7">jackson04showu</bcf:citekey>
-    <bcf:citekey order="7">gong18these</bcf:citekey>
-    <bcf:citekey order="8">zhangsy18stem</bcf:citekey>
-    <bcf:citekey order="9">benveniste66problemes1</bcf:citekey>
-    <bcf:citekey order="10">jacques12agreement</bcf:citekey>
-    <bcf:citekey order="11">delancey14second</bcf:citekey>
-    <bcf:citekey order="12">jacques12khaling</bcf:citekey>
-    <bcf:citekey order="13">lin11direction</bcf:citekey>
-    <bcf:citekey order="14">tournadre08conjunct</bcf:citekey>
-    <bcf:citekey order="14">hill17evidential</bcf:citekey>
-    <bcf:citekey order="15">jacksonlin07</bcf:citekey>
-    <bcf:citekey order="16">jacques20am-st</bcf:citekey>
-    <bcf:citekey order="17">koch84associated.motion</bcf:citekey>
-    <bcf:citekey order="18">guillaume09mouv.assoc</bcf:citekey>
-    <bcf:citekey order="19">jacques14antipassive</bcf:citekey>
-    <bcf:citekey order="20">jackson03caodeng</bcf:citekey>
-    <bcf:citekey order="21">jacques19ipa</bcf:citekey>
-    <bcf:citekey order="22">jacques07redupl</bcf:citekey>
-    <bcf:citekey order="23">lai17khroskyabs</bcf:citekey>
-    <bcf:citekey order="24">blevins95syllable</bcf:citekey>
-    <bcf:citekey order="25">jacques15sr</bcf:citekey>
-    <bcf:citekey order="25">zhangsy19cognates</bcf:citekey>
-    <bcf:citekey order="26">hill2019phonology</bcf:citekey>
-    <bcf:citekey order="27">gong17clusters</bcf:citekey>
-    <bcf:citekey order="28">zuniga06</bcf:citekey>
-    <bcf:citekey order="29">delancey81direction</bcf:citekey>
-    <bcf:citekey order="29">jackson02rentongdengdi</bcf:citekey>
-    <bcf:citekey order="29">jacques10inverse</bcf:citekey>
-    <bcf:citekey order="29">gongxun14agreement</bcf:citekey>
-    <bcf:citekey order="30">jacques14inverse</bcf:citekey>
-    <bcf:citekey order="31">koga2008</bcf:citekey>
-    <bcf:citekey order="32">arkadiev17inverse</bcf:citekey>
-    <bcf:citekey order="33">konnerth19agreement</bcf:citekey>
-    <bcf:citekey order="34">doornenbal09</bcf:citekey>
-    <bcf:citekey order="35">bickel07puma</bcf:citekey>
-    <bcf:citekey order="36">jacques14inverse</bcf:citekey>
-    <bcf:citekey order="37">jacques18generic</bcf:citekey>
-    <bcf:citekey order="38">viti15wandel</bcf:citekey>
-    <bcf:citekey order="39">werner97ketisch</bcf:citekey>
-    <bcf:citekey order="40">rice2000scope</bcf:citekey>
-    <bcf:citekey order="41">Sagart19ST</bcf:citekey>
-    <bcf:citekey order="42">jacques13harmonization</bcf:citekey>
-    <bcf:citekey order="43">laiyf20betrayal</bcf:citekey>
-    <bcf:citekey order="44">jacques18bipartite</bcf:citekey>
-    <bcf:citekey order="45">tournadre08conjunct</bcf:citekey>
-    <bcf:citekey order="46">vbrugmo03maqu</bcf:citekey>
-    <bcf:citekey order="47">heine-kuteva02</bcf:citekey>
-    <bcf:citekey order="48">jacques16comparative</bcf:citekey>
-    <bcf:citekey order="49">jacques14antipassive</bcf:citekey>
-    <bcf:citekey order="50">jacques10refl</bcf:citekey>
-    <bcf:citekey order="51">jacques13harmonization</bcf:citekey>
-    <bcf:citekey order="52">jacques17comitative</bcf:citekey>
-    <bcf:citekey order="53">bauman75</bcf:citekey>
-    <bcf:citekey order="53">delancey89agreement</bcf:citekey>
-    <bcf:citekey order="53">lapolla92</bcf:citekey>
-    <bcf:citekey order="53">driem93agreement</bcf:citekey>
-    <bcf:citekey order="54">jacques12agreement</bcf:citekey>
-    <bcf:citekey order="54">delancey14second</bcf:citekey>
-    <bcf:citekey order="54">jacques16th</bcf:citekey>
-    <bcf:citekey order="55">michailovsky85dental</bcf:citekey>
-    <bcf:citekey order="55">jacques15derivational.khaling</bcf:citekey>
-    <bcf:citekey order="56">jacques03s.houzhui</bcf:citekey>
-    <bcf:citekey order="56">jacques16ssuffixes</bcf:citekey>
-    <bcf:citekey order="57">sagart12sprefix</bcf:citekey>
-    <bcf:citekey order="57">jacques15causative</bcf:citekey>
-    <bcf:citekey order="58">jacques14snom</bcf:citekey>
-    <bcf:citekey order="58">konnerth16gV</bcf:citekey>
-    <bcf:citekey order="58">jacques18oc-nmlz</bcf:citekey>
-    <bcf:citekey order="59">handel12valence</bcf:citekey>
-    <bcf:citekey order="60">sagart12sprefix</bcf:citekey>
-    <bcf:citekey order="60">mei12caus</bcf:citekey>
-    <bcf:citekey order="61">jacques04these</bcf:citekey>
-    <bcf:citekey order="62">gong18these</bcf:citekey>
-    <bcf:citekey order="63">sagart03prenasalized</bcf:citekey>
-    <bcf:citekey order="64">lai17khroskyabs</bcf:citekey>
-    <bcf:citekey order="65">gong18these</bcf:citekey>
-    <bcf:citekey order="66">jacques15derivational.khaling</bcf:citekey>
-    <bcf:citekey order="67">sagart12sprefix</bcf:citekey>
-    <bcf:citekey order="68">jacques12internal</bcf:citekey>
-    <bcf:citekey order="69">jacques.michaud11naish</bcf:citekey>
-    <bcf:citekey order="69">Sagart19ST</bcf:citekey>
-    <bcf:citekey order="70">hill2019phonology</bcf:citekey>
-    <bcf:citekey order="71">fellner19allofam</bcf:citekey>
+    <bcf:citekey order="7">linluo03</bcf:citekey>
+    <bcf:citekey order="7">lin11direction</bcf:citekey>
+    <bcf:citekey order="8">jacques08</bcf:citekey>
+    <bcf:citekey order="9">jacques10gesar</bcf:citekey>
+    <bcf:citekey order="10">jacques15japhug</bcf:citekey>
+    <bcf:citekey order="11">michailovsky14pangloss</bcf:citekey>
+    <bcf:citekey order="12">hill17statest</bcf:citekey>
+    <bcf:citekey order="13">zhangsy20kinship</bcf:citekey>
+    <bcf:citekey order="14">dongsy18chabao</bcf:citekey>
+    <bcf:citekey order="15">gabelentz1881chinesische</bcf:citekey>
+    <bcf:citekey order="15">chao68chinese</bcf:citekey>
+    <bcf:citekey order="16">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="17">valentine01grammar</bcf:citekey>
+    <bcf:citekey order="18">chao68chinese</bcf:citekey>
+    <bcf:citekey order="19">aikhenvald00classifiers</bcf:citekey>
+    <bcf:citekey order="20">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="21">jackson04showu</bcf:citekey>
+    <bcf:citekey order="21">gong18these</bcf:citekey>
+    <bcf:citekey order="22">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="23">benveniste66problemes1</bcf:citekey>
+    <bcf:citekey order="24">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="25">delancey14second</bcf:citekey>
+    <bcf:citekey order="26">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="27">lin11direction</bcf:citekey>
+    <bcf:citekey order="28">tournadre08conjunct</bcf:citekey>
+    <bcf:citekey order="28">hill17evidential</bcf:citekey>
+    <bcf:citekey order="29">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="30">jacques20am-st</bcf:citekey>
+    <bcf:citekey order="31">koch84associated.motion</bcf:citekey>
+    <bcf:citekey order="32">guillaume09mouv.assoc</bcf:citekey>
+    <bcf:citekey order="33">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="34">jackson03caodeng</bcf:citekey>
+    <bcf:citekey order="35">jacques19ipa</bcf:citekey>
+    <bcf:citekey order="36">jacques07redupl</bcf:citekey>
+    <bcf:citekey order="37">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="38">blevins95syllable</bcf:citekey>
+    <bcf:citekey order="39">jacques15sr</bcf:citekey>
+    <bcf:citekey order="39">zhangsy19cognates</bcf:citekey>
+    <bcf:citekey order="40">hill2019phonology</bcf:citekey>
+    <bcf:citekey order="41">gong17clusters</bcf:citekey>
+    <bcf:citekey order="42">zuniga06</bcf:citekey>
+    <bcf:citekey order="43">delancey81direction</bcf:citekey>
+    <bcf:citekey order="43">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="43">jacques10inverse</bcf:citekey>
+    <bcf:citekey order="43">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="44">jacques14inverse</bcf:citekey>
+    <bcf:citekey order="45">koga2008</bcf:citekey>
+    <bcf:citekey order="46">arkadiev17inverse</bcf:citekey>
+    <bcf:citekey order="47">konnerth19agreement</bcf:citekey>
+    <bcf:citekey order="48">doornenbal09</bcf:citekey>
+    <bcf:citekey order="49">bickel07puma</bcf:citekey>
+    <bcf:citekey order="50">jacques14inverse</bcf:citekey>
+    <bcf:citekey order="51">jacques18generic</bcf:citekey>
+    <bcf:citekey order="52">viti15wandel</bcf:citekey>
+    <bcf:citekey order="53">werner97ketisch</bcf:citekey>
+    <bcf:citekey order="54">rice2000scope</bcf:citekey>
+    <bcf:citekey order="55">Sagart19ST</bcf:citekey>
+    <bcf:citekey order="56">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="57">laiyf20betrayal</bcf:citekey>
+    <bcf:citekey order="58">jacques18bipartite</bcf:citekey>
+    <bcf:citekey order="59">tournadre08conjunct</bcf:citekey>
+    <bcf:citekey order="60">vbrugmo03maqu</bcf:citekey>
+    <bcf:citekey order="61">heine-kuteva02</bcf:citekey>
+    <bcf:citekey order="62">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="63">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="64">jacques10refl</bcf:citekey>
+    <bcf:citekey order="65">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="66">jacques17comitative</bcf:citekey>
+    <bcf:citekey order="67">bauman75</bcf:citekey>
+    <bcf:citekey order="67">delancey89agreement</bcf:citekey>
+    <bcf:citekey order="67">lapolla92</bcf:citekey>
+    <bcf:citekey order="67">driem93agreement</bcf:citekey>
+    <bcf:citekey order="68">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="68">delancey14second</bcf:citekey>
+    <bcf:citekey order="68">jacques16th</bcf:citekey>
+    <bcf:citekey order="69">michailovsky85dental</bcf:citekey>
+    <bcf:citekey order="69">jacques15derivational.khaling</bcf:citekey>
+    <bcf:citekey order="70">jacques03s.houzhui</bcf:citekey>
+    <bcf:citekey order="70">jacques16ssuffixes</bcf:citekey>
+    <bcf:citekey order="71">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="71">jacques15causative</bcf:citekey>
+    <bcf:citekey order="72">jacques14snom</bcf:citekey>
+    <bcf:citekey order="72">konnerth16gV</bcf:citekey>
+    <bcf:citekey order="72">jacques18oc-nmlz</bcf:citekey>
+    <bcf:citekey order="73">handel12valence</bcf:citekey>
+    <bcf:citekey order="74">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="74">mei12caus</bcf:citekey>
+    <bcf:citekey order="75">jacques04these</bcf:citekey>
+    <bcf:citekey order="76">gong18these</bcf:citekey>
+    <bcf:citekey order="77">sagart03prenasalized</bcf:citekey>
+    <bcf:citekey order="78">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="79">gong18these</bcf:citekey>
+    <bcf:citekey order="80">jacques15derivational.khaling</bcf:citekey>
+    <bcf:citekey order="81">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="82">jacques12internal</bcf:citekey>
+    <bcf:citekey order="83">jacques.michaud11naish</bcf:citekey>
+    <bcf:citekey order="83">Sagart19ST</bcf:citekey>
+    <bcf:citekey order="84">hill2019phonology</bcf:citekey>
+    <bcf:citekey order="85">fellner19allofam</bcf:citekey>
+    <bcf:citekey order="86">boydalexis06</bcf:citekey>
+    <bcf:citekey order="87">jacques04these</bcf:citekey>
+    <bcf:citekey order="88">jacques19ipa</bcf:citekey>
+    <bcf:citekey order="89">hill16refutation</bcf:citekey>
+    <bcf:citekey order="90">jackson05yingao</bcf:citekey>
+    <bcf:citekey order="91">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="92">jacques07passif</bcf:citekey>
+    <bcf:citekey order="93">sunhk82dulong</bcf:citekey>
+    <bcf:citekey order="94">jacques04these</bcf:citekey>
+    <bcf:citekey order="95">jacques04these</bcf:citekey>
+    <bcf:citekey order="96">jacques04these</bcf:citekey>
+    <bcf:citekey order="97">jacques08zh</bcf:citekey>
+    <bcf:citekey order="98">jackson03caodeng</bcf:citekey>
+    <bcf:citekey order="99">gong16amdo</bcf:citekey>
+    <bcf:citekey order="100">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="101">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="102">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="103">michaud06neutralisation</bcf:citekey>
+    <bcf:citekey order="104">jacques15japhug</bcf:citekey>
+    <bcf:citekey order="105">jackson05yingao</bcf:citekey>
+    <bcf:citekey order="106">linyj12tone</bcf:citekey>
+    <bcf:citekey order="107">gong18these</bcf:citekey>
+    <bcf:citekey order="108">dixon02word</bcf:citekey>
+    <bcf:citekey order="109">schiering10prosodic</bcf:citekey>
+    <bcf:citekey order="110">jacques07redupl</bcf:citekey>
+    <bcf:citekey order="111">jacques19ipa</bcf:citekey>
+    <bcf:citekey order="112">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="113">jacques19ipa</bcf:citekey>
+    <bcf:citekey order="114">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="115">jacques04these</bcf:citekey>
+    <bcf:citekey order="116">jacques04these</bcf:citekey>
+    <bcf:citekey order="117">gong18these</bcf:citekey>
+    <bcf:citekey order="118">jacques04these</bcf:citekey>
+    <bcf:citekey order="119">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="120">hill2019phonology</bcf:citekey>
+    <bcf:citekey order="121">hill2019phonology</bcf:citekey>
+    <bcf:citekey order="122">lifk33</bcf:citekey>
+    <bcf:citekey order="123">hill2019phonology</bcf:citekey>
+    <bcf:citekey order="124">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="125">gong18these</bcf:citekey>
+    <bcf:citekey order="126">jacques04these</bcf:citekey>
+    <bcf:citekey order="127">jacques04these</bcf:citekey>
+    <bcf:citekey order="128">jacques04these</bcf:citekey>
+    <bcf:citekey order="129">huangsun02</bcf:citekey>
+    <bcf:citekey order="130">jacques09wazur</bcf:citekey>
+    <bcf:citekey order="130">hill11laws</bcf:citekey>
+    <bcf:citekey order="131">huangsun02</bcf:citekey>
+    <bcf:citekey order="132">jacques04these</bcf:citekey>
+    <bcf:citekey order="133">gong18these</bcf:citekey>
+    <bcf:citekey order="134">jacques04these</bcf:citekey>
+    <bcf:citekey order="135">huangsun02</bcf:citekey>
+    <bcf:citekey order="136">jacques17num</bcf:citekey>
+    <bcf:citekey order="137">vennemann88syllable</bcf:citekey>
+    <bcf:citekey order="137">blevins95syllable</bcf:citekey>
+    <bcf:citekey order="138">ohala90sonority</bcf:citekey>
+    <bcf:citekey order="139">parker02sonority</bcf:citekey>
+    <bcf:citekey order="140">blevins95syllable</bcf:citekey>
+    <bcf:citekey order="141">jackson00puxi</bcf:citekey>
+    <bcf:citekey order="142">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="143">linluo03</bcf:citekey>
+    <bcf:citekey order="144">lin11direction</bcf:citekey>
+    <bcf:citekey order="145">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="146">prins16kyomkyo</bcf:citekey>
+    <bcf:citekey order="147">haude16symmetrical</bcf:citekey>
+    <bcf:citekey order="148">jacques10inverse</bcf:citekey>
+    <bcf:citekey order="149">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="150">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="151">sanso14inverse</bcf:citekey>
+    <bcf:citekey order="152">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="153">prins16kyomkyo</bcf:citekey>
+    <bcf:citekey order="154">jacques16japhug</bcf:citekey>
+    <bcf:citekey order="155">thompson96koyukon</bcf:citekey>
+    <bcf:citekey order="156">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="157">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="158">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="159">lin09phd</bcf:citekey>
+    <bcf:citekey order="160">lin09phd</bcf:citekey>
+    <bcf:citekey order="161">zhangsy19cognates</bcf:citekey>
+    <bcf:citekey order="162">jacques17stau</bcf:citekey>
+    <bcf:citekey order="163">michaud17yongning</bcf:citekey>
+    <bcf:citekey order="164">lapolla01rawang</bcf:citekey>
+    <bcf:citekey order="165">stein61</bcf:citekey>
+    <bcf:citekey order="166">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="167">norde09degrammaticalization</bcf:citekey>
+    <bcf:citekey order="168">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="169">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="170">coupe07mongsen</bcf:citekey>
+    <bcf:citekey order="171">wolfenden29outlines</bcf:citekey>
+    <bcf:citekey order="172">jacques14snom</bcf:citekey>
+    <bcf:citekey order="173">thompson96koyukon</bcf:citekey>
+    <bcf:citekey order="174">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="175">jackson05yingao</bcf:citekey>
+    <bcf:citekey order="176">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="177">nagano03cogtse</bcf:citekey>
+    <bcf:citekey order="178">prins16kyomkyo</bcf:citekey>
+    <bcf:citekey order="179">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="180">jacques04these</bcf:citekey>
+    <bcf:citekey order="181">jacques12incorp</bcf:citekey>
+    <bcf:citekey order="182">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="183">creissels06hongrois</bcf:citekey>
+    <bcf:citekey order="184">creissels17construct</bcf:citekey>
+    <bcf:citekey order="185">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="186">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="187">jacques14snom</bcf:citekey>
+    <bcf:citekey order="188">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="189">uray52diminutive</bcf:citekey>
+    <bcf:citekey order="190">hill14derivational</bcf:citekey>
+    <bcf:citekey order="191">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="192">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="193">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="194">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="195">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="196">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="197">jacques08zh</bcf:citekey>
+    <bcf:citekey order="198">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="199">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="200">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="201">lai13fuyin</bcf:citekey>
+    <bcf:citekey order="202">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="203">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="204">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="205">jacques17comitative</bcf:citekey>
+    <bcf:citekey order="206">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="207">jacques17comitative</bcf:citekey>
+    <bcf:citekey order="208">gong18these</bcf:citekey>
+    <bcf:citekey order="209">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="210">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="211">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="212">prins16kyomkyo</bcf:citekey>
+    <bcf:citekey order="213">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="214">idiatov07nonselective</bcf:citekey>
+    <bcf:citekey order="215">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="216">haspelmath97indef</bcf:citekey>
+    <bcf:citekey order="217">haspelmath97indef</bcf:citekey>
+    <bcf:citekey order="218">haspelmath97indef</bcf:citekey>
+    <bcf:citekey order="219">haspelmath97indef</bcf:citekey>
+    <bcf:citekey order="220">mazaudon02nombre</bcf:citekey>
+    <bcf:citekey order="221">huangsun02</bcf:citekey>
+    <bcf:citekey order="222">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="223">gong18these</bcf:citekey>
+    <bcf:citekey order="224">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="225">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="226">daudey14grammar</bcf:citekey>
+    <bcf:citekey order="227">jacques17num</bcf:citekey>
+    <bcf:citekey order="228">francois99classificateurs</bcf:citekey>
+    <bcf:citekey order="229">zhang14classifiers</bcf:citekey>
+    <bcf:citekey order="230">michaud17yongning</bcf:citekey>
+    <bcf:citekey order="231">bradley05numerals</bcf:citekey>
+    <bcf:citekey order="232">michaud11cl</bcf:citekey>
+    <bcf:citekey order="233">gerner10classifier.isolating</bcf:citekey>
+    <bcf:citekey order="234">jacques17num</bcf:citekey>
+    <bcf:citekey order="235">jacques.michaud11naish</bcf:citekey>
+    <bcf:citekey order="236">jacques04these</bcf:citekey>
+    <bcf:citekey order="237">jacques17stau</bcf:citekey>
+    <bcf:citekey order="238">michailovsky03ordinals</bcf:citekey>
+    <bcf:citekey order="239">michailovsky03ordinals</bcf:citekey>
+    <bcf:citekey order="240">michailovsky03ordinals</bcf:citekey>
+    <bcf:citekey order="241">anicotte15fractions</bcf:citekey>
+    <bcf:citekey order="242">jacques16relatives</bcf:citekey>
+    <bcf:citekey order="243">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="244">creissels14functive</bcf:citekey>
+    <bcf:citekey order="245">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="246">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="246">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="247">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="248">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="249">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="250">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="251">haller04themchen</bcf:citekey>
+    <bcf:citekey order="252">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="253">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="254">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="255">jacques14linking</bcf:citekey>
+    <bcf:citekey order="256">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="257">mauri18categorization</bcf:citekey>
+    <bcf:citekey order="258">antonov07ra</bcf:citekey>
+    <bcf:citekey order="259">basilico96internally</bcf:citekey>
+    <bcf:citekey order="260">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="261">lehmann84relativsatz</bcf:citekey>
+    <bcf:citekey order="262">creissels06sgit1</bcf:citekey>
+    <bcf:citekey order="263">jacques14linking</bcf:citekey>
+    <bcf:citekey order="264">cinque05universal20</bcf:citekey>
+    <bcf:citekey order="265">jackson04zhuangmaoci</bcf:citekey>
+    <bcf:citekey order="265">japhug14ideophones</bcf:citekey>
+    <bcf:citekey order="266">dingemanse14</bcf:citekey>
+    <bcf:citekey order="267">diffloth76expressives</bcf:citekey>
+    <bcf:citekey order="268">zwicky87expressive</bcf:citekey>
+    <bcf:citekey order="269">jackson04zhuangmaoci</bcf:citekey>
+    <bcf:citekey order="270">japhug14ideophones</bcf:citekey>
+    <bcf:citekey order="271">jackson04zhuangmaoci</bcf:citekey>
+    <bcf:citekey order="272">japhug14ideophones</bcf:citekey>
+    <bcf:citekey order="273">rai06triplication</bcf:citekey>
+    <bcf:citekey order="274">gates17triplication</bcf:citekey>
+    <bcf:citekey order="275">dingemanse12ideo</bcf:citekey>
+    <bcf:citekey order="276">jacques04these</bcf:citekey>
+    <bcf:citekey order="277">diffloth79expressive</bcf:citekey>
+    <bcf:citekey order="278">dingemanse11ezra</bcf:citekey>
+    <bcf:citekey order="279">deloria41</bcf:citekey>
+    <bcf:citekey order="280">gerner04expressives1</bcf:citekey>
+    <bcf:citekey order="281">deloria41</bcf:citekey>
+    <bcf:citekey order="282">japhug14ideophones</bcf:citekey>
+    <bcf:citekey order="283">dingemanse12ideo</bcf:citekey>
+    <bcf:citekey order="284">guldemann08quot</bcf:citekey>
+    <bcf:citekey order="285">dingemanse11phd</bcf:citekey>
+    <bcf:citekey order="286">aikhenvald10imperative</bcf:citekey>
+    <bcf:citekey order="287">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="288">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="289">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="290">tournadre14evidentiality</bcf:citekey>
+    <bcf:citekey order="291">ebihara19amdo</bcf:citekey>
+    <bcf:citekey order="292">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="293">bickel07inflectional</bcf:citekey>
+    <bcf:citekey order="294">jackson05yingao</bcf:citekey>
+    <bcf:citekey order="295">linyj12tone</bcf:citekey>
+    <bcf:citekey order="296">gong18these</bcf:citekey>
+    <bcf:citekey order="297">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="298">gong18these</bcf:citekey>
+    <bcf:citekey order="299">jackson17tshobdun</bcf:citekey>
+    <bcf:citekey order="300">gong18these</bcf:citekey>
+    <bcf:citekey order="301">bickel07chintang</bcf:citekey>
+    <bcf:citekey order="302">bickel07inflectional</bcf:citekey>
+    <bcf:citekey order="303">post09disunity</bcf:citekey>
+    <bcf:citekey order="303">schiering10prosodic</bcf:citekey>
+    <bcf:citekey order="303">doornenbal09</bcf:citekey>
+    <bcf:citekey order="304">jacques18bipartite</bcf:citekey>
+    <bcf:citekey order="305">doornenbal09</bcf:citekey>
+    <bcf:citekey order="306">schackow15yakkha</bcf:citekey>
+    <bcf:citekey order="307">doornenbal09</bcf:citekey>
+    <bcf:citekey order="308">jacques18bipartite</bcf:citekey>
+    <bcf:citekey order="309">jackson05yingao</bcf:citekey>
+    <bcf:citekey order="309">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="309">gong18these</bcf:citekey>
+    <bcf:citekey order="309">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="310">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="311">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="312">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="313">jackson04showu</bcf:citekey>
+    <bcf:citekey order="313">gong18these</bcf:citekey>
+    <bcf:citekey order="314">linyj03tense</bcf:citekey>
+    <bcf:citekey order="314">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="315">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="316">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="317">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="318">gong18these</bcf:citekey>
+    <bcf:citekey order="319">jackson04showu</bcf:citekey>
+    <bcf:citekey order="320">linluo03</bcf:citekey>
+    <bcf:citekey order="321">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="322">gong18these</bcf:citekey>
+    <bcf:citekey order="323">linluo03</bcf:citekey>
+    <bcf:citekey order="324">jacques08zh</bcf:citekey>
+    <bcf:citekey order="325">gong18these</bcf:citekey>
+    <bcf:citekey order="326">jacques04these</bcf:citekey>
+    <bcf:citekey order="327">jacques08zh</bcf:citekey>
+    <bcf:citekey order="328">jackson03caodeng</bcf:citekey>
+    <bcf:citekey order="329">gong18these</bcf:citekey>
+    <bcf:citekey order="330">jacques14esquisse</bcf:citekey>
+    <bcf:citekey order="331">jacques14esquisse</bcf:citekey>
+    <bcf:citekey order="332">gong18these</bcf:citekey>
+    <bcf:citekey order="333">jacques14linking</bcf:citekey>
+    <bcf:citekey order="334">gates17triplication</bcf:citekey>
+    <bcf:citekey order="335">miestamo05negation</bcf:citekey>
+    <bcf:citekey order="336">driem93dumi</bcf:citekey>
+    <bcf:citekey order="337">lai15person</bcf:citekey>
+    <bcf:citekey order="338">jacques16th</bcf:citekey>
+    <bcf:citekey order="339">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="340">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="341">gong18these</bcf:citekey>
+    <bcf:citekey order="342">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="343">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="344">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="345">zuniga06</bcf:citekey>
+    <bcf:citekey order="345">jacques14inverse</bcf:citekey>
+    <bcf:citekey order="346">cuoq1866</bcf:citekey>
+    <bcf:citekey order="347">heath98skewing</bcf:citekey>
+    <bcf:citekey order="348">delancey18sociopragmatic</bcf:citekey>
+    <bcf:citekey order="349">jacques18generic</bcf:citekey>
+    <bcf:citekey order="350">jacques12khaling</bcf:citekey>
+    <bcf:citekey order="351">driem90hayu</bcf:citekey>
+    <bcf:citekey order="352">michailovsky88</bcf:citekey>
+    <bcf:citekey order="353">driem90hayu</bcf:citekey>
+    <bcf:citekey order="354">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="355">sun14generic</bcf:citekey>
+    <bcf:citekey order="356">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="357">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="358">jacques14inverse</bcf:citekey>
+    <bcf:citekey order="359">silverstein76</bcf:citekey>
+    <bcf:citekey order="359">delancey81direction</bcf:citekey>
+    <bcf:citekey order="359">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="359">lockwood12hierarchies</bcf:citekey>
+    <bcf:citekey order="360">benveniste66problemes1</bcf:citekey>
+    <bcf:citekey order="361">silverstein76</bcf:citekey>
+    <bcf:citekey order="362">zuniga06</bcf:citekey>
+    <bcf:citekey order="362">lockwood12hierarchies</bcf:citekey>
+    <bcf:citekey order="363">zuniga18hierarchies</bcf:citekey>
+    <bcf:citekey order="364">zuniga06</bcf:citekey>
+    <bcf:citekey order="365">delancey81direction</bcf:citekey>
+    <bcf:citekey order="365">jackson15sastod</bcf:citekey>
+    <bcf:citekey order="365">zhangsy19obviative</bcf:citekey>
+    <bcf:citekey order="366">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="367">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="368">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="369">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="370">lai15person</bcf:citekey>
+    <bcf:citekey order="371">jackson15sastod</bcf:citekey>
+    <bcf:citekey order="371">zhangsy19obviative</bcf:citekey>
+    <bcf:citekey order="372">wolfart73</bcf:citekey>
+    <bcf:citekey order="373">valentine01grammar</bcf:citekey>
+    <bcf:citekey order="374">valentine01grammar</bcf:citekey>
+    <bcf:citekey order="375">wolfart73</bcf:citekey>
+    <bcf:citekey order="376">aissen97obviation</bcf:citekey>
+    <bcf:citekey order="377">haude16symmetrical</bcf:citekey>
+    <bcf:citekey order="378">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="379">sun14generic</bcf:citekey>
+    <bcf:citekey order="380">jacques12incorp</bcf:citekey>
+    <bcf:citekey order="381">malchukov10ditransitive</bcf:citekey>
+    <bcf:citekey order="382">bickel00agreement</bcf:citekey>
+    <bcf:citekey order="383">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="384">bickel15antipassive</bcf:citekey>
+    <bcf:citekey order="385">pott1859</bcf:citekey>
+    <bcf:citekey order="386">viti15wandel</bcf:citekey>
+    <bcf:citekey order="387">braune53gotische</bcf:citekey>
+    <bcf:citekey order="388">hill11hb</bcf:citekey>
+    <bcf:citekey order="389">jacques19contact</bcf:citekey>
+    <bcf:citekey order="390">linluo03</bcf:citekey>
+    <bcf:citekey order="391">lin11direction</bcf:citekey>
+    <bcf:citekey order="392">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="393">jackson17tshobdun</bcf:citekey>
+    <bcf:citekey order="394">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="394">gong18these</bcf:citekey>
+    <bcf:citekey order="395">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="396">lapolla92</bcf:citekey>
+    <bcf:citekey order="397">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="397">delancey14second</bcf:citekey>
+    <bcf:citekey order="398">jacques16th</bcf:citekey>
+    <bcf:citekey order="399">gong16stems</bcf:citekey>
+    <bcf:citekey order="400">jackson04showu</bcf:citekey>
+    <bcf:citekey order="401">gong18these</bcf:citekey>
+    <bcf:citekey order="402">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="403">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="404">jouon06</bcf:citekey>
+    <bcf:citekey order="405">suchard16vowels</bcf:citekey>
+    <bcf:citekey order="406">doornenbal09</bcf:citekey>
+    <bcf:citekey order="407">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="408">gong18these</bcf:citekey>
+    <bcf:citekey order="409">daudey14grammar</bcf:citekey>
+    <bcf:citekey order="410">jacques17num</bcf:citekey>
+    <bcf:citekey order="411">norde09degrammaticalization</bcf:citekey>
+    <bcf:citekey order="412">jacques18directionality</bcf:citekey>
+    <bcf:citekey order="413">jacques14inverse</bcf:citekey>
+    <bcf:citekey order="414">lai15person</bcf:citekey>
+    <bcf:citekey order="415">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="416">heath98skewing</bcf:citekey>
+    <bcf:citekey order="417">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="418">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="419">gongxun14agreement</bcf:citekey>
+    <bcf:citekey order="420">jacques18generic</bcf:citekey>
+    <bcf:citekey order="421">jacques07passif</bcf:citekey>
+    <bcf:citekey order="422">delancey18sociopragmatic</bcf:citekey>
+    <bcf:citekey order="423">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="424">hetzron76two</bcf:citekey>
+    <bcf:citekey order="425">doornenbal09</bcf:citekey>
+    <bcf:citekey order="426">michailovsky02dico</bcf:citekey>
+    <bcf:citekey order="427">jacques12agreement</bcf:citekey>
+    <bcf:citekey order="428">sun14generic</bcf:citekey>
+    <bcf:citekey order="429">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="430">linyj16cogtse</bcf:citekey>
+    <bcf:citekey order="431">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="432">jacques18generic</bcf:citekey>
+    <bcf:citekey order="432">delancey18sociopragmatic</bcf:citekey>
+    <bcf:citekey order="433">linyj16cogtse</bcf:citekey>
+    <bcf:citekey order="434">lin11direction</bcf:citekey>
+    <bcf:citekey order="435">jackson17tshobdun</bcf:citekey>
+    <bcf:citekey order="436">lin11direction</bcf:citekey>
+    <bcf:citekey order="437">linluo03</bcf:citekey>
+    <bcf:citekey order="438">lin11direction</bcf:citekey>
+    <bcf:citekey order="439">lin11direction</bcf:citekey>
+    <bcf:citekey order="440">linluo03</bcf:citekey>
+    <bcf:citekey order="441">linluo03</bcf:citekey>
+    <bcf:citekey order="442">lin11direction</bcf:citekey>
+    <bcf:citekey order="443">jacques17stau</bcf:citekey>
+    <bcf:citekey order="444">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="445">margetts19bring</bcf:citekey>
+    <bcf:citekey order="446">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="447">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="447">lin02dimension</bcf:citekey>
+    <bcf:citekey order="447">linyj17space</bcf:citekey>
+    <bcf:citekey order="448">gong18these</bcf:citekey>
+    <bcf:citekey order="449">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="450">jackson00sidaba</bcf:citekey>
+    <bcf:citekey order="451">lin02dimension</bcf:citekey>
+    <bcf:citekey order="452">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="453">lin02dimension</bcf:citekey>
+    <bcf:citekey order="454">lin02dimension</bcf:citekey>
+    <bcf:citekey order="455">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="456">liv</bcf:citekey>
+    <bcf:citekey order="457">gong18these</bcf:citekey>
+    <bcf:citekey order="458">guillaume16am</bcf:citekey>
+    <bcf:citekey order="459">koch84associated.motion</bcf:citekey>
+    <bcf:citekey order="460">wilkins91associated.motion</bcf:citekey>
+    <bcf:citekey order="461">guillaume09mouv.assoc</bcf:citekey>
+    <bcf:citekey order="462">jacques20am-st</bcf:citekey>
+    <bcf:citekey order="463">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="464">gong18these</bcf:citekey>
+    <bcf:citekey order="465">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="466">linyj16cogtse</bcf:citekey>
+    <bcf:citekey order="467">zhang16bragdbar</bcf:citekey>
+    <bcf:citekey order="468">prins16kyomkyo</bcf:citekey>
+    <bcf:citekey order="469">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="470">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="471">fuente18am</bcf:citekey>
+    <bcf:citekey order="472">guillaume16am</bcf:citekey>
+    <bcf:citekey order="473">wilkins91associated.motion</bcf:citekey>
+    <bcf:citekey order="474">vuillermet12eseejja</bcf:citekey>
+    <bcf:citekey order="475">rose15am</bcf:citekey>
+    <bcf:citekey order="476">guillaume16am</bcf:citekey>
+    <bcf:citekey order="477">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="478">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="479">jacques13harmonization</bcf:citekey>
+    <bcf:citekey order="480">stojnova16nda</bcf:citekey>
+    <bcf:citekey order="481">jackson06guanxiju</bcf:citekey>
+    <bcf:citekey order="481">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="482">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="483">sun12complementation</bcf:citekey>
+    <bcf:citekey order="484">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="485">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="486">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="487">jacques14esquisse</bcf:citekey>
+    <bcf:citekey order="488">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="489">zhangsy19cognates</bcf:citekey>
+    <bcf:citekey order="490">sun14generic</bcf:citekey>
+    <bcf:citekey order="491">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="492">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="493">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="494">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="495">jacques03s.houzhui</bcf:citekey>
+    <bcf:citekey order="496">jacques16ssuffixes</bcf:citekey>
+    <bcf:citekey order="497">hill14derivational</bcf:citekey>
+    <bcf:citekey order="498">jacques03s.houzhui</bcf:citekey>
+    <bcf:citekey order="499">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="500">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="501">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="502">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="503">konnerth16gV</bcf:citekey>
+    <bcf:citekey order="504">jacques14snom</bcf:citekey>
+    <bcf:citekey order="505">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="506">lin09phd</bcf:citekey>
+    <bcf:citekey order="507">jackson06guanxiju</bcf:citekey>
+    <bcf:citekey order="507">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="508">jacques18generic</bcf:citekey>
+    <bcf:citekey order="509">sagart99roc</bcf:citekey>
+    <bcf:citekey order="510">bs14oc</bcf:citekey>
+    <bcf:citekey order="511">jacques18oc-nmlz</bcf:citekey>
+    <bcf:citekey order="512">dai92yufa</bcf:citekey>
+    <bcf:citekey order="513">jacques14linking</bcf:citekey>
+    <bcf:citekey order="514">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="515">jackson07shangzhai</bcf:citekey>
+    <bcf:citekey order="516">lai16caus</bcf:citekey>
+    <bcf:citekey order="517">gong18these</bcf:citekey>
+    <bcf:citekey order="518">zhangsy18stem</bcf:citekey>
+    <bcf:citekey order="519">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="520">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="521">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="521">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="522">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="523">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="524">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="525">larcher96</bcf:citekey>
+    <bcf:citekey order="526">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="527">jacques13tropative</bcf:citekey>
+    <bcf:citekey order="528">jacques12demotion</bcf:citekey>
+    <bcf:citekey order="529">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="530">gong18these</bcf:citekey>
+    <bcf:citekey order="531">gong18these</bcf:citekey>
+    <bcf:citekey order="532">jacques10refl</bcf:citekey>
+    <bcf:citekey order="533">maslova07yukaghir</bcf:citekey>
+    <bcf:citekey order="534">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="535">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="536">kemmer93middle</bcf:citekey>
+    <bcf:citekey order="537">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="538">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="539">creissels08coparticipation</bcf:citekey>
+    <bcf:citekey order="540">shefts1971causative</bcf:citekey>
+    <bcf:citekey order="540">daiqx94biguan</bcf:citekey>
+    <bcf:citekey order="540">gerner07caus</bcf:citekey>
+    <bcf:citekey order="541">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="541">jacques12internal</bcf:citekey>
+    <bcf:citekey order="542">handel12valence</bcf:citekey>
+    <bcf:citekey order="543">gong18these</bcf:citekey>
+    <bcf:citekey order="544">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="545">jacques12internal</bcf:citekey>
+    <bcf:citekey order="545">hill14voicing</bcf:citekey>
+    <bcf:citekey order="546">dai92yufa</bcf:citekey>
+    <bcf:citekey order="547">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="548">jacques20alternation</bcf:citekey>
+    <bcf:citekey order="549">gates22voicing</bcf:citekey>
+    <bcf:citekey order="550">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="551">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="552">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="553">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="554">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="555">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="556">khalilova16bezhta.valency</bcf:citekey>
+    <bcf:citekey order="557">jacques12demotion</bcf:citekey>
+    <bcf:citekey order="558">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="559">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="560">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="561">gong18these</bcf:citekey>
+    <bcf:citekey order="562">jacques15spontaneous</bcf:citekey>
+    <bcf:citekey order="563">jacques15spontaneous</bcf:citekey>
+    <bcf:citekey order="564">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="565">jacques14linking</bcf:citekey>
+    <bcf:citekey order="566">adams90latin</bcf:citekey>
+    <bcf:citekey order="567">lifk33</bcf:citekey>
+    <bcf:citekey order="568">jacques14esquisse</bcf:citekey>
+    <bcf:citekey order="569">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="570">jacques15causative</bcf:citekey>
+    <bcf:citekey order="571">lai13fuyin</bcf:citekey>
+    <bcf:citekey order="572">jacques17volitional</bcf:citekey>
+    <bcf:citekey order="573">michailovsky02dico</bcf:citekey>
+    <bcf:citekey order="574">jacques17pkiranti</bcf:citekey>
+    <bcf:citekey order="575">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="576">bs14oc</bcf:citekey>
+    <bcf:citekey order="577">michailovsky85dental</bcf:citekey>
+    <bcf:citekey order="578">jacques15derivational.khaling</bcf:citekey>
+    <bcf:citekey order="579">jacques16ssuffixes</bcf:citekey>
+    <bcf:citekey order="580">linyj17space</bcf:citekey>
+    <bcf:citekey order="580">zhangshuya20these</bcf:citekey>
+    <bcf:citekey order="581">gong18these</bcf:citekey>
+    <bcf:citekey order="582">gong18these</bcf:citekey>
+    <bcf:citekey order="583">gong18these</bcf:citekey>
+    <bcf:citekey order="584">gong18these</bcf:citekey>
+    <bcf:citekey order="585">jacques16si</bcf:citekey>
+    <bcf:citekey order="586">jacques20antipass</bcf:citekey>
+    <bcf:citekey order="587">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="588">jacques17pkiranti</bcf:citekey>
+    <bcf:citekey order="589">jacques15khaling</bcf:citekey>
+    <bcf:citekey order="590">hill.kc03hopi</bcf:citekey>
+    <bcf:citekey order="591">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="592">jacques18similative</bcf:citekey>
+    <bcf:citekey order="593">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="594">jacques17comitative</bcf:citekey>
+    <bcf:citekey order="595">sutton76having</bcf:citekey>
+    <bcf:citekey order="595">patz91djabugay</bcf:citekey>
+    <bcf:citekey order="595">stassen00and</bcf:citekey>
+    <bcf:citekey order="595">stolz06comitative</bcf:citekey>
+    <bcf:citekey order="595">arkhipov09comitative</bcf:citekey>
+    <bcf:citekey order="596">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="597">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="598">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="599">jacques04these</bcf:citekey>
+    <bcf:citekey order="600">hill14dz</bcf:citekey>
+    <bcf:citekey order="601">jacques18similative</bcf:citekey>
+    <bcf:citekey order="602">jackson04zhuangmaoci</bcf:citekey>
+    <bcf:citekey order="602">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="603">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="604">jacques14antipassive</bcf:citekey>
+    <bcf:citekey order="604">jacques15causative</bcf:citekey>
+    <bcf:citekey order="605">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="606">lai20denom</bcf:citekey>
+    <bcf:citekey order="607">jacques10refl</bcf:citekey>
+    <bcf:citekey order="608">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="609">jacques15spontaneous</bcf:citekey>
+    <bcf:citekey order="610">jackson06paisheng</bcf:citekey>
+    <bcf:citekey order="610">jackson14morpho</bcf:citekey>
+    <bcf:citekey order="611">jacques20antipass</bcf:citekey>
+    <bcf:citekey order="612">creissels12antip</bcf:citekey>
+    <bcf:citekey order="613">sanso17antipassive</bcf:citekey>
+    <bcf:citekey order="614">gates17triplication</bcf:citekey>
+    <bcf:citekey order="615">jacques07passif</bcf:citekey>
+    <bcf:citekey order="616">hartmann09grammar</bcf:citekey>
+    <bcf:citekey order="617">mang06kcho</bcf:citekey>
+    <bcf:citekey order="618">jackson07shangzhai</bcf:citekey>
+    <bcf:citekey order="618">lai16caus</bcf:citekey>
+    <bcf:citekey order="619">conrady1896</bcf:citekey>
+    <bcf:citekey order="620">sagart12sprefix</bcf:citekey>
+    <bcf:citekey order="621">mei12caus</bcf:citekey>
+    <bcf:citekey order="622">handel12valence</bcf:citekey>
+    <bcf:citekey order="623">jacques15causative</bcf:citekey>
+    <bcf:citekey order="624">dai92yufa</bcf:citekey>
+    <bcf:citekey order="625">kurabe16jinghpo</bcf:citekey>
+    <bcf:citekey order="626">conrady1896</bcf:citekey>
+    <bcf:citekey order="627">jacques19contact</bcf:citekey>
+    <bcf:citekey order="628">jacques18bipartite</bcf:citekey>
+    <bcf:citekey order="629">jacques12incorp</bcf:citekey>
+    <bcf:citekey order="630">benveniste66incorp</bcf:citekey>
+    <bcf:citekey order="631">mithun84incorp</bcf:citekey>
+    <bcf:citekey order="632">benveniste66incorp</bcf:citekey>
+    <bcf:citekey order="633">garrett04stem.structure</bcf:citekey>
+    <bcf:citekey order="633">jacques12incorp</bcf:citekey>
+    <bcf:citekey order="634">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="635">hill.kc03hopi</bcf:citekey>
+    <bcf:citekey order="635">haugen08incorp</bcf:citekey>
+    <bcf:citekey order="636">haspelmath10categories</bcf:citekey>
+    <bcf:citekey order="637">lin11direction</bcf:citekey>
+    <bcf:citekey order="638">jacques14linking</bcf:citekey>
+    <bcf:citekey order="639">sun18evidentials</bcf:citekey>
+    <bcf:citekey order="640">tournadre14evidentiality</bcf:citekey>
+    <bcf:citekey order="641">sanroque17interrogativity</bcf:citekey>
+    <bcf:citekey order="642">garrett07symbiosis</bcf:citekey>
+    <bcf:citekey order="643">jacques14linking</bcf:citekey>
+    <bcf:citekey order="644">jacques19egophoric</bcf:citekey>
+    <bcf:citekey order="645">oisel13aux</bcf:citekey>
+    <bcf:citekey order="646">tournadre14evidentiality</bcf:citekey>
+    <bcf:citekey order="647">tournadre14evidentiality</bcf:citekey>
+    <bcf:citekey order="648">hill12mirativity</bcf:citekey>
+    <bcf:citekey order="649">delancey12still</bcf:citekey>
+    <bcf:citekey order="650">aikhenvald12mirativity</bcf:citekey>
+    <bcf:citekey order="651">hill20egophoricity</bcf:citekey>
+    <bcf:citekey order="652">gawne17bodish</bcf:citekey>
+    <bcf:citekey order="653">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="654">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="655">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="656">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="657">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="658">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="659">lin11direction</bcf:citekey>
+    <bcf:citekey order="660">jackson02rentongdengdi</bcf:citekey>
+    <bcf:citekey order="661">gong18these</bcf:citekey>
+    <bcf:citekey order="662">gong18these</bcf:citekey>
+    <bcf:citekey order="663">sun08shiti</bcf:citekey>
+    <bcf:citekey order="664">gong18these</bcf:citekey>
+    <bcf:citekey order="665">laiyf20betrayal</bcf:citekey>
+    <bcf:citekey order="666">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="667">sunhk96yiwen</bcf:citekey>
+    <bcf:citekey order="668">hoshi12e</bcf:citekey>
+    <bcf:citekey order="669">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="670">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="671">honkasalo19geshiza</bcf:citekey>
+    <bcf:citekey order="672">honkasalo19geshiza</bcf:citekey>
+    <bcf:citekey order="673">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="674">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="675">jacques13yod</bcf:citekey>
+    <bcf:citekey order="676">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="677">jackson06guanxiju</bcf:citekey>
+    <bcf:citekey order="677">jacksonlin07</bcf:citekey>
+    <bcf:citekey order="678">jacques16relatives</bcf:citekey>
+    <bcf:citekey order="679">lai18genitivization</bcf:citekey>
+    <bcf:citekey order="680">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="681">lai17khroskyabs</bcf:citekey>
+    <bcf:citekey order="682">jacques16relatives</bcf:citekey>
+    <bcf:citekey order="683">keenan77accessibility</bcf:citekey>
+    <bcf:citekey order="684">creissels06sgit2</bcf:citekey>
+    <bcf:citekey order="685">sun12complementation</bcf:citekey>
+    <bcf:citekey order="686">jacques08zh</bcf:citekey>
+    <bcf:citekey order="686">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="687">dixon06complementation</bcf:citekey>
+    <bcf:citekey order="688">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="689">sun12complementation</bcf:citekey>
+    <bcf:citekey order="690">jackson07irrealis</bcf:citekey>
+    <bcf:citekey order="691">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="692">loedrup14agree</bcf:citekey>
+    <bcf:citekey order="693">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="694">tournadre08conjunct</bcf:citekey>
+    <bcf:citekey order="695">aikhenvald08semidirect</bcf:citekey>
+    <bcf:citekey order="696">hagege74logophoriques</bcf:citekey>
+    <bcf:citekey order="696">nikitina12logophoric</bcf:citekey>
+    <bcf:citekey order="697">jacques17stau</bcf:citekey>
+    <bcf:citekey order="698">sun12complementation</bcf:citekey>
+    <bcf:citekey order="699">jacques16complementation</bcf:citekey>
+    <bcf:citekey order="700">dixon06complementation</bcf:citekey>
+    <bcf:citekey order="701">dixon06complementation</bcf:citekey>
+    <bcf:citekey order="702">vernhes96hermaion</bcf:citekey>
+    <bcf:citekey order="703">sun12complementation</bcf:citekey>
+    <bcf:citekey order="704">jacques14linking</bcf:citekey>
+    <bcf:citekey order="705">sun12complementation</bcf:citekey>
+    <bcf:citekey order="706">aikhenvald06svc</bcf:citekey>
+    <bcf:citekey order="707">vries05tailhead</bcf:citekey>
+    <bcf:citekey order="708">zhangsh13ersu</bcf:citekey>
+    <bcf:citekey order="709">jacques14linking</bcf:citekey>
+    <bcf:citekey order="710">jacques14linking</bcf:citekey>
+    <bcf:citekey order="711">creissels17similative</bcf:citekey>
+    <bcf:citekey order="712">sun12complementation</bcf:citekey>
+    <bcf:citekey order="713">lopes09justification</bcf:citekey>
+    <bcf:citekey order="714">angelo16beware</bcf:citekey>
+    <bcf:citekey order="715">jackson19tshobdun</bcf:citekey>
+    <bcf:citekey order="716">dixon08comparative</bcf:citekey>
+    <bcf:citekey order="717">jacques16comparative</bcf:citekey>
+    <bcf:citekey order="718">haspelmath08equative</bcf:citekey>
+    <bcf:citekey order="719">haspelmath17equative</bcf:citekey>
+    <bcf:citekey order="720">haspelmath17equative</bcf:citekey>
+    <bcf:citekey order="721">linxr93jiarong</bcf:citekey>
+    <bcf:citekey order="722">jacques18similative</bcf:citekey>
+    <bcf:citekey order="723">haspelmath17equative</bcf:citekey>
+    <bcf:citekey order="724">ylikovski17similarity</bcf:citekey>
+    <bcf:citekey order="725">kroeber1909classificatory</bcf:citekey>
+    <bcf:citekey order="726">kroeber1909classificatory</bcf:citekey>
+    <bcf:citekey order="727">jackson98morphology</bcf:citekey>
+    <bcf:citekey order="728">jacques11kinship</bcf:citekey>
+    <bcf:citekey order="729">jacques11kinship</bcf:citekey>
+    <bcf:citekey order="730">zhangsy20kinship</bcf:citekey>
+    <bcf:citekey order="731">lounsbury64crow</bcf:citekey>
+    <bcf:citekey order="732">lounsbury64crow</bcf:citekey>
+    <bcf:citekey order="733">lounsbury64crow</bcf:citekey>
+    <bcf:citekey order="734">lounsbury64crow</bcf:citekey>
+    <bcf:citekey order="735">lounsbury64crow</bcf:citekey>
+    <bcf:citekey order="736">trautmann12crossness</bcf:citekey>
+    <bcf:citekey order="737">trautmann12crossness</bcf:citekey>
   </bcf:section>
-  <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
-  <bcf:sorting>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nyt">
     <bcf:sort order="1">
       <bcf:sortitem order="1">presort</bcf:sortitem>
     </bcf:sort>
@@ -2263,8 +3184,17 @@
     </bcf:sort>
     <bcf:sort order="6">
       <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem order="2">0</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
     </bcf:sort>
-  </bcf:sorting>
-  </bcf:sortlist>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nyt/global//global/global"
+                type="entry"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>
